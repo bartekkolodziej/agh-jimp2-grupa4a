@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="jimp_exercises" targetName="lab1_factorial_tests" />
+      <config projectName="jimp_exercises" targetName="lab2_array_2d_step2_tests" />
+      <config projectName="jimp_exercises" targetName="lab2_greatest_product_step1_tests" />
+      <config projectName="jimp_exercises" targetName="libreversestring" />
+      <config projectName="jimp_exercises" targetName="palindrome" />
+      <config projectName="jimp_exercises" targetName="factorial" />
+      <config projectName="jimp_exercises" targetName="libfactorial" />
+      <config projectName="jimp_exercises" targetName="array2d" />
+      <config projectName="jimp_exercises" targetName="lab1_all_tests" />
+      <config projectName="jimp_exercises" targetName="lab2_polybius_step1_tests" />
+      <config projectName="jimp_exercises" targetName="gtest" />
+      <config projectName="jimp_exercises" targetName="lab2_greatest_product_step3_tests" />
+      <config projectName="jimp_exercises" targetName="gmock" />
+      <config projectName="jimp_exercises" targetName="reversestring" />
+      <config projectName="jimp_exercises" targetName="lab2_array_2d_step3_tests" />
+      <config projectName="jimp_exercises" targetName="lab1_reverse_string_tests" />
+      <config projectName="jimp_exercises" targetName="libmultiplicationtable" />
+      <config projectName="jimp_exercises" targetName="multiplicationtable" />
+      <config projectName="jimp_exercises" targetName="gmock_main" />
+      <config projectName="jimp_exercises" targetName="lab2_all_tests" />
+      <config projectName="jimp_exercises" targetName="lab2_greatest_product_step2_tests" />
+      <config projectName="jimp_exercises" targetName="libpalindrome" />
+      <config projectName="jimp_exercises" targetName="lab1_multiplication_table_tests" />
+      <config projectName="jimp_exercises" targetName="memleak" />
+      <config projectName="jimp_exercises" targetName="lab1_double_base_palindrome_tests" />
+      <config projectName="jimp_exercises" targetName="libarray2d" />
+      <config projectName="jimp_exercises" targetName="lab2_array_2d_step1_tests" />
+      <config projectName="jimp_exercises" targetName="lab2_xor_cypher_breaker_tests" />
+      <config projectName="jimp_exercises" targetName="libdoublebasepalindromes" />
+      <config projectName="jimp_exercises" targetName="lab2_array_2d_step4_tests" />
+      <config projectName="jimp_exercises" targetName="doublebasepalindromes" />
+      <config projectName="jimp_exercises" targetName="lab1_palindrome_tests" />
+      <config projectName="jimp_exercises" targetName="lab2_polybius_step2_tests" />
+      <config projectName="jimp_exercises" targetName="gtest_main" />
+      <config projectName="jimp_exercises" targetName="stringutility" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b0b8c914-f466-4905-8d6f-147166fe85c9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2/CMakeLists.txt" afterPath="$PROJECT_DIR$/lab2/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/lab2test/Array2DStep2Test.cpp" afterPath="$PROJECT_DIR$/tests/lab2test/Array2DStep2Test.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/lab2test/Array2DStep3Test.cpp" afterPath="$PROJECT_DIR$/tests/lab2test/Array2DStep3Test.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/lab2test/CMakeLists.txt" afterPath="$PROJECT_DIR$/tests/lab2test/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/lib/memleak/MemLeak.h" afterPath="$PROJECT_DIR$/tests/lib/memleak/MemLeak.h" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lab2/array2d/main.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1360" />
+    <option name="height" value="678" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jimp_exercises" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agh-jimp2-grupa4a" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jimp_exercises" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agh-jimp2-grupa4a" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jimp_exercises" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agh-jimp2-grupa4a" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lab1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doublebasepalindromes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Google Test.lab1_all_tests">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="doublebasepalindromes" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="doublebasepalindromes" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="agh-jimp2-grupa4a" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="agh-jimp2-grupa4a" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="agh-jimp2-grupa4a" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="agh-jimp2-grupa4a" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="agh-jimp2-grupa4a" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="agh-jimp2-grupa4a" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="agh-jimp2-grupa4a" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="doublebasepalindromes" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="doublebasepalindromes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="doublebasepalindromes">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="libdoublebasepalindromes" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="libdoublebasepalindromes" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="factorial" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="factorial" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="factorial">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="libfactorial" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="libfactorial" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="libmultiplicationtable" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="libmultiplicationtable" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="multiplicationtable" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="multiplicationtable" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="multiplicationtable">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="libpalindrome" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="libpalindrome" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="palindrome" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="palindrome" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="palindrome">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="libreversestring" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="libreversestring" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="reversestring" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="reversestring" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="reversestring">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="array2d" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="array2d" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="array2d">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="libarray2d" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="libarray2d" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab1_all_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab1_all_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab1_all_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab1_double_base_palindrome_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab1_double_base_palindrome_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab1_double_base_palindrome_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab1_factorial_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab1_factorial_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab1_factorial_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab1_multiplication_table_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab1_multiplication_table_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab1_multiplication_table_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab1_palindrome_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab1_palindrome_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab1_palindrome_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab1_reverse_string_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab1_reverse_string_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab1_reverse_string_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab2_all_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab2_all_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab2_all_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab2_array_2d_step1_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab2_array_2d_step1_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab2_array_2d_step1_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab2_array_2d_step2_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab2_array_2d_step2_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab2_array_2d_step2_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab2_array_2d_step3_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab2_array_2d_step3_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab2_array_2d_step3_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab2_array_2d_step4_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab2_array_2d_step4_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab2_array_2d_step4_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab2_greatest_product_step1_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab2_greatest_product_step1_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab2_greatest_product_step1_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab2_greatest_product_step2_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab2_greatest_product_step2_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab2_greatest_product_step2_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab2_greatest_product_step3_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab2_greatest_product_step3_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab2_greatest_product_step3_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab2_polybius_step1_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab2_polybius_step1_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab2_polybius_step1_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab2_polybius_step2_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab2_polybius_step2_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab2_polybius_step2_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="lab2_xor_cypher_breaker_tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="lab2_xor_cypher_breaker_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="jimp_exercises" RUN_TARGET_NAME="lab2_xor_cypher_breaker_tests" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="memleak" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="memleak" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="stringutility" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="stringutility" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <list size="36">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.doublebasepalindromes" />
+      <item index="2" class="java.lang.String" itemvalue="Application.libdoublebasepalindromes" />
+      <item index="3" class="java.lang.String" itemvalue="Application.factorial" />
+      <item index="4" class="java.lang.String" itemvalue="Application.libfactorial" />
+      <item index="5" class="java.lang.String" itemvalue="Application.libmultiplicationtable" />
+      <item index="6" class="java.lang.String" itemvalue="Application.multiplicationtable" />
+      <item index="7" class="java.lang.String" itemvalue="Application.libpalindrome" />
+      <item index="8" class="java.lang.String" itemvalue="Application.palindrome" />
+      <item index="9" class="java.lang.String" itemvalue="Application.libreversestring" />
+      <item index="10" class="java.lang.String" itemvalue="Application.reversestring" />
+      <item index="11" class="java.lang.String" itemvalue="Application.array2d" />
+      <item index="12" class="java.lang.String" itemvalue="Application.libarray2d" />
+      <item index="13" class="java.lang.String" itemvalue="Google Test.lab1_all_tests" />
+      <item index="14" class="java.lang.String" itemvalue="Google Test.lab1_double_base_palindrome_tests" />
+      <item index="15" class="java.lang.String" itemvalue="Google Test.lab1_factorial_tests" />
+      <item index="16" class="java.lang.String" itemvalue="Google Test.lab1_multiplication_table_tests" />
+      <item index="17" class="java.lang.String" itemvalue="Google Test.lab1_palindrome_tests" />
+      <item index="18" class="java.lang.String" itemvalue="Google Test.lab1_reverse_string_tests" />
+      <item index="19" class="java.lang.String" itemvalue="Google Test.lab2_all_tests" />
+      <item index="20" class="java.lang.String" itemvalue="Google Test.lab2_array_2d_step1_tests" />
+      <item index="21" class="java.lang.String" itemvalue="Google Test.lab2_array_2d_step2_tests" />
+      <item index="22" class="java.lang.String" itemvalue="Google Test.lab2_array_2d_step3_tests" />
+      <item index="23" class="java.lang.String" itemvalue="Google Test.lab2_array_2d_step4_tests" />
+      <item index="24" class="java.lang.String" itemvalue="Google Test.lab2_greatest_product_step1_tests" />
+      <item index="25" class="java.lang.String" itemvalue="Google Test.lab2_greatest_product_step2_tests" />
+      <item index="26" class="java.lang.String" itemvalue="Google Test.lab2_greatest_product_step3_tests" />
+      <item index="27" class="java.lang.String" itemvalue="Google Test.lab2_polybius_step1_tests" />
+      <item index="28" class="java.lang.String" itemvalue="Google Test.lab2_polybius_step2_tests" />
+      <item index="29" class="java.lang.String" itemvalue="Google Test.lab2_xor_cypher_breaker_tests" />
+      <item index="30" class="java.lang.String" itemvalue="Application.gmock" />
+      <item index="31" class="java.lang.String" itemvalue="Application.gmock_main" />
+      <item index="32" class="java.lang.String" itemvalue="Application.gtest" />
+      <item index="33" class="java.lang.String" itemvalue="Application.gtest_main" />
+      <item index="34" class="java.lang.String" itemvalue="Application.memleak" />
+      <item index="35" class="java.lang.String" itemvalue="Application.stringutility" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0b8c914-f466-4905-8d6f-147166fe85c9" name="Default" comment="" />
+      <created>1488748839924</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488748839924</updated>
+      <workItem from="1488748841401" duration="331000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="lab1_double_base_palindrome_tests - 2017.03.05 at 22h 24m 27s.xml">
+      <configuration name="lab1_double_base_palindrome_tests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="lab2_array_2d_step1_tests - 2017.03.05 at 22h 21m 31s.xml">
+      <configuration name="lab2_array_2d_step1_tests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="lab2_array_2d_step1_tests - 2017.03.05 at 22h 22m 07s.xml">
+      <configuration name="lab2_array_2d_step1_tests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="lab2_array_2d_step2_tests - 2017.03.05 at 22h 22m 16s.xml">
+      <configuration name="lab2_array_2d_step2_tests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="lab2_array_2d_step3_tests - 2017.03.05 at 22h 22m 31s.xml">
+      <configuration name="lab2_array_2d_step3_tests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="lab2_array_2d_step4_tests - 2017.03.05 at 22h 22m 37s.xml">
+      <configuration name="lab2_array_2d_step4_tests" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="331000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1360" height="678" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lab2/array2d/Array2D.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/array2d/Array2D.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/array2d/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/array2d/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/palindrome/Palindrome.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/doublebasepalindromes/DoubleBasePalindromes.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab1/doublebasepalindromes/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

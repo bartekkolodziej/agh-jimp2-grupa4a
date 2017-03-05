@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblibreversestring.a  CMakeFiles/libreversestring.dir/ReverseString.cpp.o
+/usr/bin/ranlib liblibreversestring.a

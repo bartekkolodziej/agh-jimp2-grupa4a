@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/reversestring.dir/ReverseString.cpp.o CMakeFiles/reversestring.dir/main.cpp.o  -o reversestring liblibreversestring.a 

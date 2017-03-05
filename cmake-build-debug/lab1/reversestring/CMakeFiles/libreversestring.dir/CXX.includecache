@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bartek/agh-jimp2-grupa4a/lab1/reversestring/ReverseString.cpp
+ReverseString.h
+/home/bartek/agh-jimp2-grupa4a/lab1/reversestring/ReverseString.h
+
+/home/bartek/agh-jimp2-grupa4a/lab1/reversestring/ReverseString.h
+iostream
+-
+string
+-
+
