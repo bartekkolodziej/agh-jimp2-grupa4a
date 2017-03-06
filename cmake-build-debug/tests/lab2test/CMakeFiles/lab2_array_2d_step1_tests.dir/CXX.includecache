@@ -282,7 +282,7 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/bartek/agh-jimp2-grupa4a/tests/lab2test/Array2DStep1Test.cpp
+/home/bartek/c++/tests/lab2test/Array2DStep1Test.cpp
 Array2D.h
 -
 gtest/gtest.h

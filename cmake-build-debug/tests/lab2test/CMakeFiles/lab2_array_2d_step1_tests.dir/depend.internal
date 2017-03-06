@@ -25,4 +25,4 @@ tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/Array2DStep1Test.cpp.o
  ../tests/lib/gtest-1.8.0/googletest/include/gtest/internal/gtest-string.h
  ../tests/lib/gtest-1.8.0/googletest/include/gtest/internal/gtest-tuple.h
  ../tests/lib/gtest-1.8.0/googletest/include/gtest/internal/gtest-type-util.h
- /home/bartek/agh-jimp2-grupa4a/tests/lab2test/Array2DStep1Test.cpp
+ /home/bartek/c++/tests/lab2test/Array2DStep1Test.cpp
