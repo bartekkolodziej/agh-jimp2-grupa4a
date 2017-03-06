@@ -34,7 +34,7 @@ tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-al
  ../tests/lib/gtest-1.8.0/googletest/src/gtest-test-part.cc
  ../tests/lib/gtest-1.8.0/googletest/src/gtest-typed-test.cc
  ../tests/lib/gtest-1.8.0/googletest/src/gtest.cc
- /home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/src/gtest-all.cc
+ /home/bartek/c++/tests/lib/gtest-1.8.0/googletest/src/gtest-all.cc
 tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
  ../tests/lib/gtest-1.8.0/googlemock/include/gmock/gmock-actions.h
  ../tests/lib/gtest-1.8.0/googlemock/include/gmock/gmock-cardinalities.h
@@ -80,4 +80,4 @@ tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
  ../tests/lib/gtest-1.8.0/googletest/include/gtest/internal/gtest-string.h
  ../tests/lib/gtest-1.8.0/googletest/include/gtest/internal/gtest-tuple.h
  ../tests/lib/gtest-1.8.0/googletest/include/gtest/internal/gtest-type-util.h
- /home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/src/gmock-all.cc
+ /home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/src/gmock-all.cc

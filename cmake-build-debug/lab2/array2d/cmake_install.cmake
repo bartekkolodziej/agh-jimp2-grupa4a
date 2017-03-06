@@ -1,4 +1,4 @@
-# Install script for directory: /home/bartek/agh-jimp2-grupa4a/lab2/array2d
+# Install script for directory: /home/bartek/c++/lab2/array2d
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

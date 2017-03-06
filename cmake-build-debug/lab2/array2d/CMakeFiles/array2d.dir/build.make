@@ -43,10 +43,10 @@ RM = /home/bartek/Pobrane/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bartek/agh-jimp2-grupa4a
+CMAKE_SOURCE_DIR = /home/bartek/c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bartek/agh-jimp2-grupa4a/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bartek/c++/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include lab2/array2d/CMakeFiles/array2d.dir/depend.make
@@ -59,16 +59,16 @@ include lab2/array2d/CMakeFiles/array2d.dir/flags.make
 
 lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.o: lab2/array2d/CMakeFiles/array2d.dir/flags.make
 lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.o: ../lab2/array2d/Array2D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.o"
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab2/array2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array2d.dir/Array2D.cpp.o -c /home/bartek/agh-jimp2-grupa4a/lab2/array2d/Array2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartek/c++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.o"
+	cd /home/bartek/c++/cmake-build-debug/lab2/array2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array2d.dir/Array2D.cpp.o -c /home/bartek/c++/lab2/array2d/Array2D.cpp
 
 lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array2d.dir/Array2D.cpp.i"
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab2/array2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bartek/agh-jimp2-grupa4a/lab2/array2d/Array2D.cpp > CMakeFiles/array2d.dir/Array2D.cpp.i
+	cd /home/bartek/c++/cmake-build-debug/lab2/array2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bartek/c++/lab2/array2d/Array2D.cpp > CMakeFiles/array2d.dir/Array2D.cpp.i
 
 lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array2d.dir/Array2D.cpp.s"
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab2/array2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bartek/agh-jimp2-grupa4a/lab2/array2d/Array2D.cpp -o CMakeFiles/array2d.dir/Array2D.cpp.s
+	cd /home/bartek/c++/cmake-build-debug/lab2/array2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bartek/c++/lab2/array2d/Array2D.cpp -o CMakeFiles/array2d.dir/Array2D.cpp.s
 
 lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.o.requires:
 
@@ -83,16 +83,16 @@ lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.o.provides.build: lab2/array2d/C
 
 lab2/array2d/CMakeFiles/array2d.dir/main.cpp.o: lab2/array2d/CMakeFiles/array2d.dir/flags.make
 lab2/array2d/CMakeFiles/array2d.dir/main.cpp.o: ../lab2/array2d/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lab2/array2d/CMakeFiles/array2d.dir/main.cpp.o"
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab2/array2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array2d.dir/main.cpp.o -c /home/bartek/agh-jimp2-grupa4a/lab2/array2d/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartek/c++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lab2/array2d/CMakeFiles/array2d.dir/main.cpp.o"
+	cd /home/bartek/c++/cmake-build-debug/lab2/array2d && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/array2d.dir/main.cpp.o -c /home/bartek/c++/lab2/array2d/main.cpp
 
 lab2/array2d/CMakeFiles/array2d.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/array2d.dir/main.cpp.i"
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab2/array2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bartek/agh-jimp2-grupa4a/lab2/array2d/main.cpp > CMakeFiles/array2d.dir/main.cpp.i
+	cd /home/bartek/c++/cmake-build-debug/lab2/array2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bartek/c++/lab2/array2d/main.cpp > CMakeFiles/array2d.dir/main.cpp.i
 
 lab2/array2d/CMakeFiles/array2d.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/array2d.dir/main.cpp.s"
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab2/array2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bartek/agh-jimp2-grupa4a/lab2/array2d/main.cpp -o CMakeFiles/array2d.dir/main.cpp.s
+	cd /home/bartek/c++/cmake-build-debug/lab2/array2d && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bartek/c++/lab2/array2d/main.cpp -o CMakeFiles/array2d.dir/main.cpp.s
 
 lab2/array2d/CMakeFiles/array2d.dir/main.cpp.o.requires:
 
@@ -118,8 +118,8 @@ lab2/array2d/array2d: lab2/array2d/CMakeFiles/array2d.dir/main.cpp.o
 lab2/array2d/array2d: lab2/array2d/CMakeFiles/array2d.dir/build.make
 lab2/array2d/array2d: lab2/array2d/liblibarray2d.a
 lab2/array2d/array2d: lab2/array2d/CMakeFiles/array2d.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable array2d"
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab2/array2d && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/array2d.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bartek/c++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable array2d"
+	cd /home/bartek/c++/cmake-build-debug/lab2/array2d && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/array2d.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lab2/array2d/CMakeFiles/array2d.dir/build: lab2/array2d/array2d
@@ -132,10 +132,10 @@ lab2/array2d/CMakeFiles/array2d.dir/requires: lab2/array2d/CMakeFiles/array2d.di
 .PHONY : lab2/array2d/CMakeFiles/array2d.dir/requires
 
 lab2/array2d/CMakeFiles/array2d.dir/clean:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab2/array2d && $(CMAKE_COMMAND) -P CMakeFiles/array2d.dir/cmake_clean.cmake
+	cd /home/bartek/c++/cmake-build-debug/lab2/array2d && $(CMAKE_COMMAND) -P CMakeFiles/array2d.dir/cmake_clean.cmake
 .PHONY : lab2/array2d/CMakeFiles/array2d.dir/clean
 
 lab2/array2d/CMakeFiles/array2d.dir/depend:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bartek/agh-jimp2-grupa4a /home/bartek/agh-jimp2-grupa4a/lab2/array2d /home/bartek/agh-jimp2-grupa4a/cmake-build-debug /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab2/array2d /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab2/array2d/CMakeFiles/array2d.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bartek/c++ /home/bartek/c++/lab2/array2d /home/bartek/c++/cmake-build-debug /home/bartek/c++/cmake-build-debug/lab2/array2d /home/bartek/c++/cmake-build-debug/lab2/array2d/CMakeFiles/array2d.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lab2/array2d/CMakeFiles/array2d.dir/depend
 

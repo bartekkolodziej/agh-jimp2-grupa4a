@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/include -I/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest -I/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/include -I/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock -I/home/bartek/agh-jimp2-grupa4a/lab1/factorial/. -I/home/bartek/agh-jimp2-grupa4a/lab1/reversestring/. -I/home/bartek/agh-jimp2-grupa4a/lab1/palindrome/. -I/home/bartek/agh-jimp2-grupa4a/lab1/multiplicationtable/. -I/home/bartek/agh-jimp2-grupa4a/lab1/doublebasepalindromes/. 
+CXX_INCLUDES = -I/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include -I/home/bartek/c++/tests/lib/gtest-1.8.0/googletest -I/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include -I/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock -I/home/bartek/c++/lab1/factorial/. -I/home/bartek/c++/lab1/reversestring/. -I/home/bartek/c++/lab1/palindrome/. -I/home/bartek/c++/lab1/multiplicationtable/. -I/home/bartek/c++/lab1/doublebasepalindromes/. 
 

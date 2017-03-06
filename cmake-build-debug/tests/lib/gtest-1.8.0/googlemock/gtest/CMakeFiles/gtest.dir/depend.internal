@@ -34,4 +34,4 @@ tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
  ../tests/lib/gtest-1.8.0/googletest/src/gtest-test-part.cc
  ../tests/lib/gtest-1.8.0/googletest/src/gtest-typed-test.cc
  ../tests/lib/gtest-1.8.0/googletest/src/gtest.cc
- /home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/src/gtest-all.cc
+ /home/bartek/c++/tests/lib/gtest-1.8.0/googletest/src/gtest-all.cc

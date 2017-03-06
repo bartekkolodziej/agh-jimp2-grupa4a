@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/src/gtest-all.cc" "/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+  "/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/src/gtest-all.cc" "/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

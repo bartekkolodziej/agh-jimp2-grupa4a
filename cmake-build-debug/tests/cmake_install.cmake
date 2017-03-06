@@ -1,4 +1,4 @@
-# Install script for directory: /home/bartek/agh-jimp2-grupa4a/tests
+# Install script for directory: /home/bartek/c++/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,11 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/cmake_install.cmake")
-  include("/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/stringutility/cmake_install.cmake")
-  include("/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/memleak/cmake_install.cmake")
-  include("/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lab1test/cmake_install.cmake")
-  include("/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lab2test/cmake_install.cmake")
+  include("/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/cmake_install.cmake")
+  include("/home/bartek/c++/cmake-build-debug/tests/lib/stringutility/cmake_install.cmake")
+  include("/home/bartek/c++/cmake-build-debug/tests/lib/memleak/cmake_install.cmake")
+  include("/home/bartek/c++/cmake-build-debug/tests/lab1test/cmake_install.cmake")
+  include("/home/bartek/c++/cmake-build-debug/tests/lab2test/cmake_install.cmake")
 
 endif()
 

@@ -43,10 +43,10 @@ RM = /home/bartek/Pobrane/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bartek/agh-jimp2-grupa4a
+CMAKE_SOURCE_DIR = /home/bartek/c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bartek/agh-jimp2-grupa4a/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bartek/c++/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/depend.make
@@ -59,16 +59,16 @@ include lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/flags
 
 lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.o: lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/flags.make
 lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.o: ../lab1/doublebasepalindromes/DoubleBasePalindromes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.o"
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/doublebasepalindromes && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.o -c /home/bartek/agh-jimp2-grupa4a/lab1/doublebasepalindromes/DoubleBasePalindromes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bartek/c++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.o"
+	cd /home/bartek/c++/cmake-build-debug/lab1/doublebasepalindromes && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.o -c /home/bartek/c++/lab1/doublebasepalindromes/DoubleBasePalindromes.cpp
 
 lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.i"
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/doublebasepalindromes && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bartek/agh-jimp2-grupa4a/lab1/doublebasepalindromes/DoubleBasePalindromes.cpp > CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.i
+	cd /home/bartek/c++/cmake-build-debug/lab1/doublebasepalindromes && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bartek/c++/lab1/doublebasepalindromes/DoubleBasePalindromes.cpp > CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.i
 
 lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.s"
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/doublebasepalindromes && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bartek/agh-jimp2-grupa4a/lab1/doublebasepalindromes/DoubleBasePalindromes.cpp -o CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.s
+	cd /home/bartek/c++/cmake-build-debug/lab1/doublebasepalindromes && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bartek/c++/lab1/doublebasepalindromes/DoubleBasePalindromes.cpp -o CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.s
 
 lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.o.requires:
 
@@ -91,9 +91,9 @@ libdoublebasepalindromes_EXTERNAL_OBJECTS =
 lab1/doublebasepalindromes/liblibdoublebasepalindromes.a: lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.o
 lab1/doublebasepalindromes/liblibdoublebasepalindromes.a: lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/build.make
 lab1/doublebasepalindromes/liblibdoublebasepalindromes.a: lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblibdoublebasepalindromes.a"
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/doublebasepalindromes && $(CMAKE_COMMAND) -P CMakeFiles/libdoublebasepalindromes.dir/cmake_clean_target.cmake
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/doublebasepalindromes && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libdoublebasepalindromes.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bartek/c++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library liblibdoublebasepalindromes.a"
+	cd /home/bartek/c++/cmake-build-debug/lab1/doublebasepalindromes && $(CMAKE_COMMAND) -P CMakeFiles/libdoublebasepalindromes.dir/cmake_clean_target.cmake
+	cd /home/bartek/c++/cmake-build-debug/lab1/doublebasepalindromes && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libdoublebasepalindromes.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/build: lab1/doublebasepalindromes/liblibdoublebasepalindromes.a
@@ -105,10 +105,10 @@ lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/requires: lab
 .PHONY : lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/requires
 
 lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/clean:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/doublebasepalindromes && $(CMAKE_COMMAND) -P CMakeFiles/libdoublebasepalindromes.dir/cmake_clean.cmake
+	cd /home/bartek/c++/cmake-build-debug/lab1/doublebasepalindromes && $(CMAKE_COMMAND) -P CMakeFiles/libdoublebasepalindromes.dir/cmake_clean.cmake
 .PHONY : lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/clean
 
 lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/depend:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bartek/agh-jimp2-grupa4a /home/bartek/agh-jimp2-grupa4a/lab1/doublebasepalindromes /home/bartek/agh-jimp2-grupa4a/cmake-build-debug /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/doublebasepalindromes /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bartek/c++ /home/bartek/c++/lab1/doublebasepalindromes /home/bartek/c++/cmake-build-debug /home/bartek/c++/cmake-build-debug/lab1/doublebasepalindromes /home/bartek/c++/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/depend
 

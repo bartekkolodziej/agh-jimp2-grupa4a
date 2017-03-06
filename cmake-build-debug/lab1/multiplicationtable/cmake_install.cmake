@@ -1,4 +1,4 @@
-# Install script for directory: /home/bartek/agh-jimp2-grupa4a/lab1/multiplicationtable
+# Install script for directory: /home/bartek/c++/lab1/multiplicationtable
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -6,5 +6,5 @@ CXX_FLAGS = -g     -DGTEST_HAS_PTHREAD=1   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/include -I/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest 
+CXX_INCLUDES = -I/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include -I/home/bartek/c++/tests/lib/gtest-1.8.0/googletest 
 

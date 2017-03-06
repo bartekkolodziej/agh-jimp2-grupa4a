@@ -1,4 +1,4 @@
-# Install script for directory: /home/bartek/agh-jimp2-grupa4a/tests/lib/memleak
+# Install script for directory: /home/bartek/c++/tests/lib/memleak
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

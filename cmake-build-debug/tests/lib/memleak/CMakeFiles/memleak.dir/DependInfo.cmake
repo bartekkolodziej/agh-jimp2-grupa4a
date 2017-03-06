@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/MemLeak.cpp" "/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/memleak/CMakeFiles/memleak.dir/MemLeak.cpp.o"
-  "/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/MemLeakTest.cpp" "/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/memleak/CMakeFiles/memleak.dir/MemLeakTest.cpp.o"
+  "/home/bartek/c++/tests/lib/memleak/MemLeak.cpp" "/home/bartek/c++/cmake-build-debug/tests/lib/memleak/CMakeFiles/memleak.dir/MemLeak.cpp.o"
+  "/home/bartek/c++/tests/lib/memleak/MemLeakTest.cpp" "/home/bartek/c++/cmake-build-debug/tests/lib/memleak/CMakeFiles/memleak.dir/MemLeakTest.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -20,10 +20,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
+  "/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

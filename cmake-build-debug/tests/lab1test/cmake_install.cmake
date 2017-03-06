@@ -1,4 +1,4 @@
-# Install script for directory: /home/bartek/agh-jimp2-grupa4a/tests/lab1test
+# Install script for directory: /home/bartek/c++/tests/lab1test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

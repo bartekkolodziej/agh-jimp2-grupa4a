@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/src/gtest-all.cc" "/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o"
-  "/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/src/gmock-all.cc" "/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o"
-  "/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/src/gmock_main.cc" "/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+  "/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/src/gtest-all.cc" "/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o"
+  "/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/src/gmock-all.cc" "/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o"
+  "/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/src/gmock_main.cc" "/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

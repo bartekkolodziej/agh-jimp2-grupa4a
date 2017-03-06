@@ -24,4 +24,4 @@ tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.
  ../tests/lib/gtest-1.8.0/googletest/include/gtest/internal/gtest-string.h
  ../tests/lib/gtest-1.8.0/googletest/include/gtest/internal/gtest-tuple.h
  ../tests/lib/gtest-1.8.0/googletest/include/gtest/internal/gtest-type-util.h
- /home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/src/gtest_main.cc
+ /home/bartek/c++/tests/lib/gtest-1.8.0/googletest/src/gtest_main.cc

@@ -1,4 +1,4 @@
-# Install script for directory: /home/bartek/agh-jimp2-grupa4a/lab1/palindrome
+# Install script for directory: /home/bartek/c++/lab1/palindrome
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

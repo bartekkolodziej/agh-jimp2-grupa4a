@@ -48,10 +48,10 @@ RM = /home/bartek/Pobrane/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bartek/agh-jimp2-grupa4a
+CMAKE_SOURCE_DIR = /home/bartek/c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bartek/agh-jimp2-grupa4a/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bartek/c++/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/CMakeFiles/progress.marks
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles 0
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles /home/bartek/c++/cmake-build-debug/lab1/CMakeFiles/progress.marks
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/clean
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,17 +141,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/preinstall
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/preinstall
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -48,10 +48,10 @@ RM = /home/bartek/Pobrane/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bartek/agh-jimp2-grupa4a
+CMAKE_SOURCE_DIR = /home/bartek/c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bartek/agh-jimp2-grupa4a/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bartek/c++/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/progress.marks
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles 0
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles /home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/progress.marks
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/clean
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/preinstall
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/preinstall
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/rule:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
 .PHONY : tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -166,12 +166,12 @@ gtest_main: tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/rul
 
 # fast build rule for target.
 gtest_main/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 # Convenience name for target.
 tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/rule:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/rule
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/rule
 .PHONY : tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -181,7 +181,7 @@ gtest: tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/rule
 
 # fast build rule for target.
 gtest/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 src/gtest-all.o: src/gtest-all.cc.o
@@ -190,7 +190,7 @@ src/gtest-all.o: src/gtest-all.cc.o
 
 # target to build an object file
 src/gtest-all.cc.o:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
 .PHONY : src/gtest-all.cc.o
 
 src/gtest-all.i: src/gtest-all.cc.i
@@ -199,7 +199,7 @@ src/gtest-all.i: src/gtest-all.cc.i
 
 # target to preprocess a source file
 src/gtest-all.cc.i:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
 .PHONY : src/gtest-all.cc.i
 
 src/gtest-all.s: src/gtest-all.cc.s
@@ -208,7 +208,7 @@ src/gtest-all.s: src/gtest-all.cc.s
 
 # target to generate assembly for a file
 src/gtest-all.cc.s:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
 .PHONY : src/gtest-all.cc.s
 
 src/gtest_main.o: src/gtest_main.cc.o
@@ -217,7 +217,7 @@ src/gtest_main.o: src/gtest_main.cc.o
 
 # target to build an object file
 src/gtest_main.cc.o:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 .PHONY : src/gtest_main.cc.o
 
 src/gtest_main.i: src/gtest_main.cc.i
@@ -226,7 +226,7 @@ src/gtest_main.i: src/gtest_main.cc.i
 
 # target to preprocess a source file
 src/gtest_main.cc.i:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
 .PHONY : src/gtest_main.cc.i
 
 src/gtest_main.s: src/gtest_main.cc.s
@@ -235,7 +235,7 @@ src/gtest_main.s: src/gtest_main.cc.s
 
 # target to generate assembly for a file
 src/gtest_main.cc.s:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
 .PHONY : src/gtest_main.cc.s
 
 # Help Target
@@ -269,6 +269,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

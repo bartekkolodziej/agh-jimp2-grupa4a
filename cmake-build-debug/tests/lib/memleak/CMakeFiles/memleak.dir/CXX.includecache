@@ -284,9 +284,9 @@ bits/c++config.h
 exception
 -
 
-/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/MemLeak.cpp
+/home/bartek/c++/tests/lib/memleak/MemLeak.cpp
 MemLeak.h
-/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/MemLeak.h
+/home/bartek/c++/tests/lib/memleak/MemLeak.h
 iostream
 -
 algorithm
@@ -294,7 +294,7 @@ algorithm
 regex
 -
 
-/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/MemLeak.h
+/home/bartek/c++/tests/lib/memleak/MemLeak.h
 MusialemToDodac.h
 -
 map
@@ -304,11 +304,11 @@ vector
 string
 -
 
-/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/MemLeakTest.cpp
+/home/bartek/c++/tests/lib/memleak/MemLeakTest.cpp
 MemLeak.h
-/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/MemLeak.h
+/home/bartek/c++/tests/lib/memleak/MemLeak.h
 MemLeakTest.h
-/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/MemLeakTest.h
+/home/bartek/c++/tests/lib/memleak/MemLeakTest.h
 gtest/gtest.h
 -
 string
@@ -316,5 +316,5 @@ string
 sstream
 -
 
-/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/MemLeakTest.h
+/home/bartek/c++/tests/lib/memleak/MemLeakTest.h
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/bartek/agh-jimp2-grupa4a/lab1
+# Install script for directory: /home/bartek/c++/lab1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,11 +34,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/factorial/cmake_install.cmake")
-  include("/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/reversestring/cmake_install.cmake")
-  include("/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/palindrome/cmake_install.cmake")
-  include("/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/multiplicationtable/cmake_install.cmake")
-  include("/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/doublebasepalindromes/cmake_install.cmake")
+  include("/home/bartek/c++/cmake-build-debug/lab1/factorial/cmake_install.cmake")
+  include("/home/bartek/c++/cmake-build-debug/lab1/reversestring/cmake_install.cmake")
+  include("/home/bartek/c++/cmake-build-debug/lab1/palindrome/cmake_install.cmake")
+  include("/home/bartek/c++/cmake-build-debug/lab1/multiplicationtable/cmake_install.cmake")
+  include("/home/bartek/c++/cmake-build-debug/lab1/doublebasepalindromes/cmake_install.cmake")
 
 endif()
 

@@ -48,10 +48,10 @@ RM = /home/bartek/Pobrane/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bartek/agh-jimp2-grupa4a
+CMAKE_SOURCE_DIR = /home/bartek/c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bartek/agh-jimp2-grupa4a/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bartek/c++/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab2/array2d/CMakeFiles/progress.marks
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles 0
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles /home/bartek/c++/cmake-build-debug/lab2/array2d/CMakeFiles/progress.marks
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/clean
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/preinstall
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/preinstall
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lab2/array2d/CMakeFiles/array2d.dir/rule:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/CMakeFiles/array2d.dir/rule
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/CMakeFiles/array2d.dir/rule
 .PHONY : lab2/array2d/CMakeFiles/array2d.dir/rule
 
 # Convenience name for target.
@@ -166,12 +166,12 @@ array2d: lab2/array2d/CMakeFiles/array2d.dir/rule
 
 # fast build rule for target.
 array2d/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/build
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/build
 .PHONY : array2d/fast
 
 # Convenience name for target.
 lab2/array2d/CMakeFiles/libarray2d.dir/rule:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/CMakeFiles/libarray2d.dir/rule
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab2/array2d/CMakeFiles/libarray2d.dir/rule
 .PHONY : lab2/array2d/CMakeFiles/libarray2d.dir/rule
 
 # Convenience name for target.
@@ -181,7 +181,7 @@ libarray2d: lab2/array2d/CMakeFiles/libarray2d.dir/rule
 
 # fast build rule for target.
 libarray2d/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/libarray2d.dir/build.make lab2/array2d/CMakeFiles/libarray2d.dir/build
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/libarray2d.dir/build.make lab2/array2d/CMakeFiles/libarray2d.dir/build
 .PHONY : libarray2d/fast
 
 Array2D.o: Array2D.cpp.o
@@ -190,8 +190,8 @@ Array2D.o: Array2D.cpp.o
 
 # target to build an object file
 Array2D.cpp.o:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.o
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/libarray2d.dir/build.make lab2/array2d/CMakeFiles/libarray2d.dir/Array2D.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/libarray2d.dir/build.make lab2/array2d/CMakeFiles/libarray2d.dir/Array2D.cpp.o
 .PHONY : Array2D.cpp.o
 
 Array2D.i: Array2D.cpp.i
@@ -200,8 +200,8 @@ Array2D.i: Array2D.cpp.i
 
 # target to preprocess a source file
 Array2D.cpp.i:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.i
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/libarray2d.dir/build.make lab2/array2d/CMakeFiles/libarray2d.dir/Array2D.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/libarray2d.dir/build.make lab2/array2d/CMakeFiles/libarray2d.dir/Array2D.cpp.i
 .PHONY : Array2D.cpp.i
 
 Array2D.s: Array2D.cpp.s
@@ -210,8 +210,8 @@ Array2D.s: Array2D.cpp.s
 
 # target to generate assembly for a file
 Array2D.cpp.s:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.s
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/libarray2d.dir/build.make lab2/array2d/CMakeFiles/libarray2d.dir/Array2D.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/Array2D.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/libarray2d.dir/build.make lab2/array2d/CMakeFiles/libarray2d.dir/Array2D.cpp.s
 .PHONY : Array2D.cpp.s
 
 main.o: main.cpp.o
@@ -220,7 +220,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/main.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -229,7 +229,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/main.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -238,7 +238,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/main.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab2/array2d/CMakeFiles/array2d.dir/build.make lab2/array2d/CMakeFiles/array2d.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -272,6 +272,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

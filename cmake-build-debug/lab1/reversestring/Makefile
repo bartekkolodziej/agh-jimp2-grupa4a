@@ -48,10 +48,10 @@ RM = /home/bartek/Pobrane/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bartek/agh-jimp2-grupa4a
+CMAKE_SOURCE_DIR = /home/bartek/c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bartek/agh-jimp2-grupa4a/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bartek/c++/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/reversestring/CMakeFiles/progress.marks
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles 0
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles /home/bartek/c++/cmake-build-debug/lab1/reversestring/CMakeFiles/progress.marks
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/clean
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/preinstall
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/preinstall
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lab1/reversestring/CMakeFiles/reversestring.dir/rule:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/CMakeFiles/reversestring.dir/rule
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/CMakeFiles/reversestring.dir/rule
 .PHONY : lab1/reversestring/CMakeFiles/reversestring.dir/rule
 
 # Convenience name for target.
@@ -166,12 +166,12 @@ reversestring: lab1/reversestring/CMakeFiles/reversestring.dir/rule
 
 # fast build rule for target.
 reversestring/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/build
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/build
 .PHONY : reversestring/fast
 
 # Convenience name for target.
 lab1/reversestring/CMakeFiles/libreversestring.dir/rule:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/CMakeFiles/libreversestring.dir/rule
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/reversestring/CMakeFiles/libreversestring.dir/rule
 .PHONY : lab1/reversestring/CMakeFiles/libreversestring.dir/rule
 
 # Convenience name for target.
@@ -181,7 +181,7 @@ libreversestring: lab1/reversestring/CMakeFiles/libreversestring.dir/rule
 
 # fast build rule for target.
 libreversestring/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/libreversestring.dir/build.make lab1/reversestring/CMakeFiles/libreversestring.dir/build
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/libreversestring.dir/build.make lab1/reversestring/CMakeFiles/libreversestring.dir/build
 .PHONY : libreversestring/fast
 
 ReverseString.o: ReverseString.cpp.o
@@ -190,8 +190,8 @@ ReverseString.o: ReverseString.cpp.o
 
 # target to build an object file
 ReverseString.cpp.o:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/ReverseString.cpp.o
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/libreversestring.dir/build.make lab1/reversestring/CMakeFiles/libreversestring.dir/ReverseString.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/ReverseString.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/libreversestring.dir/build.make lab1/reversestring/CMakeFiles/libreversestring.dir/ReverseString.cpp.o
 .PHONY : ReverseString.cpp.o
 
 ReverseString.i: ReverseString.cpp.i
@@ -200,8 +200,8 @@ ReverseString.i: ReverseString.cpp.i
 
 # target to preprocess a source file
 ReverseString.cpp.i:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/ReverseString.cpp.i
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/libreversestring.dir/build.make lab1/reversestring/CMakeFiles/libreversestring.dir/ReverseString.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/ReverseString.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/libreversestring.dir/build.make lab1/reversestring/CMakeFiles/libreversestring.dir/ReverseString.cpp.i
 .PHONY : ReverseString.cpp.i
 
 ReverseString.s: ReverseString.cpp.s
@@ -210,8 +210,8 @@ ReverseString.s: ReverseString.cpp.s
 
 # target to generate assembly for a file
 ReverseString.cpp.s:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/ReverseString.cpp.s
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/libreversestring.dir/build.make lab1/reversestring/CMakeFiles/libreversestring.dir/ReverseString.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/ReverseString.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/libreversestring.dir/build.make lab1/reversestring/CMakeFiles/libreversestring.dir/ReverseString.cpp.s
 .PHONY : ReverseString.cpp.s
 
 main.o: main.cpp.o
@@ -220,7 +220,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/main.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -229,7 +229,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/main.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -238,7 +238,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/main.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/reversestring/CMakeFiles/reversestring.dir/build.make lab1/reversestring/CMakeFiles/reversestring.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -272,6 +272,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bartek/agh-jimp2-grupa4a/tests/lib/stringutility/. 
+CXX_INCLUDES = -I/home/bartek/c++/tests/lib/stringutility/. 
 

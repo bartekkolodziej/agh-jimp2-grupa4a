@@ -48,10 +48,10 @@ RM = /home/bartek/Pobrane/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bartek/agh-jimp2-grupa4a
+CMAKE_SOURCE_DIR = /home/bartek/c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bartek/agh-jimp2-grupa4a/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bartek/c++/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,9 +124,9 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles /home/bartek/c++/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -309,6 +309,84 @@ libarray2d: cmake_check_build_system
 libarray2d/fast:
 	$(MAKE) -f lab2/array2d/CMakeFiles/libarray2d.dir/build.make lab2/array2d/CMakeFiles/libarray2d.dir/build
 .PHONY : libarray2d/fast
+
+#=============================================================================
+# Target rules for targets named polybius
+
+# Build rule for target.
+polybius: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 polybius
+.PHONY : polybius
+
+# fast build rule for target.
+polybius/fast:
+	$(MAKE) -f lab2/polybius/CMakeFiles/polybius.dir/build.make lab2/polybius/CMakeFiles/polybius.dir/build
+.PHONY : polybius/fast
+
+#=============================================================================
+# Target rules for targets named libpolybius
+
+# Build rule for target.
+libpolybius: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libpolybius
+.PHONY : libpolybius
+
+# fast build rule for target.
+libpolybius/fast:
+	$(MAKE) -f lab2/polybius/CMakeFiles/libpolybius.dir/build.make lab2/polybius/CMakeFiles/libpolybius.dir/build
+.PHONY : libpolybius/fast
+
+#=============================================================================
+# Target rules for targets named greatestproduct
+
+# Build rule for target.
+greatestproduct: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 greatestproduct
+.PHONY : greatestproduct
+
+# fast build rule for target.
+greatestproduct/fast:
+	$(MAKE) -f lab2/greatestproduct/CMakeFiles/greatestproduct.dir/build.make lab2/greatestproduct/CMakeFiles/greatestproduct.dir/build
+.PHONY : greatestproduct/fast
+
+#=============================================================================
+# Target rules for targets named libgreatestproduct
+
+# Build rule for target.
+libgreatestproduct: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libgreatestproduct
+.PHONY : libgreatestproduct
+
+# fast build rule for target.
+libgreatestproduct/fast:
+	$(MAKE) -f lab2/greatestproduct/CMakeFiles/libgreatestproduct.dir/build.make lab2/greatestproduct/CMakeFiles/libgreatestproduct.dir/build
+.PHONY : libgreatestproduct/fast
+
+#=============================================================================
+# Target rules for targets named simpleforwardlist
+
+# Build rule for target.
+simpleforwardlist: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 simpleforwardlist
+.PHONY : simpleforwardlist
+
+# fast build rule for target.
+simpleforwardlist/fast:
+	$(MAKE) -f lab2/simpleforwardlist/CMakeFiles/simpleforwardlist.dir/build.make lab2/simpleforwardlist/CMakeFiles/simpleforwardlist.dir/build
+.PHONY : simpleforwardlist/fast
+
+#=============================================================================
+# Target rules for targets named libsimpleforwardlist
+
+# Build rule for target.
+libsimpleforwardlist: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libsimpleforwardlist
+.PHONY : libsimpleforwardlist
+
+# fast build rule for target.
+libsimpleforwardlist/fast:
+	$(MAKE) -f lab2/simpleforwardlist/CMakeFiles/libsimpleforwardlist.dir/build.make lab2/simpleforwardlist/CMakeFiles/libsimpleforwardlist.dir/build
+.PHONY : libsimpleforwardlist/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -633,6 +711,12 @@ help:
 	@echo "... libdoublebasepalindromes"
 	@echo "... array2d"
 	@echo "... libarray2d"
+	@echo "... polybius"
+	@echo "... libpolybius"
+	@echo "... greatestproduct"
+	@echo "... libgreatestproduct"
+	@echo "... simpleforwardlist"
+	@echo "... libsimpleforwardlist"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"

@@ -5,29 +5,29 @@
 		<Option title="googletest-distribution"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="clang"/>
-		<Option virtualFolders="CMake Files\;CMake Files\lab2\;CMake Files\lab2\array2d\;CMake Files\lab1\;CMake Files\lab1\doublebasepalindromes\;CMake Files\lab1\factorial\;CMake Files\lab1\reversestring\;CMake Files\lab1\palindrome\;CMake Files\lab1\multiplicationtable\;CMake Files\tests\;CMake Files\tests\lib\;CMake Files\tests\lib\gtest-1.8.0\;CMake Files\tests\lib\gtest-1.8.0\googlemock\;CMake Files\tests\lib\gtest-1.8.0\googletest\;CMake Files\tests\lib\gtest-1.8.0\googletest\cmake\;CMake Files\tests\lib\stringutility\;CMake Files\tests\lib\memleak\;CMake Files\tests\lab1test\;CMake Files\tests\lab2test\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lab2\;CMake Files\lab2\array2d\;CMake Files\lab2\greatestproduct\;CMake Files\lab2\polybius\;CMake Files\lab2\simpleforwardlist\;CMake Files\lab1\;CMake Files\lab1\doublebasepalindromes\;CMake Files\lab1\factorial\;CMake Files\lab1\reversestring\;CMake Files\lab1\palindrome\;CMake Files\lab1\multiplicationtable\;CMake Files\tests\;CMake Files\tests\lib\;CMake Files\tests\lib\gtest-1.8.0\;CMake Files\tests\lib\gtest-1.8.0\googlemock\;CMake Files\tests\lib\gtest-1.8.0\googletest\;CMake Files\tests\lib\gtest-1.8.0\googletest\cmake\;CMake Files\tests\lib\stringutility\;CMake Files\tests\lib\memleak\;CMake Files\tests\lab1test\;CMake Files\tests\lab2test\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main">
-				<Option output="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock"/>
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -39,23 +39,23 @@
 					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main/fast">
-				<Option output="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock"/>
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -67,23 +67,23 @@
 					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock">
-				<Option output="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock"/>
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -95,23 +95,23 @@
 					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock/fast">
-				<Option output="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock"/>
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -123,21 +123,21 @@
 					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
-				<Option output="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest"/>
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -149,21 +149,21 @@
 					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
-				<Option output="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest"/>
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -175,21 +175,21 @@
 					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest">
-				<Option output="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest"/>
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -201,21 +201,21 @@
 					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest/fast">
-				<Option output="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest"/>
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
@@ -227,182 +227,209 @@
 					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/src/gmock-all.cc">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/src/gmock_main.cc">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/src/gmock_main.cc">
 			<Option target="gmock_main"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/src/gtest-all.cc">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/src/gtest-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
 			<Option target="gtest"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/src/gtest_main.cc">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab2/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab2\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab2/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab2\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab2/array2d/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab2/array2d/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab2\array2d\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab2/array2d/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab2/array2d/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab2\array2d\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab2/array2d/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab2/array2d/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab2\array2d\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab2/greatestproduct/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab2\greatestproduct\"/>
+		</Unit>
+		<Unit filename="/home/bartek/c++/lab2/greatestproduct/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab2\greatestproduct\"/>
+		</Unit>
+		<Unit filename="/home/bartek/c++/lab2/greatestproduct/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab2\greatestproduct\"/>
+		</Unit>
+		<Unit filename="/home/bartek/c++/lab2/polybius/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab2\polybius\"/>
+		</Unit>
+		<Unit filename="/home/bartek/c++/lab2/polybius/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab2\polybius\"/>
+		</Unit>
+		<Unit filename="/home/bartek/c++/lab2/polybius/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab2\polybius\"/>
+		</Unit>
+		<Unit filename="/home/bartek/c++/lab2/simpleforwardlist/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab2\simpleforwardlist\"/>
+		</Unit>
+		<Unit filename="/home/bartek/c++/lab2/simpleforwardlist/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab2\simpleforwardlist\"/>
+		</Unit>
+		<Unit filename="/home/bartek/c++/lab2/simpleforwardlist/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lab2\simpleforwardlist\"/>
+		</Unit>
+		<Unit filename="/home/bartek/c++/lab1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/doublebasepalindromes/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/doublebasepalindromes/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\doublebasepalindromes\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/doublebasepalindromes/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/doublebasepalindromes/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\doublebasepalindromes\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/doublebasepalindromes/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/doublebasepalindromes/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\doublebasepalindromes\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/factorial/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/factorial/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\factorial\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/factorial/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/factorial/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\factorial\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/factorial/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/factorial/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\factorial\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/reversestring/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/reversestring/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\reversestring\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/reversestring/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/reversestring/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\reversestring\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/reversestring/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/reversestring/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\reversestring\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/palindrome/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/palindrome/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\palindrome\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/palindrome/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/palindrome/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\palindrome\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/palindrome/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/palindrome/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\palindrome\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/multiplicationtable/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/multiplicationtable/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\multiplicationtable\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/multiplicationtable/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/multiplicationtable/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\multiplicationtable\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/lab1/multiplicationtable/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/lab1/multiplicationtable/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lab1\multiplicationtable\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googlemock/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googletest\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googletest\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googletest\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googletest\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googletest\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/gtest-1.8.0/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\tests\lib\gtest-1.8.0\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/stringutility/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/stringutility/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\stringutility\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/stringutility/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/stringutility/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\stringutility\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/stringutility/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/stringutility/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\stringutility\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/memleak/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\memleak\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/memleak/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\memleak\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lib/memleak/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lib/memleak/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lib\memleak\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lab1test/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lab1test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lab1test\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lab1test/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lab1test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lab1test\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lab2test/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lab2test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lab2test\"/>
 		</Unit>
-		<Unit filename="/home/bartek/agh-jimp2-grupa4a/tests/lab2test/CMakeLists.txt">
+		<Unit filename="/home/bartek/c++/tests/lab2test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\lab2test\"/>
 		</Unit>
 	</Project>

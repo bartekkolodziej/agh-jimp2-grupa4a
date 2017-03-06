@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/bartek/agh-jimp2-grupa4a/lab1/palindrome/Palindrome.cpp" "/home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/palindrome/CMakeFiles/libpalindrome.dir/Palindrome.cpp.o"
+  "/home/bartek/c++/lab1/palindrome/Palindrome.cpp" "/home/bartek/c++/cmake-build-debug/lab1/palindrome/CMakeFiles/libpalindrome.dir/Palindrome.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

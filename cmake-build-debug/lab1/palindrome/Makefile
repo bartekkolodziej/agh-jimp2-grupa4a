@@ -48,10 +48,10 @@ RM = /home/bartek/Pobrane/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bartek/agh-jimp2-grupa4a
+CMAKE_SOURCE_DIR = /home/bartek/c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bartek/agh-jimp2-grupa4a/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bartek/c++/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/lab1/palindrome/CMakeFiles/progress.marks
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/agh-jimp2-grupa4a/cmake-build-debug/CMakeFiles 0
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles /home/bartek/c++/cmake-build-debug/lab1/palindrome/CMakeFiles/progress.marks
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/clean
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/preinstall
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/preinstall
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lab1/palindrome/CMakeFiles/palindrome.dir/rule:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/CMakeFiles/palindrome.dir/rule
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/CMakeFiles/palindrome.dir/rule
 .PHONY : lab1/palindrome/CMakeFiles/palindrome.dir/rule
 
 # Convenience name for target.
@@ -166,12 +166,12 @@ palindrome: lab1/palindrome/CMakeFiles/palindrome.dir/rule
 
 # fast build rule for target.
 palindrome/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/build
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/build
 .PHONY : palindrome/fast
 
 # Convenience name for target.
 lab1/palindrome/CMakeFiles/libpalindrome.dir/rule:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/CMakeFiles/libpalindrome.dir/rule
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 lab1/palindrome/CMakeFiles/libpalindrome.dir/rule
 .PHONY : lab1/palindrome/CMakeFiles/libpalindrome.dir/rule
 
 # Convenience name for target.
@@ -181,7 +181,7 @@ libpalindrome: lab1/palindrome/CMakeFiles/libpalindrome.dir/rule
 
 # fast build rule for target.
 libpalindrome/fast:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/libpalindrome.dir/build.make lab1/palindrome/CMakeFiles/libpalindrome.dir/build
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/libpalindrome.dir/build.make lab1/palindrome/CMakeFiles/libpalindrome.dir/build
 .PHONY : libpalindrome/fast
 
 Palindrome.o: Palindrome.cpp.o
@@ -190,8 +190,8 @@ Palindrome.o: Palindrome.cpp.o
 
 # target to build an object file
 Palindrome.cpp.o:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/Palindrome.cpp.o
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/libpalindrome.dir/build.make lab1/palindrome/CMakeFiles/libpalindrome.dir/Palindrome.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/Palindrome.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/libpalindrome.dir/build.make lab1/palindrome/CMakeFiles/libpalindrome.dir/Palindrome.cpp.o
 .PHONY : Palindrome.cpp.o
 
 Palindrome.i: Palindrome.cpp.i
@@ -200,8 +200,8 @@ Palindrome.i: Palindrome.cpp.i
 
 # target to preprocess a source file
 Palindrome.cpp.i:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/Palindrome.cpp.i
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/libpalindrome.dir/build.make lab1/palindrome/CMakeFiles/libpalindrome.dir/Palindrome.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/Palindrome.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/libpalindrome.dir/build.make lab1/palindrome/CMakeFiles/libpalindrome.dir/Palindrome.cpp.i
 .PHONY : Palindrome.cpp.i
 
 Palindrome.s: Palindrome.cpp.s
@@ -210,8 +210,8 @@ Palindrome.s: Palindrome.cpp.s
 
 # target to generate assembly for a file
 Palindrome.cpp.s:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/Palindrome.cpp.s
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/libpalindrome.dir/build.make lab1/palindrome/CMakeFiles/libpalindrome.dir/Palindrome.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/Palindrome.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/libpalindrome.dir/build.make lab1/palindrome/CMakeFiles/libpalindrome.dir/Palindrome.cpp.s
 .PHONY : Palindrome.cpp.s
 
 main.o: main.cpp.o
@@ -220,7 +220,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/main.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -229,7 +229,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/main.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -238,7 +238,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/main.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f lab1/palindrome/CMakeFiles/palindrome.dir/build.make lab1/palindrome/CMakeFiles/palindrome.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -272,6 +272,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/bartek/agh-jimp2-grupa4a/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bartek/c++/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
