@@ -49,38 +49,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b8c914-f466-4905-8d6f-147166fe85c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab2/simpleforwardlist/main.cpp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/10" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/11" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/12" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/13" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/14" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/15" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/16" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/17" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/18" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/19" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/20" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/21" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/22" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/23" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/24" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/25" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/26" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/72" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/73" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/74" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/75" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/76" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/77" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/78" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/79" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/80" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/81" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/DoubleBasePalindromes.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/liblibdoublebasepalindromes.a" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/liblibdoublebasepalindromes.a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/Array2D.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/Array2D.cpp.o" />
@@ -99,13 +67,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_multiplication_table_tests.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_multiplication_table_tests.dir/depend.make" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_palindrome_tests.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_palindrome_tests.dir/depend.make" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_reverse_string_tests.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_reverse_string_tests.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab1/doublebasepalindromes/DoubleBasePalindromes.cpp" afterPath="$PROJECT_DIR$/lab1/doublebasepalindromes/DoubleBasePalindromes.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab1/doublebasepalindromes/DoubleBasePalindromes.h" afterPath="$PROJECT_DIR$/lab1/doublebasepalindromes/DoubleBasePalindromes.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2/array2d/Array2D.cpp" afterPath="$PROJECT_DIR$/lab2/array2d/Array2D.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2/array2d/Array2D.h" afterPath="$PROJECT_DIR$/lab2/array2d/Array2D.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab2/array2d/main.cpp" afterPath="$PROJECT_DIR$/lab2/array2d/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/lab2test/Array2DStep3Test.cpp" afterPath="$PROJECT_DIR$/tests/lab2test/Array2DStep3Test.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/lib/memleak/MemLeak.h" afterPath="$PROJECT_DIR$/tests/lib/memleak/MemLeak.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -174,7 +135,7 @@
       <file leaf-file-name="MemLeak.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/lib/memleak/MemLeak.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
+            <state relative-caret-position="63">
               <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding />
             </state>
@@ -654,8 +615,16 @@
       <workItem from="1488755190728" duration="205000" />
       <workItem from="1488797662746" duration="587000" />
       <workItem from="1488798327876" duration="49000" />
-      <workItem from="1488799179092" duration="464000" />
+      <workItem from="1488799179092" duration="577000" />
     </task>
+    <task id="LOCAL-00001" summary=".">
+      <created>1488799707703</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1488799707703</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -691,7 +660,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2559000" />
+    <option name="totallyTimeSpent" value="2672000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1360" height="678" extended-state="0" />
@@ -724,7 +693,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -964,7 +934,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/lib/memleak/MemLeak.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="63">
           <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding />
         </state>
