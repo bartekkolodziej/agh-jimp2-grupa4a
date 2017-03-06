@@ -11,7 +11,7 @@
 
 using namespace std;
 
-bool is_palindrome(string str);
+bool IsPalindrome(string str);
 string to_binary(int number);
 uint64_t DoubleBasePalindromes(int max_vaule_exculsive);
 

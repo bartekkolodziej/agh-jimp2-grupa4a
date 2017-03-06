@@ -16,7 +16,7 @@ int main() {
 
     FillArray2D(rows, columns,tab);
     Print(tab,rows,columns);
-    DeleteArray2D(tab, rows);
+    DeleteArray2D(tab, rows, columns);
 
 return 0;
 }

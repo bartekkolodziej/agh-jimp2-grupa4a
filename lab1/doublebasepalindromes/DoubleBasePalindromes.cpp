@@ -5,7 +5,7 @@
 #include "DoubleBasePalindromes.h"
 
 using namespace std;
-bool is_palindrome(string str){
+bool IsPalindrome(string str){
     for(int i=0; i<str.length()/2; i++){
         if(str.at(i) == str.at(str.length()-i-1)) continue;
         else return false;
@@ -28,7 +28,7 @@ string to_binary(int number){
 uint64_t DoubleBasePalindromes(int max_vaule_exculsive){
     int sum = 0;
     for(int i=0; i < max_vaule_exculsive; i++){
-        if( is_palindrome(to_string(i)) == 1 && is_palindrome(to_binary(i)) == 1) sum += i;
+        if( IsPalindrome(to_string(i)) == 1 && IsPalindrome(to_binary(i)) == 1) sum += i;
     }
     return sum;
 }

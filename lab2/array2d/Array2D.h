@@ -10,7 +10,7 @@
 using namespace std;
 
 int **Array2D(int n_rows, int n_columns);
-void DeleteArray2D(int **array, int n_rows);
+void DeleteArray2D(int **array, int n_rows, int n_columns);
 void FillArray2D(int n_rows, int n_columns,int **array);
 void Print(int **array, int n_rows, int n_columns);
 
