@@ -170,6 +170,51 @@ lab2_all_tests/fast:
 .PHONY : lab2_all_tests/fast
 
 # Convenience name for target.
+tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/rule:
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/rule
+.PHONY : tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/rule
+
+# Convenience name for target.
+lab2_simple_forward_list_step3_tests: tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/rule
+
+.PHONY : lab2_simple_forward_list_step3_tests
+
+# fast build rule for target.
+lab2_simple_forward_list_step3_tests/fast:
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/build
+.PHONY : lab2_simple_forward_list_step3_tests/fast
+
+# Convenience name for target.
+tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/rule:
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/rule
+.PHONY : tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/rule
+
+# Convenience name for target.
+lab2_xor_cypher_breaker_tests: tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/rule
+
+.PHONY : lab2_xor_cypher_breaker_tests
+
+# fast build rule for target.
+lab2_xor_cypher_breaker_tests/fast:
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/build
+.PHONY : lab2_xor_cypher_breaker_tests/fast
+
+# Convenience name for target.
+tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/rule:
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/rule
+.PHONY : tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/rule
+
+# Convenience name for target.
+lab2_simple_forward_list_step2_tests: tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/rule
+
+.PHONY : lab2_simple_forward_list_step2_tests
+
+# fast build rule for target.
+lab2_simple_forward_list_step2_tests/fast:
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/build
+.PHONY : lab2_simple_forward_list_step2_tests/fast
+
+# Convenience name for target.
 tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/rule:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/rule
 .PHONY : tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/rule
@@ -183,21 +228,6 @@ lab2_array_2d_step1_tests: tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.d
 lab2_array_2d_step1_tests/fast:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/build
 .PHONY : lab2_array_2d_step1_tests/fast
-
-# Convenience name for target.
-tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/rule:
-	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/rule
-.PHONY : tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/rule
-
-# Convenience name for target.
-lab2_polybius_step1_tests: tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/rule
-
-.PHONY : lab2_polybius_step1_tests
-
-# fast build rule for target.
-lab2_polybius_step1_tests/fast:
-	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/build
-.PHONY : lab2_polybius_step1_tests/fast
 
 # Convenience name for target.
 tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/rule:
@@ -290,6 +320,36 @@ lab2_greatest_product_step1_tests/fast:
 .PHONY : lab2_greatest_product_step1_tests/fast
 
 # Convenience name for target.
+tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/rule:
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/rule
+.PHONY : tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/rule
+
+# Convenience name for target.
+lab2_polybius_step1_tests: tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/rule
+
+.PHONY : lab2_polybius_step1_tests
+
+# fast build rule for target.
+lab2_polybius_step1_tests/fast:
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/build
+.PHONY : lab2_polybius_step1_tests/fast
+
+# Convenience name for target.
+tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/rule:
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/rule
+.PHONY : tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/rule
+
+# Convenience name for target.
+lab2_simple_forward_list_step1_tests: tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/rule
+
+.PHONY : lab2_simple_forward_list_step1_tests
+
+# fast build rule for target.
+lab2_simple_forward_list_step1_tests/fast:
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/build
+.PHONY : lab2_simple_forward_list_step1_tests/fast
+
+# Convenience name for target.
 tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/rule:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/rule
 .PHONY : tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/rule
@@ -303,21 +363,6 @@ lab2_greatest_product_step2_tests: tests/lab2test/CMakeFiles/lab2_greatest_produ
 lab2_greatest_product_step2_tests/fast:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/build
 .PHONY : lab2_greatest_product_step2_tests/fast
-
-# Convenience name for target.
-tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/rule:
-	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/rule
-.PHONY : tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/rule
-
-# Convenience name for target.
-lab2_xor_cypher_breaker_tests: tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/rule
-
-.PHONY : lab2_xor_cypher_breaker_tests
-
-# fast build rule for target.
-lab2_xor_cypher_breaker_tests/fast:
-	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/build
-.PHONY : lab2_xor_cypher_breaker_tests/fast
 
 Array2DStep1Test.o: Array2DStep1Test.cpp.o
 
@@ -596,6 +641,7 @@ SimpleForwardListStep1Test.o: SimpleForwardListStep1Test.cpp.o
 # target to build an object file
 SimpleForwardListStep1Test.cpp.o:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_all_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_all_tests.dir/SimpleForwardListStep1Test.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/SimpleForwardListStep1Test.cpp.o
 .PHONY : SimpleForwardListStep1Test.cpp.o
 
 SimpleForwardListStep1Test.i: SimpleForwardListStep1Test.cpp.i
@@ -605,6 +651,7 @@ SimpleForwardListStep1Test.i: SimpleForwardListStep1Test.cpp.i
 # target to preprocess a source file
 SimpleForwardListStep1Test.cpp.i:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_all_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_all_tests.dir/SimpleForwardListStep1Test.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/SimpleForwardListStep1Test.cpp.i
 .PHONY : SimpleForwardListStep1Test.cpp.i
 
 SimpleForwardListStep1Test.s: SimpleForwardListStep1Test.cpp.s
@@ -614,6 +661,7 @@ SimpleForwardListStep1Test.s: SimpleForwardListStep1Test.cpp.s
 # target to generate assembly for a file
 SimpleForwardListStep1Test.cpp.s:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_all_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_all_tests.dir/SimpleForwardListStep1Test.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step1_tests.dir/SimpleForwardListStep1Test.cpp.s
 .PHONY : SimpleForwardListStep1Test.cpp.s
 
 SimpleForwardListStep2Test.o: SimpleForwardListStep2Test.cpp.o
@@ -623,6 +671,7 @@ SimpleForwardListStep2Test.o: SimpleForwardListStep2Test.cpp.o
 # target to build an object file
 SimpleForwardListStep2Test.cpp.o:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_all_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_all_tests.dir/SimpleForwardListStep2Test.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/SimpleForwardListStep2Test.cpp.o
 .PHONY : SimpleForwardListStep2Test.cpp.o
 
 SimpleForwardListStep2Test.i: SimpleForwardListStep2Test.cpp.i
@@ -632,6 +681,7 @@ SimpleForwardListStep2Test.i: SimpleForwardListStep2Test.cpp.i
 # target to preprocess a source file
 SimpleForwardListStep2Test.cpp.i:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_all_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_all_tests.dir/SimpleForwardListStep2Test.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/SimpleForwardListStep2Test.cpp.i
 .PHONY : SimpleForwardListStep2Test.cpp.i
 
 SimpleForwardListStep2Test.s: SimpleForwardListStep2Test.cpp.s
@@ -641,6 +691,7 @@ SimpleForwardListStep2Test.s: SimpleForwardListStep2Test.cpp.s
 # target to generate assembly for a file
 SimpleForwardListStep2Test.cpp.s:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_all_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_all_tests.dir/SimpleForwardListStep2Test.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step2_tests.dir/SimpleForwardListStep2Test.cpp.s
 .PHONY : SimpleForwardListStep2Test.cpp.s
 
 SimpleForwardListStep3Test.o: SimpleForwardListStep3Test.cpp.o
@@ -650,6 +701,7 @@ SimpleForwardListStep3Test.o: SimpleForwardListStep3Test.cpp.o
 # target to build an object file
 SimpleForwardListStep3Test.cpp.o:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_all_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_all_tests.dir/SimpleForwardListStep3Test.cpp.o
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/SimpleForwardListStep3Test.cpp.o
 .PHONY : SimpleForwardListStep3Test.cpp.o
 
 SimpleForwardListStep3Test.i: SimpleForwardListStep3Test.cpp.i
@@ -659,6 +711,7 @@ SimpleForwardListStep3Test.i: SimpleForwardListStep3Test.cpp.i
 # target to preprocess a source file
 SimpleForwardListStep3Test.cpp.i:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_all_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_all_tests.dir/SimpleForwardListStep3Test.cpp.i
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/SimpleForwardListStep3Test.cpp.i
 .PHONY : SimpleForwardListStep3Test.cpp.i
 
 SimpleForwardListStep3Test.s: SimpleForwardListStep3Test.cpp.s
@@ -668,6 +721,7 @@ SimpleForwardListStep3Test.s: SimpleForwardListStep3Test.cpp.s
 # target to generate assembly for a file
 SimpleForwardListStep3Test.cpp.s:
 	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_all_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_all_tests.dir/SimpleForwardListStep3Test.cpp.s
+	cd /home/bartek/c++/cmake-build-debug && $(MAKE) -f tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/build.make tests/lab2test/CMakeFiles/lab2_simple_forward_list_step3_tests.dir/SimpleForwardListStep3Test.cpp.s
 .PHONY : SimpleForwardListStep3Test.cpp.s
 
 XorCypherBreakerTest.o: XorCypherBreakerTest.cpp.o
@@ -707,19 +761,22 @@ help:
 	@echo "... install"
 	@echo "... edit_cache"
 	@echo "... lab2_all_tests"
+	@echo "... lab2_simple_forward_list_step3_tests"
+	@echo "... lab2_xor_cypher_breaker_tests"
+	@echo "... lab2_simple_forward_list_step2_tests"
 	@echo "... install/local"
 	@echo "... lab2_array_2d_step1_tests"
-	@echo "... lab2_polybius_step1_tests"
 	@echo "... lab2_array_2d_step2_tests"
 	@echo "... lab2_array_2d_step4_tests"
 	@echo "... lab2_polybius_step2_tests"
 	@echo "... lab2_array_2d_step3_tests"
 	@echo "... lab2_greatest_product_step3_tests"
 	@echo "... lab2_greatest_product_step1_tests"
+	@echo "... lab2_polybius_step1_tests"
+	@echo "... lab2_simple_forward_list_step1_tests"
 	@echo "... list_install_components"
 	@echo "... install/strip"
 	@echo "... lab2_greatest_product_step2_tests"
-	@echo "... lab2_xor_cypher_breaker_tests"
 	@echo "... Array2DStep1Test.o"
 	@echo "... Array2DStep1Test.i"
 	@echo "... Array2DStep1Test.s"

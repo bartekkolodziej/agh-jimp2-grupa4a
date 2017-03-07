@@ -1,2 +1,0 @@
-/usr/bin/ar qc libstringutility.a  CMakeFiles/stringutility.dir/StringUtility.cpp.o
-/usr/bin/ranlib libstringutility.a

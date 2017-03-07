@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/doublebasepalindromes.dir/DoubleBasePalindromes.cpp.o CMakeFiles/doublebasepalindromes.dir/main.cpp.o  -o doublebasepalindromes liblibdoublebasepalindromes.a 

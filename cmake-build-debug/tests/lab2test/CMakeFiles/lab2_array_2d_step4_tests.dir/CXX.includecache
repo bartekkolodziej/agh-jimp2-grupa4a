@@ -284,11 +284,11 @@ acxx_demangle.h
 
 ../tests/lib/memleak/./MemLeakTest.h
 
-/home/bartek/agh-jimp2-grupa4a/tests/lab2test/Array2DStep4Test.cpp
+/home/bartek/c++/tests/lab2test/Array2DStep4Test.cpp
 Array2D.h
 -
 gtest/gtest.h
 -
 MemLeakTest.h
-/home/bartek/agh-jimp2-grupa4a/tests/lab2test/MemLeakTest.h
+/home/bartek/c++/tests/lab2test/MemLeakTest.h
 

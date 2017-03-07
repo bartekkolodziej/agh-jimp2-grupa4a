@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/array2d.dir/Array2D.cpp.o CMakeFiles/array2d.dir/main.cpp.o  -o array2d liblibarray2d.a 

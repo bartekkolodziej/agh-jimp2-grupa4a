@@ -35,6 +35,15 @@ add_gtest_with_memleak lib: libgreatestproduct
 add_gtest_with_memleak target: lab2_greatest_product_step3_tests
 add_gtest_with_memleak src: GreatestProductStep3Test.cpp
 add_gtest_with_memleak lib: libgreatestproduct
+add_gtest_with_memleak target: lab2_simple_forward_list_step1_tests
+add_gtest_with_memleak src: SimpleForwardListStep1Test.cpp
+add_gtest_with_memleak lib: libsimpleforwardlist
+add_gtest_with_memleak target: lab2_simple_forward_list_step2_tests
+add_gtest_with_memleak src: SimpleForwardListStep2Test.cpp
+add_gtest_with_memleak lib: libsimpleforwardlist
+add_gtest_with_memleak target: lab2_simple_forward_list_step3_tests
+add_gtest_with_memleak src: SimpleForwardListStep3Test.cpp
+add_gtest_with_memleak lib: libsimpleforwardlist
 add_gtest_with_memleak target: lab2_xor_cypher_breaker_tests
 add_gtest_with_memleak src: XorCypherBreakerTest.cpp
 add_gtest_with_memleak lib: libxorcypherbreaker

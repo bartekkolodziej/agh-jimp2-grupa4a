@@ -1725,6 +1725,190 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="lab2_simple_forward_list_step3_tests">
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_simple_forward_list_step3_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/lab2/simpleforwardlist/."/>
+					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
+					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
+					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_simple_forward_list_step3_tests"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_simple_forward_list_step3_tests/fast">
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_simple_forward_list_step3_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/lab2/simpleforwardlist/."/>
+					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
+					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
+					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_simple_forward_list_step3_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_xor_cypher_breaker_tests">
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_xor_cypher_breaker_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
+					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
+					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_xor_cypher_breaker_tests"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_xor_cypher_breaker_tests/fast">
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_xor_cypher_breaker_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
+					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
+					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_xor_cypher_breaker_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_simple_forward_list_step2_tests">
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_simple_forward_list_step2_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/lab2/simpleforwardlist/."/>
+					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
+					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
+					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_simple_forward_list_step2_tests"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_simple_forward_list_step2_tests/fast">
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_simple_forward_list_step2_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/lab2/simpleforwardlist/."/>
+					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
+					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
+					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_simple_forward_list_step2_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="lab2_array_2d_step1_tests">
 				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_array_2d_step1_tests" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
@@ -1780,68 +1964,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_array_2d_step1_tests/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lab2_polybius_step1_tests">
-				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_polybius_step1_tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="clang"/>
-				<Compiler>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
-					<Add directory="/home/bartek/c++/lab2/polybius/."/>
-					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
-					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
-					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_polybius_step1_tests"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lab2_polybius_step1_tests/fast">
-				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_polybius_step1_tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="clang"/>
-				<Compiler>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
-					<Add directory="/home/bartek/c++/lab2/polybius/."/>
-					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
-					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
-					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_polybius_step1_tests/fast"/>
 					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
@@ -2219,6 +2341,130 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="lab2_polybius_step1_tests">
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_polybius_step1_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/lab2/polybius/."/>
+					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
+					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
+					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_polybius_step1_tests"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_polybius_step1_tests/fast">
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_polybius_step1_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/lab2/polybius/."/>
+					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
+					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
+					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_polybius_step1_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_simple_forward_list_step1_tests">
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_simple_forward_list_step1_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/lab2/simpleforwardlist/."/>
+					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
+					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
+					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_simple_forward_list_step1_tests"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab2_simple_forward_list_step1_tests/fast">
+				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_simple_forward_list_step1_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
+					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
+					<Add directory="/home/bartek/c++/lab2/simpleforwardlist/."/>
+					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
+					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
+					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_simple_forward_list_step1_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="lab2_greatest_product_step2_tests">
 				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_greatest_product_step2_tests" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
@@ -2276,66 +2522,6 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_greatest_product_step2_tests/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lab2_xor_cypher_breaker_tests">
-				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_xor_cypher_breaker_tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="clang"/>
-				<Compiler>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
-					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
-					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
-					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_xor_cypher_breaker_tests"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lab2_xor_cypher_breaker_tests/fast">
-				<Option output="/home/bartek/c++/cmake-build-debug/tests/lab2test/lab2_xor_cypher_breaker_tests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bartek/c++/cmake-build-debug/tests/lab2test"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="clang"/>
-				<Compiler>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest/include"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googletest"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock/include"/>
-					<Add directory="/home/bartek/c++/tests/lib/gtest-1.8.0/googlemock"/>
-					<Add directory="/home/bartek/c++/tests/lib/stringutility/."/>
-					<Add directory="/home/bartek/c++/tests/lib/memleak/."/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0"/>
-					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward"/>
-					<Add directory="/usr/lib/llvm-3.8/bin/../lib/clang/3.8.0/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 lab2_xor_cypher_breaker_tests/fast"/>
 					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/bartek/c++/cmake-build-debug/tests/lab2test/Makefile&quot;  VERBOSE=1 clean"/>
@@ -2488,12 +2674,15 @@
 		</Unit>
 		<Unit filename="/home/bartek/c++/tests/lab2test/SimpleForwardListStep1Test.cpp">
 			<Option target="lab2_all_tests"/>
+			<Option target="lab2_simple_forward_list_step1_tests"/>
 		</Unit>
 		<Unit filename="/home/bartek/c++/tests/lab2test/SimpleForwardListStep2Test.cpp">
 			<Option target="lab2_all_tests"/>
+			<Option target="lab2_simple_forward_list_step2_tests"/>
 		</Unit>
 		<Unit filename="/home/bartek/c++/tests/lab2test/SimpleForwardListStep3Test.cpp">
 			<Option target="lab2_all_tests"/>
+			<Option target="lab2_simple_forward_list_step3_tests"/>
 		</Unit>
 		<Unit filename="/home/bartek/c++/tests/lab2test/XorCypherBreakerTest.cpp">
 			<Option target="lab2_xor_cypher_breaker_tests"/>
