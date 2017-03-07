@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmemleak.a  CMakeFiles/memleak.dir/MemLeak.cpp.o CMakeFiles/memleak.dir/MemLeakTest.cpp.o
-/usr/bin/ranlib libmemleak.a
