@@ -55,13 +55,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b8c914-f466-4905-8d6f-147166fe85c9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/Array2DStep2Test.cpp.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/Array2DStep4Test.cpp.o" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/lib/memleak/MusialemToDodac.h" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/Array2DStep3Test.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/Array2DStep3Test.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step2_tests" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step2_tests" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step3_tests" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step3_tests" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step4_tests" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step4_tests" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lab2/simpleforwardlist/main.cpp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
@@ -69,56 +67,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/jimp_exercises.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/jimp_exercises.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/factorial/CMakeFiles/libfactorial.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/factorial/CMakeFiles/libfactorial.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/multiplicationtable/CMakeFiles/libmultiplicationtable.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/multiplicationtable/CMakeFiles/libmultiplicationtable.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/multiplicationtable/CMakeFiles/multiplicationtable.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/multiplicationtable/CMakeFiles/multiplicationtable.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/libpalindrome.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/libpalindrome.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/palindrome.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/palindrome.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/reversestring/CMakeFiles/libreversestring.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/reversestring/CMakeFiles/libreversestring.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/progress.marks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/jimp_excercises_tests.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/jimp_excercises_tests.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_all_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_all_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_double_base_palindrome_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_double_base_palindrome_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_factorial_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_factorial_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_multiplication_table_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_multiplication_table_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_palindrome_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_palindrome_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_reverse_string_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_reverse_string_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_all_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_all_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step1_tests.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step1_tests.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step1_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step1_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step3_tests.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step3_tests.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step3_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step3_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_polybius_step2_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_polybius_step2_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/progress.marks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/memleak/CMakeFiles/memleak.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/memleak/CMakeFiles/memleak.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/memleak/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/memleak/CMakeFiles/progress.marks" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -134,31 +84,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MemLeak.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/lib/memleak/MemLeak.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+              <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
               <folding>
                 <element signature="e#41#61#0" expanded="true" />
               </folding>
@@ -170,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/tests/lib/memleak/MemLeak.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
               <folding>
                 <element signature="e#109#123#0" expanded="true" />
               </folding>
@@ -183,16 +113,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForwardList.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -270,79 +190,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="c++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jimp_exercises" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jimp_exercises" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jimp_exercises" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memleak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jimp_exercises" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lab2test" />
+              <option name="myItemId" value="moje_repo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,6 +202,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RunManager" selected="Google Test.lab2_greatest_product_step3_tests">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="jimp_exercises" TARGET_NAME="doublebasepalindromes" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
@@ -769,6 +618,8 @@
       <workItem from="1488799179092" duration="588000" />
       <workItem from="1488841332813" duration="3469000" />
       <workItem from="1488914352507" duration="803000" />
+      <workItem from="1488916354831" duration="236000" />
+      <workItem from="1488916634029" duration="148000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1488799707703</created>
@@ -848,7 +699,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6955000" />
+    <option name="totallyTimeSpent" value="7339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1360" height="678" extended-state="0" />
@@ -856,14 +707,14 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.4970458" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.4970458" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.5029542" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.4911374" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.5088626" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.4970458" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -892,60 +743,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/greatestproduct/GreatestProduct.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.h" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/main.cpp" />
     <entry file="file://$PROJECT_DIR$/lab1/doublebasepalindromes/DoubleBasePalindromes.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -957,70 +759,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#109#123#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.h" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/main.cpp" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.h" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/main.cpp" />
     <entry file="file://$PROJECT_DIR$/lab1/doublebasepalindromes/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1063,13 +815,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/lib/memleak/MusialemToDodac.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="115" column="40" lean-forward="false" selection-start-line="114" selection-start-column="30" selection-end-line="115" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/lib/memleak/MusialemToDodac.h" />
     <entry file="file://$PROJECT_DIR$/lab2/array2d/Array2D.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1140,20 +886,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.h" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/main.cpp" />
     <entry file="file://$PROJECT_DIR$/lab1/doublebasepalindromes/DoubleBasePalindromes.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
@@ -1172,7 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,23 +959,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp">
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp" />
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/_gitignore" />
+    <entry file="file://$PROJECT_DIR$/tests/lib/memleak/MemLeak.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="54">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding>
+            <element signature="e#41#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_gitignore">
+    <entry file="file://$PROJECT_DIR$/.git/info/exclude">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1250,20 +980,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/lib/memleak/MemLeak.cpp">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-          <folding>
-            <element signature="e#41#61#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/lib/memleak/MemLeak.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding>
             <element signature="e#109#123#0" expanded="true" />
           </folding>

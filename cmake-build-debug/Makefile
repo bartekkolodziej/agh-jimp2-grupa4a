@@ -48,10 +48,10 @@ RM = /home/bartek/Pobrane/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bartek/c++
+CMAKE_SOURCE_DIR = /home/bartek/moje_repo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bartek/c++/cmake-build-debug
+CMAKE_BINARY_DIR = /home/bartek/moje_repo/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,9 +124,9 @@ install/strip/fast: install/strip
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles /home/bartek/c++/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/moje_repo/cmake-build-debug/CMakeFiles /home/bartek/moje_repo/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/c++/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bartek/moje_repo/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -361,32 +361,6 @@ libgreatestproduct: cmake_check_build_system
 libgreatestproduct/fast:
 	$(MAKE) -f lab2/greatestproduct/CMakeFiles/libgreatestproduct.dir/build.make lab2/greatestproduct/CMakeFiles/libgreatestproduct.dir/build
 .PHONY : libgreatestproduct/fast
-
-#=============================================================================
-# Target rules for targets named simpleforwardlist
-
-# Build rule for target.
-simpleforwardlist: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simpleforwardlist
-.PHONY : simpleforwardlist
-
-# fast build rule for target.
-simpleforwardlist/fast:
-	$(MAKE) -f lab2/simpleforwardlist/CMakeFiles/simpleforwardlist.dir/build.make lab2/simpleforwardlist/CMakeFiles/simpleforwardlist.dir/build
-.PHONY : simpleforwardlist/fast
-
-#=============================================================================
-# Target rules for targets named libsimpleforwardlist
-
-# Build rule for target.
-libsimpleforwardlist: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libsimpleforwardlist
-.PHONY : libsimpleforwardlist
-
-# fast build rule for target.
-libsimpleforwardlist/fast:
-	$(MAKE) -f lab2/simpleforwardlist/CMakeFiles/libsimpleforwardlist.dir/build.make lab2/simpleforwardlist/CMakeFiles/libsimpleforwardlist.dir/build
-.PHONY : libsimpleforwardlist/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -754,8 +728,6 @@ help:
 	@echo "... libpolybius"
 	@echo "... greatestproduct"
 	@echo "... libgreatestproduct"
-	@echo "... simpleforwardlist"
-	@echo "... libsimpleforwardlist"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"
