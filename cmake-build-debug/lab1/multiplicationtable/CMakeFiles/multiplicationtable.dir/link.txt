@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/multiplicationtable.dir/MultiplicationTable.cpp.o CMakeFiles/multiplicationtable.dir/main.cpp.o  -o multiplicationtable liblibmultiplicationtable.a 

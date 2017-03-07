@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/factorial.dir/Factorial.cpp.o CMakeFiles/factorial.dir/main.cpp.o  -o factorial liblibfactorial.a 

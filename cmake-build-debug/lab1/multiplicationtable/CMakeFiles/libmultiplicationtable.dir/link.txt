@@ -1,2 +1,0 @@
-/usr/bin/ar qc liblibmultiplicationtable.a  CMakeFiles/libmultiplicationtable.dir/MultiplicationTable.cpp.o
-/usr/bin/ranlib liblibmultiplicationtable.a
