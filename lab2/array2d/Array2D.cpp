@@ -5,7 +5,7 @@
 #include "Array2D.h"
 
 using namespace std;
-
+//comment
 int **Array2D(int n_rows, int n_columns){
     if(n_rows <= 0 || n_columns <= 0) return 0;
     int **tab = new int *[n_rows];
