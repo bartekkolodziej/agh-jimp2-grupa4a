@@ -5,7 +5,7 @@
 #ifndef JIMP_EXERCISES_MEMLEAK_H
 #define JIMP_EXERCISES_MEMLEAK_H
 
-#include <MusialemToDodac.h>
+#include <new>
 #include <map>
 #include <vector>
 #include <string>
@@ -60,10 +60,8 @@ class MemLeak {
 };
 
 void *operator new(std::size_t n) throw(std::bad_alloc);
-void operator delete(void *p) _GLIBCXX_USE_NOEXCEPT
-__attribute__((__externally_visible__));
+void operator delete(void *p) noexcept;
 void *operator new[](std::size_t n) throw(std::bad_alloc);
-void operator delete[](void *p) _GLIBCXX_USE_NOEXCEPT
-__attribute__((__externally_visible__));
+void operator delete[](void *p) noexcept;
 
 #endif //JIMP_EXERCISES_MEMLEAK_H
