@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
+      <config projectName="jimp_exercises" targetName="libgreatestproduct" />
       <config projectName="jimp_exercises" targetName="lab1_factorial_tests" />
       <config projectName="jimp_exercises" targetName="lab2_array_2d_step2_tests" />
-      <config projectName="jimp_exercises" targetName="libgreatestproduct" />
       <config projectName="jimp_exercises" targetName="lab2_greatest_product_step1_tests" />
       <config projectName="jimp_exercises" targetName="libreversestring" />
       <config projectName="jimp_exercises" targetName="palindrome" />
@@ -23,8 +23,8 @@
       <config projectName="jimp_exercises" targetName="lab1_reverse_string_tests" />
       <config projectName="jimp_exercises" targetName="gmock_main" />
       <config projectName="jimp_exercises" targetName="multiplicationtable" />
-      <config projectName="jimp_exercises" targetName="libmultiplicationtable" />
       <config projectName="jimp_exercises" targetName="simpleforwardlist" />
+      <config projectName="jimp_exercises" targetName="libmultiplicationtable" />
       <config projectName="jimp_exercises" targetName="lab2_greatest_product_step2_tests" />
       <config projectName="jimp_exercises" targetName="lab2_all_tests" />
       <config projectName="jimp_exercises" targetName="libpalindrome" />
@@ -32,9 +32,9 @@
       <config projectName="jimp_exercises" targetName="memleak" />
       <config projectName="jimp_exercises" targetName="lab1_double_base_palindrome_tests" />
       <config projectName="jimp_exercises" targetName="libpolybius" />
+      <config projectName="jimp_exercises" targetName="lab2_simple_forward_list_step1_tests" />
       <config projectName="jimp_exercises" targetName="libarray2d" />
       <config projectName="jimp_exercises" targetName="lab2_xor_cypher_breaker_tests" />
-      <config projectName="jimp_exercises" targetName="lab2_simple_forward_list_step1_tests" />
       <config projectName="jimp_exercises" targetName="lab2_array_2d_step1_tests" />
       <config projectName="jimp_exercises" targetName="libdoublebasepalindromes" />
       <config projectName="jimp_exercises" targetName="lab2_simple_forward_list_step2_tests" />
@@ -43,8 +43,8 @@
       <config projectName="jimp_exercises" targetName="doublebasepalindromes" />
       <config projectName="jimp_exercises" targetName="gtest_main" />
       <config projectName="jimp_exercises" targetName="lab1_palindrome_tests" />
-      <config projectName="jimp_exercises" targetName="lab2_polybius_step2_tests" />
       <config projectName="jimp_exercises" targetName="greatestproduct" />
+      <config projectName="jimp_exercises" targetName="lab2_polybius_step2_tests" />
       <config projectName="jimp_exercises" targetName="stringutility" />
     </generated>
   </component>
@@ -55,17 +55,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0b8c914-f466-4905-8d6f-147166fe85c9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/Array2D.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/Array2D.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/liblibarray2d.a" afterPath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/liblibarray2d.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/Array2DStep1Test.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/Array2DStep1Test.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step1_tests" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step1_tests" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/Array2DStep2Test.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/Array2DStep4Test.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/Array2DStep3Test.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/Array2DStep3Test.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step2_tests" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step2_tests" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step3_tests" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step3_tests" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step4_tests" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/lab2_array_2d_step4_tests" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_polybius_step2_tests.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_polybius_step2_tests.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/lab2test/GreatestProductStep1Test.cpp" afterPath="$PROJECT_DIR$/tests/lab2test/GreatestProductStep1Test.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/jimp_exercises.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/jimp_exercises.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/libdoublebasepalindromes.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/doublebasepalindromes/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/factorial/CMakeFiles/libfactorial.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/factorial/CMakeFiles/libfactorial.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/multiplicationtable/CMakeFiles/libmultiplicationtable.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/multiplicationtable/CMakeFiles/libmultiplicationtable.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/multiplicationtable/CMakeFiles/multiplicationtable.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/multiplicationtable/CMakeFiles/multiplicationtable.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/libpalindrome.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/libpalindrome.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/palindrome.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/palindrome.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/palindrome/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab1/reversestring/CMakeFiles/libreversestring.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab1/reversestring/CMakeFiles/libreversestring.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/lab2/array2d/CMakeFiles/libarray2d.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/jimp_excercises_tests.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/jimp_excercises_tests.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_all_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_all_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_double_base_palindrome_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_double_base_palindrome_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_factorial_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_factorial_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_multiplication_table_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_multiplication_table_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_palindrome_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_palindrome_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_reverse_string_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/lab1_reverse_string_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab1test/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_all_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_all_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step1_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step2_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step3_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_array_2d_step4_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step1_tests.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step1_tests.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step1_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step1_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step2_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step3_tests.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step3_tests.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step3_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_greatest_product_step3_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_polybius_step1_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_polybius_step2_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_polybius_step2_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/lab2_xor_cypher_breaker_tests.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lab2test/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/gmock_main.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/gtest-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/memleak/CMakeFiles/memleak.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/memleak/CMakeFiles/memleak.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/tests/lib/memleak/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/tests/lib/memleak/CMakeFiles/progress.marks" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,11 +133,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,6 +184,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="M.wypych-repo" target-branch="master" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -181,38 +246,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="c++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jimp_exercises" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lab2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jimp_exercises" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c++" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lab2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpleforwardlist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -637,7 +670,8 @@
       <workItem from="1488797662746" duration="587000" />
       <workItem from="1488798327876" duration="49000" />
       <workItem from="1488799179092" duration="588000" />
-      <workItem from="1488841332813" duration="3300000" />
+      <workItem from="1488841332813" duration="3469000" />
+      <workItem from="1488914352507" duration="722000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1488799707703</created>
@@ -660,7 +694,21 @@
       <option name="project" value="LOCAL" />
       <updated>1488844197896</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".">
+      <created>1488844660951</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1488844660951</updated>
+    </task>
+    <task id="LOCAL-00005" summary=".">
+      <created>1488914800725</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1488914800725</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -696,7 +744,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5983000" />
+    <option name="totallyTimeSpent" value="6874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1360" height="678" extended-state="0" />
@@ -704,22 +752,22 @@
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.4970458" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.4970458" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32871974" sideWeight="0.5029542" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39965397" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39965397" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,15 +777,40 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="." />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="polybius" />
-    <option name="LAST_COMMIT_MESSAGE" value="polybius" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/greatestproduct/GreatestProduct.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/ForwardList.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -758,7 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +845,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,7 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -838,7 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -846,7 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -973,7 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -981,7 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,7 +1053,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,7 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,7 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="26" column="65" lean-forward="false" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1037,7 +1097,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,7 +1104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,7 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,7 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,7 +1140,15 @@
     <entry file="file://$PROJECT_DIR$/lab2/simpleforwardlist/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
