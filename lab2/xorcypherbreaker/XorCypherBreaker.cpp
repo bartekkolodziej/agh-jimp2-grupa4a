@@ -38,15 +38,15 @@ string XorCypherBreaker(const vector<char> &cryptogram,
                         int key_length,const vector<string> &dictionary){
     string key;
     vector<char> encrypted;
-    for(int i = 97; i <= 122; i++){
-        for(int j = 97; j <= 122; j++){
-            for(int k = 97; k <= 122; k++){
+    for(int i = 97; i <= 122; i++) {
+        for (int j = 97; j <= 122; j++) {
+            for (int k = 97; k <= 122; k++) {
                 key = "";
                 key += char(i);
                 key += char(j);
                 key += char(k);
                 encrypted = xor_crypt(cryptogram, key);
-                if(compare(dictionary, encrypted) > 10) return key;
+                if (compare(dictionary, encrypted) > 10) return key;
             }
         }
     }
