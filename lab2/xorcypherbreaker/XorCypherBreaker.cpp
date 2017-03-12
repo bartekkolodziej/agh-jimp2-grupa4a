@@ -15,6 +15,7 @@ vector<char> xor_crypt(vector<char> message, string key){
         ascii_message.push_back(char(xor_value));
         i = (i+1) % 3;
     }
+
     return ascii_message;
 }
 
