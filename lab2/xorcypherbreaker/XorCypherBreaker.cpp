@@ -4,8 +4,16 @@
 
 #include "XorCypherBreaker.h"
 
+vector<string> keyGenerator(string key, int number, vector<string> keyArray) {
+    if (number==0) {
+        keyArray.emplace_back(key);
+        return keyArray;
+    }
+    for (int i=97;i<123;i++) keyArray=keyGenerator(key+char(i),number-1 , keyArray);
+    return keyArray;
+}
 
-vector<char> xor_crypt(vector<char> message, string key){
+vector<char> xor_crypt(vector<char> message, string key, int key_length){
     vector<char> ascii_message;
     int xor_value;
     int i = 0;
@@ -13,7 +21,7 @@ vector<char> xor_crypt(vector<char> message, string key){
     for(auto x: message){
         xor_value = int(x) ^ key[i];
         ascii_message.push_back(char(xor_value));
-        i = (i+1) % 3;
+        i = (i+1) % key_length;
     }
 
     return ascii_message;
@@ -36,19 +44,12 @@ int compare(vector<string> dictionary, vector<char> message){
 
 string XorCypherBreaker(const vector<char> &cryptogram,
                         int key_length,const vector<string> &dictionary){
-    string key;
     vector<char> encrypted;
-    for(int i = 97; i <= 122; i++) {
-        for (int j = 97; j <= 122; j++) {
-            for (int k = 97; k <= 122; k++) {
-                key = "";
-                key += char(i);
-                key += char(j);
-                key += char(k);
-                encrypted = xor_crypt(cryptogram, key);
+    vector<string> keyArray=keyGenerator("",key_length, keyArray);
+    for(auto key : keyArray){
+                encrypted = xor_crypt(cryptogram, key,key_length);
                 if (compare(dictionary, encrypted) > 10) return key;
             }
-        }
-    }
+
     return "";
 }
