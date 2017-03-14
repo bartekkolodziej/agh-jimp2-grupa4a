@@ -10,13 +10,15 @@
 #include <sstream>
 #include <regex>
 #include <cmath>
-using namespace std;
 
 
+namespace minimaltimedifference{
+    unsigned int ToMinutes(std::string time_HH_MM);
+    unsigned int MinimalTimeDifference(std::vector<std::string> times);
+    int Difference(int a, int b);
+    int FindMinDifference(const std::vector<int> differences);
+}
 
-int Difference(int a, int b);
-int FindMinDifference(vector<int> differences);
-unsigned int ToMinutes(string time_HH_MM);
-unsigned int MinimalTimeDifference(vector<string> times);
+
 
 #endif //JIMP_EXERCISES_MINIMALTIMEDIFFERENCE_H
