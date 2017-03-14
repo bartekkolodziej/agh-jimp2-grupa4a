@@ -14,9 +14,9 @@
 
 namespace minimaltimedifference{
     unsigned int ToMinutes(std::string time_HH_MM);
-    unsigned int MinimalTimeDifference(std::vector<std::string> times);
+    unsigned int MinimalTimeDifference(const std::vector<std::string> &times);
     int Difference(int a, int b);
-    int FindMinDifference(const std::vector<int> differences);
+    int FindMinDifference(const std::vector<int> &differences);
 }
 
 
