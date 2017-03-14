@@ -15,4 +15,5 @@ std::string XorCypherBreaker(const vector<char> &cryptogram, int key_length, con
 int compare(vector<string> dictionary, vector<char> message);
 vector<char> xor_crypt(vector<char> message, string key);
 
+
 #endif //JIMP_EXERCISES_XORCYPHERBREAKER_H
