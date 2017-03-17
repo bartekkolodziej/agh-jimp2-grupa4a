@@ -1,7 +1,3 @@
-//
-// Created by bartek on 12.03.17.
-//
-
 #include "XorCypherBreaker.h"
 
 vector<string> keyGenerator(string key, int number, vector<string> keyArray) {
