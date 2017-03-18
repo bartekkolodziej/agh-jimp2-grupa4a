@@ -14,6 +14,12 @@ namespace tinyurl {
         std::vector<std::string> tab;
     };
 
+    std::unique_ptr<TinyUrlCodec> Init() {
+        std::unique_ptr<TinyUrlCodec> p = std::make_unique<TinyUrlCodec>();
+        p->state = {'0', '0', '0', '0', '0', '0'};
+        return p;
+    }
+
     void NextHash(std::array<char, 6> *state){
         std::string dictionary="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         if ((*state)[5]=='z'){
