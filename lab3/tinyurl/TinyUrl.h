@@ -11,10 +11,12 @@
 #include <memory>
 #include <vector>
 #include <cmath>
-#include <iostream>
 
 namespace tinyurl{
-    struct TinyUrlCodec;
+    struct TinyUrlCodec {
+        std::vector<std::string> LongUrls;
+        std::array<char, 6> state;
+    };
     unsigned long int ToDecimal(std::array<char, 6> digit);
     std::array<char, 6> ConvertToHash(unsigned long int digit);
     std::unique_ptr<TinyUrlCodec> Init();

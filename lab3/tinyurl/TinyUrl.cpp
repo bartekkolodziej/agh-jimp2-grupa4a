@@ -7,12 +7,12 @@
 namespace tinyurl {
 
     unsigned long int ToDecimal(std::array<char, 6> digit){
-        std::string alfabet = "0123456789ABCDEFGHIJKLMNOUPQRSTWXYZabcdefghijklmnoupqrstwxyz";
+        std::string dictionary = "0123456789ABCDEFGHIJKLMNOUPQRSTWXYZabcdefghijklmnoupqrstwxyz";
         unsigned long int sum = 0;
         int p = 0;
         for(int i = 5; i>=0; i--){
             for(int j = 0; j < 60; j++){
-                if (digit[i] == alfabet[j]) {
+                if (digit[i] == dictionary[j]) {
                     sum = sum + j * pow(60,p);
                     p=p+1;
                 }
@@ -37,12 +37,7 @@ namespace tinyurl {
         }
         return hash;
     }
-
-    struct TinyUrlCodec {
-        std::vector<std::string> LongUrls;
-        std::array<char, 6> state;
-    };
-
+    
     std::unique_ptr<TinyUrlCodec> Init() {
         std::unique_ptr<TinyUrlCodec> p = std::make_unique<TinyUrlCodec>();
         p->state = {'0', '0', '0', '0', '0', '0'};
@@ -69,5 +64,4 @@ namespace tinyurl {
         for(int i = 0; i < hash.length(); i++) tabHash[i] = hash[i];
         return codec->LongUrls[ToDecimal(tabHash)];
     }
-
 }
