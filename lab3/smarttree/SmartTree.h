@@ -13,8 +13,8 @@ namespace datastructures{
     struct SmartTree;
     struct SmartTree{
         int value;
-        std::unique_ptr <SmartTree> left= nullptr;
-        std::unique_ptr <SmartTree> right= nullptr;
+        std::unique_ptr <SmartTree> left;
+        std::unique_ptr <SmartTree> right;
 
     };
     std::unique_ptr <SmartTree> CreateLeaf(int value);
