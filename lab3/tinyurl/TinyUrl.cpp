@@ -1,61 +1,66 @@
-//
-// Created by bartosz on 17.03.17.
+// Created by bartek on 17.03.17.
 //
 
 #include "TinyUrl.h"
-#include <vector>
 
 namespace tinyurl {
-    struct TinyUrlCodec;
+
+    unsigned long int ToDecimal(std::array<char, 6> digit){
+        std::string dictionary = "0123456789ABCDEFGHIJKLMNOUPQRSTWXYZabcdefghijklmnoupqrstwxyz";
+        unsigned long int sum = 0;
+        int p = 0;
+        for(int i = 5; i>=0; i--){
+            for(int j = 0; j < 60; j++){
+                if (digit[i] == dictionary[j]) {
+                    sum = sum + j * pow(60,p);
+                    p=p+1;
+                }
+            }
+        }
+        return sum;
+    }
+
+
+    std::array<char, 6> ConvertToHash(unsigned long int digit) {
+        std::string alfabet = "0123456789ABCDEFGHIJKLMNOUPQRSTWXYZabcdefghijklmnoupqrstwxyz";
+        std::array<char, 6> hash;
+        int p = 5;
+        while (digit > 0) {
+            hash[p] = alfabet[digit % 60];
+            digit = digit / 60;
+            p = p - 1;
+        }
+        while (p >= 0) {
+            hash[p] = '0';
+            p = p - 1;
+        }
+        return hash;
+    }
+    
     std::unique_ptr<TinyUrlCodec> Init() {
         std::unique_ptr<TinyUrlCodec> p = std::make_unique<TinyUrlCodec>();
         p->state = {'0', '0', '0', '0', '0', '0'};
+        p->LongUrls.push_back("FirstURL");
         return p;
     }
 
-    void NextHash(std::array<char, 6> *state){
-        std::string dictionary="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-        if ((*state)[5]=='z'){
-            (*state)[5]='0';
-            if ((*state)[4]=='z'){
-                (*state)[4]='0';
-                if ((*state)[3]=='z'){
-                    (*state)[3]='0';
-                    if ((*state)[2]=='z'){
-                        (*state)[2]='0';
-                        if ((*state)[1]=='z'){
-                            (*state)[1]='0';
-                            if ((*state)[0]!='z')
-                            (*state)[0]=dictionary[dictionary.find((*state)[0])+1];
-                        }
-                        else (*state)[1]=dictionary[dictionary.find((*state)[1])+1];
-                    }
-                    else (*state)[2]=dictionary[dictionary.find((*state)[2])+1];
-                }
-                else (*state)[3]=dictionary[dictionary.find((*state)[3])+1];
-            }
-            else (*state)[4]=dictionary[dictionary.find((*state)[4])+1];
-        }
-        else (*state)[5]=dictionary[dictionary.find((*state)[5])+1];
+    void NextHash(std::array<char, 6> *state) {
+        std::string alfabet = "0123456789ABCDEFGHIJKLMNOUPQRSTWXYZabcdefghijklmnoupqrstwxyz";
+        unsigned long int a = ToDecimal(*state);
+        *state = ConvertToHash(a + 1);
+
     }
 
     std::string Encode(const std::string &url, std::unique_ptr<TinyUrlCodec> *codec){
+        std::string stringReturned = "";
         NextHash(&(*codec)->state);
-        (*codec)->tab.emplace_back(url);
-        std::string short_url="";
-        for (auto i:(*codec)->state){
-            short_url=short_url+i;
-        }
-        return short_url;
+        (*codec)->LongUrls.push_back(url);
+        for(auto x: (*codec)->state) stringReturned += x;
+        return stringReturned;
     }
-
     std::string Decode(const std::unique_ptr<TinyUrlCodec> &codec, const std::string &hash){
-        std::string dictionary="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-        int id=0;
-        for(int i=0;i<=6;i++){
-            id = 62*id + (int)(dictionary.find(hash[i]));
-        }
-        if(id<=codec->tab.size())return codec->tab[id];
-        return"";
+        std::array<char, 6> tabHash= {'0','0','0','0','0','0'};
+        for(int i = 0; i < hash.length(); i++) tabHash[i] = hash[i];
+        return codec->LongUrls[ToDecimal(tabHash)];
     }
 }

@@ -1,7 +1,8 @@
-//
-// Created by bartosz on 17.03.17.
+
+// Created by bartek on 17.03.17.
 //
 
-int main{
-        
-};
+int main(){
+
+}
+
