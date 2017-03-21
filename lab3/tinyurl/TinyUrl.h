@@ -12,6 +12,11 @@
 
 namespace tinyurl{
     struct TinyUrlCodec;
+    struct TinyUrlCodec{
+    public:
+        std::array <char, 6> state;
+        std::vector <std::string> tab;
+    };
     std::unique_ptr<TinyUrlCodec> Init();
     void NextHash(std::array<char, 6> *state);
     std::string Encode(const std::string &url, std::unique_ptr<TinyUrlCodec> *codec);

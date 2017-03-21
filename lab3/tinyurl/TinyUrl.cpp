@@ -6,14 +6,7 @@
 #include <vector>
 
 namespace tinyurl {
-
-    struct TinyUrlCodec{
-
-    public:
-        std::array<char, 6> state;
-        std::vector<std::string> tab;
-    };
-
+    struct TinyUrlCodec;
     std::unique_ptr<TinyUrlCodec> Init() {
         std::unique_ptr<TinyUrlCodec> p = std::make_unique<TinyUrlCodec>();
         p->state = {'0', '0', '0', '0', '0', '0'};

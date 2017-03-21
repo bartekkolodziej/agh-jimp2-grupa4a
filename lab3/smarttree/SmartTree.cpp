@@ -3,6 +3,7 @@
 //
 
 #include "SmartTree.h"
+
 namespace datastructures {
     std::unique_ptr<SmartTree> CreateLeaf(int value){
         std::unique_ptr<SmartTree> leaf = std::make_unique<SmartTree>();
@@ -33,7 +34,7 @@ namespace datastructures {
 
     void PrintTreeInOrder(const std::unique_ptr<SmartTree> &unique_ptr, std::ostream *out){
         if (unique_ptr->left!=nullptr)PrintTreeInOrder(unique_ptr->left, out);
-        printf("%d, ",unique_ptr->value);
+        (*out)<<unique_ptr->value<<", ";
         if (unique_ptr->right!=nullptr)PrintTreeInOrder(unique_ptr->right,out);
     }
 
