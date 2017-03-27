@@ -73,8 +73,9 @@ namespace nets{
                 return str_v;
             }
             case 6:{
-                std::string str_m = "";
-                for(auto x: m_) str_m += "\"" + x.first + "\"" + ": " + x.second.ToString() + " ";
+                std::string str_m = "{";
+                for(auto x: m_) str_m += "\"" + x.first + "\"" + ": " + x.second.ToString();
+                str_m += "}";
                 return str_m;
             }
             case 7: {
