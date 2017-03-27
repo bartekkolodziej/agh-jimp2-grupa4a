@@ -11,7 +11,7 @@ namespace nets{
     View::~View(){}
     std::string View::Render(const std::unordered_map <std::string, std::string> &model) const{
         std::regex pattern {R"(({{(?<subexpression>\w+)}}))"};
-        std::string rendered_text=std::regex_replace(this->raw_text, pattern, model["&{subexpression}"]);
+        std::string rendered_text=std::regex_replace(raw_text, pattern, model.at("&{subexpression}"));
         return rendered_text;
     }
 }
