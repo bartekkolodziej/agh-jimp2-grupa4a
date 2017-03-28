@@ -10,6 +10,8 @@
 #include <vector>
 #include <map>
 #include <iostream>
+#include <cstring>
+#include <sstream>
 
 namespace nets {
     class JsonValue {
@@ -28,6 +30,8 @@ namespace nets {
 
         JsonValue(std::map<std::string, JsonValue> m);
 
+        JsonValue(const char* c);
+
         std::experimental::optional<JsonValue> ValueByName(const std::string &name) const;
 
         std::string ToString() const;
@@ -35,12 +39,14 @@ namespace nets {
         ~JsonValue();
 
         int x_;
+
         double y_;
         std::string str_;
         bool z_;
         std::vector<JsonValue> v_;
         std::map<std::string, JsonValue> m_;
         int value_type;
+        const char * c_;
     };
 }
 
