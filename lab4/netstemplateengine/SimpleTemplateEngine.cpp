@@ -41,6 +41,5 @@ namespace nets{
         }
         return new_text;
     }
-
 }
 
