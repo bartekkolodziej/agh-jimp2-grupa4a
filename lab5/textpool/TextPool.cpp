@@ -7,39 +7,56 @@
 namespace pool{
 
     TextPool::TextPool(){
-        text_ = "";
-    };
+        elements_.push_back("");
+        count_ = 0;
+    }
 
-    TextPool::TextPool(TextPool &&text_pool){
-        int i = text_pool.elements_.size();
-        text_pool.elements_[i] = nullptr;
-        std::swap(elements_[i],text_pool.elements_[i]);
+    TextPool::TextPool( TextPool&& text_pool )
+            : elements_( std::move( text_pool.elements_ ) )
+    {
+        count_ = text_pool.count_;
+        text_pool.count_ = 0;
     }
 
     TextPool & TextPool::operator=(TextPool &&text_pool){
-        int i = text_pool.elements_.size();
         if (this == &text_pool) {
             return text_pool;
         }
-        text_ = nullptr;
-        std::swap(elements_[i],text_pool.elements_[i]);
+        for(int i=0; i<text_pool.count_; i ++) {
+            std::swap(elements_[i], text_pool.elements_[i]);
+        }
     }
 
     TextPool::TextPool(const std::initializer_list<std::string> &elements){
-        for(auto x: elements) elements_.push_back(x);
-    }
-    std::experimental::string_view TextPool::Intern(const std::string &str){
-        std::experimental::string_view str_tmp;
-        for(auto x: elements_){
-            if(x == str){
-                str_tmp = str;
-                return str_tmp;
+        count_ = 0;
+        for(std::experimental::string_view x: elements){
+            for(std::experimental::string_view y: elements_){
+                if(y == x){
+                    goto here;
+                }
             }
-            else {
-                elements_.push_back(str);
-                return str;
-            }
+            count_++;
+            elements_.push_back(x);
+            here:
+            count_ += 0;
         }
     }
+    std::experimental::string_view TextPool::Intern(const std::string &str){
+        for(std::experimental::string_view x: elements_){
+            if(x == str){
+                return x;
+            }
+        }
+        elements_.push_back(std::experimental::string_view(str));
+        count_++;
+        return str;
+    }
+
+    size_t TextPool::StoredStringCount() const{
+        return count_;
+    }
+
+    TextPool::~TextPool(){}
+
 
 }

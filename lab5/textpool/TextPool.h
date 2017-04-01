@@ -9,6 +9,7 @@
 #include <string>
 #include <experimental/string_view>
 #include <set>
+#include <vector>
 
 namespace pool{
 
@@ -31,8 +32,8 @@ namespace pool{
         size_t StoredStringCount() const;
         std::experimental::string_view Intern(const std::string &str);
 
-        std::string text_;
-        std::vector<std::string> elements_;
+
+        std::vector<std::experimental::string_view> elements_;
         size_t count_;
 
     };
