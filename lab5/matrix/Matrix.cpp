@@ -2,7 +2,7 @@
 // Created by bartosz on 01.04.17.
 //
 
-#include "matrix.h"
+#include "Matrix.h"
 
 Matrix::Matrix(int rows, int cols) {
     this->cols=cols;

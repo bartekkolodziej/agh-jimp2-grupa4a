@@ -5,6 +5,9 @@
 #ifndef JIMP_EXERCISES_MATRIX_H
 #define JIMP_EXERCISES_MATRIX_H
 
+#include <iostream>
+#include <complex>
+
 class Matrix{
     public:
         Matrix();
@@ -24,7 +27,7 @@ class Matrix{
     private:
         int rows;
         int cols;
-        std::complex<double> matrix[rows][cols];
+        std::complex<double> matrix[][];
 };
 
 #endif //JIMP_EXERCISES_MATRIX_H
