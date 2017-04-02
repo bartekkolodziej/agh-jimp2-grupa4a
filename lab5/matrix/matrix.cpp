@@ -93,8 +93,60 @@ Matrix::Matrix matrixMultiplication(const Matrix &m) {
 
 Matrix::Matrix exponentiation(int number) {
     Matrix new_matrix = Matrix(this);
-    for (int i=0;i<number;i++)new_matrix=new_matrix.matrixMultiplication(this)
+    for (int i=0;i<number;i++)new_matrix=new_matrix.matrixMultiplication(this);
     return new_matrix;
 }
 
+Matrix::Matrix invertion(){
+    Matrix new_matrix = Matrix(this);
+    int Column[new_matrix->rows];
+    bool isAxised[new_matrix->rows];
+    for (int i=0;i<=new_matrix->rows;i++)isAxised[i]=false;
+    for (int row=0;row<=new_matrix->rows;row++){
+        int max=0;
+        for(int col=0;col<=new_matrix->cols;col++){
+            if(isAxised[col]= false){
+                if(abs(new_matrix->matrix[row][col])>max){
+                    max=abs(new_matrix->matrix[row][col]);
+                    int p=row;
+                    int q=col;
+                }
+            }
+        }
+        if(max==0) return 1;
+        for (int r=0;r<=new_matrix->rows;r++){
+            for (int k=0;k<=new_matrix->cols;k++){
+                if(r!=p and k!=q) new_matrix->matrix[r][k]=new_matrix->matrix[r][k]-(new_matrix->matrix[p][k]*new_matrix->matrix[r][q]/new_matrix->matrix[p][q]);
+            }
+        }
+        for (int r=0;r<=new_matrix->rows;r++){
+            if(r!=p) new_matrix->matrix[r][q]= -new_matrix->matrix[r][q]/new_matrix->matrix[p][q];
+        }
+        for (int k=0;k<=new_matrix->cols;k++){
+            if(k!=q) new_matrix->matrix[p][k]= new_matrix->matrix[p][k]/new_matrix->matrix[p][q];
+        }
+        new_matrix->matrix[p][q]= 1/new_matrix->matrix[p][q];
+        Column[row]=q;
+        isAxised[q]=true;
+    }
+    Matrix tmp_matrix = Matrix(new_matrix);
+    for(int i=0;i<=new_matrix->rows;i++) {
+        for (int j = 0; j <= new_matrix->cols; j++){
+            new_matrix->matrix[Column[i]][j]=tmp_matrix->matrix[i][j];
+        }
+    }
+    Matrix tmp_matrix = Matrix(new_matrix);
+    for(int i=0;i<=new_matrix->rows;i++) {
+        for (int j = 0; j <= new_matrix->cols; j++){
+            new_matrix->matrix[j][i]=tmp_matrix->matrix[j][Column[i]];
+        }
+    }
+    return new_matrix;
+
+}
+
+Matrix::Matrix divide(const Matrix &m){
+    Matrix new_matrix=this->matrixMultiplication(m->invertion());
+    return new_matrix;
+}
 
