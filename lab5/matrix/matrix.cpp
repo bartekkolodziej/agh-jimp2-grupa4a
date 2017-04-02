@@ -40,7 +40,7 @@ Matrix::Matrix(const Matrix &m) {
         }
 
 }
-Matrix::Matrix add(const Matrix &m){
+Matrix Matrix::add(const Matrix &m){
     if(this->rows !=m.rows or this->cols!=m.cols) return 1;
     Matrix new_matrix=Matrix(this->rows, this->cols);
     for(int row=0;row<=m.rows;row++)
@@ -50,7 +50,7 @@ Matrix::Matrix add(const Matrix &m){
     return new_matrix;
 }
 
-Matrix::Matrix substract(const Matrix &m) {
+Matrix Matrix::substract(const Matrix &m) {
     if (this->rows != m.rows or this->cols != m.cols) return 1;
     Matrix new_matrix = Matrix(this->rows, this->cols);
     for (int row = 0; row <= m.rows; row++)
@@ -60,7 +60,7 @@ Matrix::Matrix substract(const Matrix &m) {
     return new_matrix;
 }
 
-Matrix::Matrix scalarMultiplication(std::complex<double> scalar) {
+Matrix Matrix::scalarMultiplication(std::complex<double> scalar) {
     Matrix new_matrix = Matrix(this->rows, this->cols);
     for (int row = 0; row <= m.rows; row++)
         for (int col = 0; col <= m.cols; col++) {
@@ -69,7 +69,7 @@ Matrix::Matrix scalarMultiplication(std::complex<double> scalar) {
     return new_matrix;
 }
 
-Matrix::Matrix scalarDivision(std::complex<double> scalar) {
+Matrix Matrix::scalarDivision(std::complex<double> scalar) {
     if (scalar==0)return 1;
     Matrix new_matrix = Matrix(this->rows, this->cols);
     for (int row = 0; row <= m.rows; row++)
@@ -79,7 +79,7 @@ Matrix::Matrix scalarDivision(std::complex<double> scalar) {
     return new_matrix;
 }
 
-Matrix::Matrix matrixMultiplication(const Matrix &m) {
+Matrix Matrix::matrixMultiplication(const Matrix &m) {
     if(this->cols != m.rows) return 1;
     Matrix new_matrix = Matrix(this->rows, this->cols);
     for (int row = 0; row <= m.rows; row++)
@@ -91,13 +91,13 @@ Matrix::Matrix matrixMultiplication(const Matrix &m) {
     return new_matrix;
 }
 
-Matrix::Matrix exponentiation(int number) {
+Matrix Matrix::exponentiation(int number) {
     Matrix new_matrix = Matrix(this);
     for (int i=0;i<number;i++)new_matrix=new_matrix.matrixMultiplication(this);
     return new_matrix;
 }
 
-Matrix::Matrix invertion(){
+Matrix Matrix::invertion(){
     Matrix new_matrix = Matrix(this);
     int Column[new_matrix->rows];
     bool isAxised[new_matrix->rows];
@@ -145,12 +145,12 @@ Matrix::Matrix invertion(){
 
 }
 
-Matrix::Matrix matrixDivision(const Matrix &m){
+Matrix Matrix::matrixDivision(const Matrix &m){
     Matrix new_matrix=this->matrixMultiplication(m->invertion());
     return new_matrix;
 }
 
-Matrix::void print(){
+void Matrix::print(){
     for(int row=0;row <= this->rows;row++){
         for(int col=0;col<=this->cols;col++){
             std::string number=string(this->matrix[row][col]);
