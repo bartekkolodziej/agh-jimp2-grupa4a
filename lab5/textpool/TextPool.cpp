@@ -11,6 +11,7 @@ namespace pool{
         count_ = 0;
     }
 
+
     TextPool::TextPool( TextPool&& text_pool )
             : elements_( std::move( text_pool.elements_ ) )
     {
@@ -18,14 +19,20 @@ namespace pool{
         text_pool.count_ = 0;
     }
 
+    void swap(TextPool& lhs, TextPool& rhs)
+    {
+        std::swap(lhs.elements_, rhs.elements_);
+        std::swap(lhs.count_, rhs.count_);
+    }
+
     TextPool & TextPool::operator=(TextPool &&text_pool){
         if (this == &text_pool) {
-            return text_pool;
+            return *this;
         }
-        for(int i=0; i<text_pool.count_; i ++) {
-            std::swap(elements_[i], text_pool.elements_[i]);
-        }
+        swap(*this, text_pool);
+        return *this;
     }
+
 
     TextPool::TextPool(const std::initializer_list<std::string> &elements){
         count_ = 0;
@@ -56,7 +63,7 @@ namespace pool{
         return count_;
     }
 
-    TextPool::~TextPool(){}
 
+    TextPool::~TextPool(){}
 
 }

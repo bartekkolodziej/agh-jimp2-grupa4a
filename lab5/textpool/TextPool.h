@@ -10,6 +10,8 @@
 #include <experimental/string_view>
 #include <set>
 #include <vector>
+#include <algorithm>
+
 
 namespace pool{
 
@@ -17,30 +19,19 @@ namespace pool{
     public:
 
         TextPool();
-        //1. konstruktor kopiujący
-        //TextPool(const TextPool &text);
-        //2. konstruktor przenoszący
         TextPool(TextPool &&text_pool);
-        //3. operator przypisania kopiujący
-        //TextPool &operator=(const TextPool &text);
-        //4. operator przypisania przenoszący
         TextPool &operator=(TextPool &&text_pool);
-        //5. konstruktor z lista inicjalizacyjna
         TextPool(const std::initializer_list<std::string> &elements);
-        //5. Destruktor
         ~TextPool();
         size_t StoredStringCount() const;
         std::experimental::string_view Intern(const std::string &str);
+        friend void swap(TextPool& lhs, TextPool& rhs);
 
 
         std::vector<std::experimental::string_view> elements_;
         size_t count_;
 
     };
-
-
-
-
 
 }
 
