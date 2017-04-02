@@ -145,8 +145,20 @@ Matrix::Matrix invertion(){
 
 }
 
-Matrix::Matrix divide(const Matrix &m){
+Matrix::Matrix matrixDivision(const Matrix &m){
     Matrix new_matrix=this->matrixMultiplication(m->invertion());
     return new_matrix;
 }
 
+Matrix::void print(){
+    for(int row=0;row <= this->rows;row++){
+        for(int col=0;col<=this->cols;col++){
+            std::string number=string(this->matrix[row][col]);
+            std::string spaces="";
+            if(number<8)for(int i=0;i<7-number.length();i++)spaces+=" ";
+            number=spaces+number;
+            std::cout<<number;
+        }
+        std::cout<<endl;
+    }
+}
