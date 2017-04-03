@@ -3,11 +3,17 @@
 //
 
 #include "Matrix.h"
+
+using namespace std::complex_literals;
+
 namespace algebra {
 
     Matrix::Matrix() {}
 
-    Matrix::~Matrix() {}; // not complete
+    Matrix::~Matrix() {
+        for (int i = 0; i < this->rows; i++) delete [] this->matrix[i];
+        delete [] this->matrix;
+    }
 
     Matrix::Matrix(int rows, int cols) {
         this->cols = cols;
@@ -82,8 +88,8 @@ namespace algebra {
         this->matrix = new std::complex<double> *[rows];
         for (int i = 0; i < rows; i++) this->matrix[i] = new std::complex<double>[cols];
 
-        for (int row = 0; row <= m.rows; row++)
-            for (int col = 0; col <= m.cols; col++) {
+        for (int row = 0; row < m.rows; row++)
+            for (int col = 0; col < m.cols; col++) {
                 this->matrix[row][col] = m.matrix[row][col];
             }
     }
@@ -94,21 +100,21 @@ namespace algebra {
             return *this;
         }
         Matrix new_matrix{this->rows, this->cols};
-        for (int row = 0; row <= this->rows; row++)
-            for (int col = 0; col <= this->cols; col++) {
-                new_matrix.matrix[row][col] = m.matrix[row][col] + this->matrix[col][row];
+        for (int row = 0; row < this->rows; row++)
+            for (int col = 0; col < this->cols; col++) {
+                new_matrix.matrix[row][col] = m.matrix[row][col] + this->matrix[row][col];
             }
         return new_matrix;
     }
 
-    Matrix Matrix::substract(const Matrix &m) {
+    Matrix Matrix::Sub(const Matrix &m) {
         if (this->rows != m.rows or this->cols != m.cols) {
             std::cout << "Incorrect dimensions" << std::endl;
             return *this;
         }
         Matrix new_matrix{this->rows, this->cols};
-        for (int row = 0; row <= this->rows; row++)
-            for (int col = 0; col <= this->cols; col++) {
+        for (int row = 0; row < this->rows; row++)
+            for (int col = 0; col < this->cols; col++) {
                 new_matrix.matrix[row][col] = this->matrix[col][row] - m.matrix[row][col];
             }
         return new_matrix;
@@ -116,8 +122,8 @@ namespace algebra {
 
     Matrix Matrix::scalarMultiplication(std::complex<double> scalar) {
         Matrix new_matrix{this->rows, this->cols};
-        for (int row = 0; row <= this->rows; row++)
-            for (int col = 0; col <= this->cols; col++) {
+        for (int row = 0; row < this->rows; row++)
+            for (int col = 0; col < this->cols; col++) {
                 new_matrix.matrix[row][col] = this->matrix[col][row] * scalar;
             }
         return new_matrix;
@@ -129,8 +135,8 @@ namespace algebra {
             return *this;
         }
         Matrix new_matrix{this->rows, this->cols};
-        for (int row = 0; row <= this->rows; row++)
-            for (int col = 0; col <= this->cols; col++) {
+        for (int row = 0; row < this->rows; row++)
+            for (int col = 0; col < this->cols; col++) {
                 new_matrix.matrix[row][col] = this->matrix[col][row] / scalar;
             }
         return new_matrix;
@@ -138,24 +144,53 @@ namespace algebra {
 
     Matrix Matrix::Mul(const Matrix &m) {
         if (this->cols != m.rows) {
-            std::cout << "Incorrect dimensions";
-            return *this;
+            Matrix empty{0,0};
+            return empty;
         }
         Matrix new_matrix{this->rows, m.cols};
-        for (int row = 0; row <= m.rows; row++)
-            for (int col = 0; col <= m.cols; col++) {
+        for (int row = 0; row < this->rows; row++)
+            for (int col = 0; col < m.cols; col++) {
                 std::complex<double> tmp;
                 tmp.real(0);
                 tmp.imag(0);
-                for (int i = 0; i <= m.rows; i++) tmp = tmp + this->matrix[row][i] * m.matrix[i][col];
+                for (int i = 0; i < m.rows; i++) tmp = tmp + this->matrix[row][i] * m.matrix[i][col];
                 new_matrix.matrix[row][col] = tmp;
             }
         return new_matrix;
     }
 
-    Matrix Matrix::exponentiation(int number) {
+    Matrix Matrix::Pow(int number) {
+        if (this->cols != this->rows) {
+            Matrix empty{0,0};
+            return empty;
+        }
+        if(number == 0){
+            Matrix generalized{this->rows, this->cols};
+            for(int i=0; i<this->rows; i++){
+                for(int j=0; j<this->cols; j++){
+                    if(i==j) {
+                        generalized.matrix[i][j].real(1);
+                        generalized.matrix[i][j].imag(0);
+                    }
+                    else {
+                        generalized.matrix[i][j].real(0);
+                        generalized.matrix[i][j].imag(0);
+                    }
+                }
+            }
+            return generalized;
+        }
         Matrix new_matrix{*this};
-        for (int i = 0; i < number; i++) new_matrix = new_matrix.Mul(*this);
+        for(int x=1; x<number; x++){
+            for (int row = 0; row < this->rows; row++)
+                for (int col = 0; col < this->cols; col++) {
+                    std::complex<double> tmp;
+                    tmp.real(0);
+                    tmp.imag(0);
+                    for (int i = 0; i < this->rows; i++) tmp = tmp + this->matrix[row][i] * this->matrix[i][col];
+                    new_matrix.matrix[row][col] = tmp;
+                }
+        }
         return new_matrix;
     }
 
@@ -219,13 +254,30 @@ Matrix Matrix::matrixDivision(Matrix &m){
         return size;
     }
 
-    void Matrix::Print() const {
+std::string Matrix::Print() const {
+    if(this->cols != 0){
+        std::stringstream tmp;
+        std::string tmp_str, string_to_return = "[";
         for (int row = 0; row < this->rows; row++) {
             for (int col = 0; col < this->cols; col++) {
-                std::cout.width(10);
-                std::cout << std::right << this->matrix[row][col];
+                tmp << real(this->matrix[row][col]);
+                tmp << "i";
+                tmp << imag(this->matrix[row][col]);
+                tmp_str = tmp.str();
+                string_to_return += tmp_str;
+                string_to_return += ", ";
+                tmp_str = "";
+                tmp.str("");
             }
-            std::cout << std::endl;
+            string_to_return.erase(string_to_return.size()-2);
+            string_to_return += "; ";
         }
+        string_to_return.erase(string_to_return.size()-2);
+        string_to_return += "]";
+        return string_to_return;
     }
+
+    else return "[]";
+}
+
 }
