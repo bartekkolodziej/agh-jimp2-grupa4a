@@ -154,6 +154,22 @@ namespace algebra {
     }
 
     Matrix Matrix::exponentiation(int number) {
+        if (number==0){
+            Matrix new_matrix=Matrix(this->rows,this->cols);
+            for(int row=0;row<this->rows;row++){
+                for(int col=0;col<this->cols;col++){
+                    if(row==col){
+                        new_matrix.matrix[row][col]=1;
+                    }
+                    else new_matrix.matrix[row][col]=0;
+                }
+            }
+            return new_matrix;
+        }
+        if(number<0){
+            std::cout << "Please, type number equal to 0 or greater than 0.";
+            return *this;
+        }
         Matrix new_matrix{*this};
         for (int i = 0; i < number; i++) new_matrix = new_matrix.Mul(*this);
         return new_matrix;
@@ -220,12 +236,15 @@ Matrix Matrix::matrixDivision(Matrix &m){
     }
 
     void Matrix::Print() const {
+        std::cout<<"[";
         for (int row = 0; row < this->rows; row++) {
             for (int col = 0; col < this->cols; col++) {
-                std::cout.width(10);
-                std::cout << std::right << this->matrix[row][col];
+                std::cout << real(this->matrix[row][col])<<"i"<<imag(this->matrix[row][col]);
+                if(row==this->rows-1){
+                    std::cout<<"; ";
+                }
+                else std::cout<<", ";
             }
-            std::cout << std::endl;
         }
     }
 }
