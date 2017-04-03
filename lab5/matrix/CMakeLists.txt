@@ -1,8 +1,8 @@
 
 project(matrix)
 
-set(HEDEAR_FILES Matrix.h)
-set(SOURCE_FILES Matrix.cpp)
+set(HEDEAR_FILES matrix.h)
+set(SOURCE_FILES matrix.cpp)
 
 add_library(libmatrix STATIC ${SOURCE_FILES})
 target_include_directories(libmatrix PUBLIC .)

@@ -5,6 +5,9 @@
 #ifndef JIMP_EXERCISES_MATRIX_H
 #define JIMP_EXERCISES_MATRIX_H
 
+#include<string>
+#include <complex>
+#include <iostream>
 class Matrix{
     public:
         Matrix();
@@ -18,13 +21,13 @@ class Matrix{
         Matrix matrixMultiplication(const Matrix &m);
         Matrix matrixDivision(const Matrix &m);
         Matrix exponentiation(int number);
-        Matrix invertion();
+        Matrix invertion() const;
         void print();
         ~Matrix();
     private:
         int rows;
         int cols;
-        std::complex<double> matrix[rows][cols];
+        std::complex<double> *matrix[rows][cols];
 };
 
 #endif //JIMP_EXERCISES_MATRIX_H
