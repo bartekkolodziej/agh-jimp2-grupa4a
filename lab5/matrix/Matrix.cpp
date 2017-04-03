@@ -159,9 +159,9 @@ namespace algebra {
             for(int row=0;row<this->rows;row++){
                 for(int col=0;col<this->cols;col++){
                     if(row==col){
-                        new_matrix.matrix[row][col]=1;
+                        new_matrix.matrix[row][col]=1+0i;
                     }
-                    else new_matrix.matrix[row][col]=0;
+                    else new_matrix.matrix[row][col]=0+0i;
                 }
             }
             return new_matrix;
