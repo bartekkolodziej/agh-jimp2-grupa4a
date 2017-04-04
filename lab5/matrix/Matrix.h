@@ -32,24 +32,17 @@ namespace algebra {
 
         Matrix Sub(const Matrix &m);
 
-        Matrix scalarMultiplication(std::complex<double> scalar);
-
-        Matrix scalarDivision(std::complex<double> scalar);
-
         Matrix Mul(const Matrix &m);
 
-        Matrix matrixDivision(Matrix &m);
-
         Matrix Pow(int number);
-
-        Matrix invertion();
 
         std::string Print() const;
 
         std::pair<size_t, size_t> Size() const; // what is it for?
+
         ~Matrix();
 
-
+    private:
         int rows;
         int cols;
         std::complex<double> **matrix;
