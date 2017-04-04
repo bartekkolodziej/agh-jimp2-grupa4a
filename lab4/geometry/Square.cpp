@@ -21,7 +21,8 @@ namespace geometry{
     }
 
     Point::~Point(){}
-
+    double Point::GetX()const {return x_;}
+    double Point::GetY()const {return y_;}
     double Point::Distance(const Point &other) const{
         return sqrt(pow(GetX()-other.GetX(),2)+pow(GetY()-other.GetY(),2));
     }
@@ -30,7 +31,7 @@ namespace geometry{
         (*out) << "(" << GetX() << ";" << GetY() << ")";
     }
 
-    Square::Square(Punkt A, Punkt B, Punkt C, Punkt D ){
+    Square::Square(Point A, Point B, Point C, Point D ){
         A_ = A;
         B_ = B;
         C_ = C;
@@ -39,6 +40,10 @@ namespace geometry{
 
     Square::~Square(){
     }
+    Point Square::GetA()const {return A_;}
+    Point Square::GetB()const {return B_;}
+    Point Square::GetC()const {return C_;}
+    Point Square::GetD()const {return D_;}
 
     double Square::Circumference(){
         if(GetA().Distance(&GetB()) == GetB().Distance(&GetC()) && GetB().Distance(&GetC()) == GetC().Distance(&GetD()) && GetC().Distance(&GetD()) == GetD().Distance(&GetA()) && GetA().Distance(&GetC()) == GetB().distance(&GetD())) {

@@ -48,19 +48,15 @@ namespace geometry{
         //Destruktor
         ~Square();
 
-        double Area(Point a, Point b);
-        double Circumference(Point a, Point b, Point c, Point d);
+        double Area();
+        double Circumference();
 
 
-        double GetA() const;
-        double GetB() const;
-        double GetC() const;
-        double GetD() const;
+        Point  GetA() const;
+        Point  GetB() const;
+        Point  GetC() const;
+        Point  GetD() const;
 
-        void SetA(double A);
-        void SetB(double B);
-        void SetC(double C);
-        void SetD(double D);
     };
 
 
