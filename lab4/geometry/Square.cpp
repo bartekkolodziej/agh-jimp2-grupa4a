@@ -39,6 +39,7 @@ namespace geometry{
 
     Square::~Square(){
     }
+    double
 
     double Square::Circumference(){
         if(GetA().Distance(&GetB()) == GetB().Distance(&GetC()) && GetB().Distance(&GetC()) == GetC().Distance(&GetD()) && GetC().Distance(&GetD()) == GetD().Distance(&GetA()) && GetA().Distance(&GetC()) == GetB().distance(&GetD())) {
