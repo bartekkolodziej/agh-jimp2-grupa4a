@@ -12,6 +12,8 @@
 #include <vector>
 #include <cstring>
 
+using namespace std::complex_literals;
+
 namespace algebra {
 
     class Matrix {
@@ -28,23 +30,16 @@ namespace algebra {
 
         Matrix Add(const Matrix &m) const;
 
-        Matrix substract(const Matrix &m);
-
-        Matrix scalarMultiplication(std::complex<double> scalar);
-
-        Matrix scalarDivision(std::complex<double> scalar);
+        Matrix Sub(const Matrix &m);
 
         Matrix Mul(const Matrix &m);
 
-        Matrix matrixDivision(Matrix &m);
+        Matrix Pow(int number);
 
-        Matrix exponentiation(int number);
-
-        Matrix invertion();
-
-        void Print() const;
+        std::string Print() const;
 
         std::pair<size_t, size_t> Size() const; // what is it for?
+
         ~Matrix();
 
     private:
