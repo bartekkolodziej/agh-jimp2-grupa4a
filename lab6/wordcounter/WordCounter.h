@@ -17,6 +17,7 @@ class Word{
         std::string word;
 };
 
+
 class Counts{
     public:
         Counts();

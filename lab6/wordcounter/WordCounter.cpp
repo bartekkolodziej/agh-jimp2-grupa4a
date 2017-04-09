@@ -46,6 +46,7 @@ WordCounter::WordCounter(std::string path){
 
 }
 
+
 pair<bool,int> WordCounter::FindWord(std::string word) {
     int i=0;
     pair<bool,int> result(false,0);
