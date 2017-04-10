@@ -14,6 +14,8 @@
 
 
 
+
+
 namespace datastructures {
 
 
@@ -21,7 +23,6 @@ namespace datastructures {
     public:
         Counts();
         Counts(int number);
-
         ~Counts();
 
         int count;
@@ -32,7 +33,6 @@ namespace datastructures {
     public:
         Word();
         Word(std::string word);
-
         ~Word();
 
         std::string word;
@@ -43,12 +43,11 @@ namespace datastructures {
     public:
         WordCounter();
         WordCounter(std::initializer_list<Word> words);
-        // its probably unnecessary WordCounter(std::string file);
+        ~WordCounter();
+
         int TotalWords();
         int DistinctWords();
         std::set<Word> Words();
-
-        ~WordCounter();
         int operator[](std::string word);
 
 
@@ -57,7 +56,6 @@ namespace datastructures {
         int distinct_words;
 
     };
-    //asd
 
     bool operator<(const Word &word1, const Word &word2);
     bool operator==(const Counts &count1, int number);
