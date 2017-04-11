@@ -57,9 +57,11 @@ namespace geometry{
         Point  GetC() const;
         Point  GetD() const;
 
+
     };
 
 
+    std::istream& operator>>(std::istream &is, Point& point);
 
 
 }
