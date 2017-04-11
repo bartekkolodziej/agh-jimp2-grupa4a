@@ -1,12 +1,10 @@
 #include "XorCypherBreaker.h"
 
-vector<string> keyGenerator(string key, int number, vector<string> keyArray) {
+void keyGenerator(string key, int number, vector<string> *keyArray) {
     if (number==0) {
-        keyArray.emplace_back(key);
-        return keyArray;
+        (*keyArray).emplace_back(key);
     }
-    for (int i=97;i<123;i++) keyArray=keyGenerator(key+char(i),number-1 , keyArray);
-    return keyArray;
+    for (int i=97;i<123;i++) keyGenerator(key+char(i),number-1 , keyArray);
 }
 
 vector<char> xor_crypt(vector<char> message, string key, int key_length){
@@ -41,7 +39,8 @@ int compare(vector<string> dictionary, vector<char> message){
 string XorCypherBreaker(const vector<char> &cryptogram,
                         int key_length,const vector<string> &dictionary){
     vector<char> encrypted;
-    vector<string> keyArray=keyGenerator("",key_length, keyArray);
+    vector<string> keyArray;
+    keyGenerator("",key_length, &keyArray);
     for(auto key : keyArray){
                 encrypted = xor_crypt(cryptogram, key,key_length);
                 if (compare(dictionary, encrypted) > 10) return key;

@@ -10,37 +10,22 @@ namespace nets{
     }
     View::~View(){}
     std::string View::Render(const std::unordered_map <std::string, std::string> &model) const{
-        std::string new_text = "";
-        std::string tmp = "";
-        for(int i=0; i < raw_text.size(); i++){
-            if(raw_text[i] == '{' && raw_text[i+1] == '{' && raw_text[i+2] != '{'){
-                i += 2;
-                while(raw_text[i] != '}'){
-                    tmp += raw_text[i];
-                    i++;
-                }
-                if(raw_text[i+1] == '}'){
-                    for(auto x: model){
-                        if(tmp == x.first) {
-                            new_text += x.second;
-                            i++;
-                            tmp = "";
-                        }
-                    }
-                    if(tmp != "") {
-                        tmp = "";
-                        i++;
-                    }
-                }
-                else {
-                    new_text += "{{" + tmp + "}";
-                    tmp = "";
-                }
+        //std::regex pattern ("{{(?<subexpression>\\w)\\k<subexpression>}}");
+        //std::string rendered_text=std::regex_replace(raw_text, pattern, model.at("&{subexpression}"));
+        std::string rendered_text = raw_text;
+        for (auto v : model){
+            size_t index = 0;
+            std::string tmp="{{"+v.first+"}}";
+            while (true) {
+                index = rendered_text.find(tmp, index);
+                if (index == std::string::npos) break;
+                rendered_text.replace(index, tmp.length(), v.second);
+                index += tmp.length();
             }
-            else new_text += raw_text[i];
         }
-        return new_text;
+        //std::regex pattern ("({{\\w}})");
+        //std::string text;
+        //text=std::regex_replace(rendered_text,pattern,"");
+        return rendered_text;
     }
-
 }
-
