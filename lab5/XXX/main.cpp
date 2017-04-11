@@ -1,21 +1,21 @@
 //
-// Created by kolobart on 28.03.17.
+// Created by wrobbart on 28.03.17.
 //
 
-#include "XXX.h"
-
-
-
+#include "xxx.h"
+XXX make_copy(XXX xxx) {
+    return xxx;
+}
 int CopyMain() {
     //Konstrukcja obiektu za pomocą domyślnego konstruktora
     //nieciekawe
-    XXX old_xxx {};
+    XXX old_xxx{};
 
     //Konstrukcja obiektu na podstawie już zaincjalizowanego
-    XXX new_xxx {old_xxx};
+    XXX new_xxx{old_xxx};
 
     //znowu nieciekawy konstruktor domyślny...
-    XXX another_xxx {};
+    XXX another_xxx{};
 
     //tutaj przypisujemy stan obiektu jednego do drugiego
     //ale obydwa są już zaincjalizowane...
@@ -23,10 +23,6 @@ int CopyMain() {
 
     //tutaj kończy się zakres funkcji main i wszystkie trzy obiekty tracą ważność
     //zostają wywołane więc destruktory
-}
-
-XXX make_copy(XXX xxx) {
-    return xxx;
 }
 
 int MoveMain() {
@@ -57,8 +53,8 @@ int MoveMain() {
     //tutaj kończy się zakres funkcji main i wszystkie trzy obiekty tracą ważność
     //zostają wywołane więc destruktory (na wszystkich trzech, ale tylko jeden ma ważny stan)
 }
-
-int main(){
+int main (){
     CopyMain();
     MoveMain();
+
 }
