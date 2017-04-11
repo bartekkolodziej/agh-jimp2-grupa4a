@@ -1,0 +1,8 @@
+//
+// Created by kolobart on 11.04.17.
+//
+
+#ifndef JIMP_EXERCISES_ARRAYFILL_H
+#define JIMP_EXERCISES_ARRAYFILL_H
+
+#endif //JIMP_EXERCISES_ARRAYFILL_H
