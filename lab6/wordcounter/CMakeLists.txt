@@ -10,4 +10,3 @@ target_include_directories(libwordcounter PUBLIC .)
 add_executable(wordcounter ${SOURCE_FILES} main.cpp)
 
 target_link_libraries(wordcounter libwordcounter)
-

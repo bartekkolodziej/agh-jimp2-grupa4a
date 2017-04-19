@@ -1,67 +1,105 @@
 //
-// Created by bartosz on 09.04.17.
+// Created by bartek on 09.04.17.
 //
 
 #include "WordCounter.h"
 
+namespace datastructures {
 
-Word::Word(){
-    this->word="";
-}
+    //operators
 
-Word::Word(std::string new_word){
-    this->word=new_word;
-}
-
-Counts::Counts(){
-    this->counts=1;
-}
-
-void Counts::operator ++ (){
-    this->counts+=1;
-}
-
-WordCounter::WordCounter(std::string path){
-    std::ifstream myfile(path);
-    if(!myfile){
-        cout << "Can't open the file." << endl;
-    }
-    std::string text;
-    myfile>> text;
-    regex pattern( "\\w*" );
-    smatch match;
-    if( regex_search( text, match, pattern ) ){
-        pair<bool,int> result = FindWord(match[0]);
-        if(result.first){
-            this->word_list[result.second].second++;
+    int  WordCounter::operator[](std::string word){
+        for(auto x: this->words_list){
+            if(x.first.word == word) return x.second.count;
         }
-        else{
-            Word word(match[0]);
-            Counts count;
-            pair<Word,Counts> pair(word,count);
-            this->word_list.emplace_back(pair);
+        return 0;
+    }
+
+    bool operator<(const Word &word1, const Word &word2){
+        return word1.count.count < word2.count.count;
+    }
+
+    bool operator==(const Counts &count1, int number){
+        return count1.count == number;
+    }
+
+    bool operator==(const Word &word1, const Word &word2){
+        return word1.count.count == word2.count.count;
+    }
+
+
+    //Word
+
+    Word::Word(){
+        this->word = "";
+        this->count.count = 0;
+    }
+
+    Word::Word(std::string word) {
+        this->word = word;
+        this->count.count = 1;
+    }
+
+    Word::~Word() {};
+
+
+    //Counts
+
+    Counts::Counts() {
+        this->count = 1;
+    }
+
+    Counts::Counts(int number){
+        this->count = number;
+    }
+
+    Counts::~Counts() {};
+
+
+    //WordCounter
+
+    WordCounter::WordCounter() {
+        this->total_words = 0;
+        this->distinct_words = 0;
+    }
+
+    WordCounter::WordCounter(std::initializer_list<Word> words){
+        this->total_words = 0;
+        this->distinct_words = 0;
+        bool word_doesnt_exists;
+        for(auto x: words){
+            word_doesnt_exists = true;
+            this->total_words++;
+
+            // for(auto y: this->words_list) { do smth } doesnt work, it loses data out of loop
+            for (std::list<std::pair<Word, Counts>>::iterator i = this->words_list.begin(), end = this->words_list.end(); i != end; i++){
+                if(x.word == i->first.word){
+                    i->second.count++;
+                    word_doesnt_exists = false;
+                    break;
+                }
+            }
+            if(word_doesnt_exists){
+                this->words_list.push_back({x,x.count});
+                this->distinct_words++;
+            }
         }
 
     }
 
-}
+    WordCounter::~WordCounter(){};
 
-
-pair<bool,int> WordCounter::FindWord(std::string word) {
-    int i=0;
-    pair<bool,int> result(false,0);
-    for (auto v : this->word_list){
-        if (v.first==word) {
-            result.first=true;
-            result.second=i;
-            return result;
-        };
-        i++;
+    int WordCounter::TotalWords() {
+        return this->total_words;
     }
-    return result;
-}
-int WordCounter::operator[](std::string word){
-    pair<bool,int> result = FindWord(word);
-    if(result.first) return this->word_list[result.second].second.count;
-    else return 0;
+
+    int WordCounter::DistinctWords() {
+        return this->distinct_words;
+    }
+
+    std::set<Word> WordCounter::Words(){
+        std::set<Word> words;
+        for(auto x: this->words_list) words.emplace(x.first);
+        return words;
+    }
 }

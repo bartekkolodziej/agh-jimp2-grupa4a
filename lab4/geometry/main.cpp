@@ -4,6 +4,20 @@
 #include "Square.h"
 
 
+using ::std::istream;
+using ::geometry::Point;
+
+
+
+
+
+
 int main(){
+
+
+Point pkt{2,5};
+
+
+std::cout<< pkt;
 
 }
