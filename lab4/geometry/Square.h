@@ -7,6 +7,9 @@
 
 #include <cmath>
 #include <ostream>
+#include <iomanip>
+#include <iostream>
+
 
 using ::std::ostream;
 using ::std::endl;
@@ -29,8 +32,7 @@ namespace geometry{
         void ToString(std::ostream *out) const;
         double Distance(const Point &other) const;
 
-        double GetX() const;
-        double GetY() const;
+
 
         void SetX(double x);
         void SetY(double y);
@@ -39,31 +41,9 @@ namespace geometry{
     };
 
 
-    class Square{
-    private:
-        Point A_, B_, C_, D_;
-    public:
-        //Konstruktor parametrowy
-        Square(Point A, Point B, Point C, Point D );
-        //Destruktor
-        ~Square();
 
-        double Area(Point a, Point b);
-        double Circumference(Point a, Point b, Point c, Point d);
-
-
-        double GetA() const;
-        double GetB() const;
-        double GetC() const;
-        double GetD() const;
-
-        void SetA(double A);
-        void SetB(double B);
-        void SetC(double C);
-        void SetD(double D);
-    };
-
-
+    std::istream& operator>>(std::istream &is, Point& point);
+    std::ostream& operator<<(std::ostream &is, Point& point);
 
 
 }
