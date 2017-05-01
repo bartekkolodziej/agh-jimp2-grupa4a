@@ -6,10 +6,41 @@
 
 namespace moviesubs{
 
+    void MicroDvdSubtitles::IfNegative(int delay, int framerate) {
+        if(delay < 0 && framerate << 0) throw NegativeFrameAfterShift();
+    }
+
+    void MicroDvdSubtitles::IfEndEarlierThanStart(std::stringstream *in){
+        std::string text, frame_start, frame_end;
+        text = (*in).str();
+        int line = 0;
+
+        for(int i = 0; i < text.length(); i++){
+            if(text[i] == '\n') line++;
+            if(text[i] == '{' && isdigit(text[i+1])){
+                frame_start = "";
+                frame_end = "";
+                i++;
+                while(text[i] != '}') {
+                    frame_start += text[i];
+                    i++;
+                }
+                i += 2;
+                while(text[i] != '}'){
+                    frame_end += text[i];
+                    i++;
+                }
+            }
+        }
+        if(frame_end < frame_start) throw SubtitleEndBeforeStart(line);
+    }
+
     void MicroDvdSubtitles::ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out){
+        IfNegative(delay, framerate);
+        IfEndEarlierThanStart(in);
+
         std::string text, frame;
         text = (*in).str();
-
         for(int i = 0; i < text.length(); i++){
             if(text[i] == '{' && isdigit(text[i+1])){
                 frame = "";
@@ -25,6 +56,39 @@ namespace moviesubs{
         if(text[text.length() - 1] != '\n') *out << '\n';
     }
 
+
+    void SubRipSubtitles::ConvertTimeToCorrectFormat(int delay, int time_seconds, int time_miliseconds, std::stringstream *out){
+        *out << ':';
+        if(time_miliseconds + delay < 1000) {
+            if(time_seconds < 10){
+                if(time_miliseconds > 100) *out <<'0' + std::to_string(time_seconds) + ','+ std::to_string(time_miliseconds+delay);
+                if(time_miliseconds < 100) *out <<'0' + std::to_string(time_seconds) + ",0"+ std::to_string(time_miliseconds+delay);
+                if(time_miliseconds < 10) *out <<'0' + std::to_string(time_seconds) + ",00"+ std::to_string(time_miliseconds+delay);
+            }
+            if(time_seconds > 10){
+                if(time_miliseconds > 100) *out <<std::to_string(time_seconds) + ','+ std::to_string(time_miliseconds+delay);
+                if(time_miliseconds < 100) *out <<std::to_string(time_seconds) + ",0"+ std::to_string(time_miliseconds+delay);
+                if(time_miliseconds < 10) *out <<std::to_string(time_seconds) + ",00"+ std::to_string(time_miliseconds+delay);
+            }
+        }
+        else{
+            time_seconds += (time_miliseconds + delay) / 1000;
+            time_miliseconds = (time_miliseconds + delay) % 1000;
+            if(time_seconds < 10){
+                if(time_miliseconds > 100) *out <<'0' + std::to_string(time_seconds) + ','+ std::to_string(time_miliseconds);
+                if(time_miliseconds < 100) *out <<'0' + std::to_string(time_seconds) + ",0"+ std::to_string(time_miliseconds);
+                if(time_miliseconds < 10) *out <<'0' + std::to_string(time_seconds) + ",00"+ std::to_string(time_miliseconds);
+            }
+            if(time_seconds > 10){
+                if(time_miliseconds > 100) *out <<std::to_string(time_seconds) + ','+ std::to_string(time_miliseconds);
+                if(time_miliseconds < 100) *out <<std::to_string(time_seconds) + ",0"+ std::to_string(time_miliseconds);
+                if(time_miliseconds < 10) *out <<std::to_string(time_seconds) + ",00"+ std::to_string(time_miliseconds);
+            }
+        }
+    }
+
+
+
     void SubRipSubtitles::ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out){
         std::string text;
         int time_seconds, time_miliseconds;
@@ -38,33 +102,12 @@ namespace moviesubs{
                     *out << text[i];
                     i++;
                 }
-                *out << ':';
                 time_seconds = (text[i+1] - 48) * 10 + text[i+2] - 48;
                 i += 3;
                 time_miliseconds = (text[i+1] - 48) * 100 + (text[i+2]-48) * 10 + text[i+3] - 48;
                 i += 3;
 
-                if(time_miliseconds + delay < 1000) {
-                    if(time_seconds < 10){
-                        *out << '0' + std::to_string(time_seconds) + ','+ std::to_string(time_miliseconds+delay);
-                    }else if(time_miliseconds < 100){
-                        *out <<std::to_string(time_seconds) + ",0"+ std::to_string(time_miliseconds+delay);
-                    }else if(time_miliseconds < 10){
-                        *out <<std::to_string(time_seconds) + ",00"+ std::to_string(time_miliseconds+delay);
-                    }else *out <<std::to_string(time_seconds) + ','+ std::to_string(time_miliseconds+delay);
-                }
-
-                else{
-                    time_seconds += (time_miliseconds + delay) / 1000;
-                    time_miliseconds = (time_miliseconds + delay) % 1000;
-                    if(time_seconds < 10){
-                        *out << '0' + std::to_string(time_seconds) + ','+ std::to_string(time_miliseconds);
-                    }else if(time_miliseconds < 100){
-                        *out <<std::to_string(time_seconds) + ",0"+ std::to_string(time_miliseconds);
-                    }else if(time_miliseconds < 10){
-                        *out <<std::to_string(time_seconds) + ",00"+ std::to_string(time_miliseconds);
-                    }else *out <<std::to_string(time_seconds) + ','+ std::to_string(time_miliseconds);
-                }
+                ConvertTimeToCorrectFormat(delay, time_seconds, time_miliseconds, out);
             }
             else *out << text[i];
         }
