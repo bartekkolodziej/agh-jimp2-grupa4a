@@ -7,7 +7,10 @@
 namespace moviesubs{
 
     void MicroDvdSubtitles::IfNegative(int delay, int framerate) {
-        if(delay < 0 && framerate << 0) throw NegativeFrameAfterShift();
+        if(delay < 0 || framerate < 0) throw NegativeFrameAfterShift();
+    }
+    void MicroDvdSubtitles::IfInvalidArgument(std::stringstream *in){
+        if((*in).str() == "") throw std::invalid_argument("elo");
     }
 
     void MicroDvdSubtitles::IfEndEarlierThanStart(std::stringstream *in){
@@ -32,12 +35,38 @@ namespace moviesubs{
                 }
             }
         }
-        if(frame_end < frame_start) throw SubtitleEndBeforeStart(line);
+        if(frame_end < frame_start) throw SubtitleEndBeforeStart(line, in);
+    }
+
+    void MicroDvdSubtitles::IfIncompleteLine(std::stringstream *in) {
+
+        }
+
+
+    std::string ReturnLineWithError(int line, std::stringstream *in){
+        std::string text, text_to_return ="";
+        text = (*in).str();
+        int current_line = 1;
+
+        for(int i = 0; i < text.length(); i++){
+            if(text[i] == '\n') current_line++;
+            if(current_line == line){
+                i++;
+                while(text[i] != '\n'){
+                    text_to_return += text[i];
+                    i++;
+                }
+            }
+        }
+        return text_to_return;
     }
 
     void MicroDvdSubtitles::ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out){
+        IfIncompleteLine(in);
+        IfInvalidArgument(in);
         IfNegative(delay, framerate);
         IfEndEarlierThanStart(in);
+
 
         std::string text, frame;
         text = (*in).str();

@@ -8,6 +8,8 @@
 #include <string>
 #include <sstream>
 #include <stdexcept>
+#include <regex>
+
 
 
 
@@ -44,8 +46,13 @@ namespace moviesubs {
         virtual void ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out);
         void IfNegative(int delay, int framerate);
         void IfEndEarlierThanStart(std::stringstream *in);
+        void IfIncompleteLine(std::stringstream *in);
+        void IfInvalidArgument(std::stringstream *in);
+
 
     };
+
+    std::string ReturnLineWithError(int line, std::stringstream *in);
 
     class MovieSubtitlesError : public std::runtime_error{
     public:
@@ -63,9 +70,13 @@ namespace moviesubs {
 
     class SubtitleEndBeforeStart : public MovieSubtitlesError{
     public:
-        SubtitleEndBeforeStart(const int &line) :  MovieSubtitlesError("Subtitles end before start"){};
+        SubtitleEndBeforeStart(const int &line, std::stringstream *in) :
+                line_{line},
+                MovieSubtitlesError("At line " + std::to_string(line) + ": " + ReturnLineWithError(line, in) ) {};
+
+
         ~SubtitleEndBeforeStart(){};
-        int LineAt() const{};
+        int LineAt() const{ return line_;};
         int line_;
     };
 
