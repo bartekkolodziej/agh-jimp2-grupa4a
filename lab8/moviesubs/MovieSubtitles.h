@@ -22,6 +22,8 @@ namespace moviesubs {
 
     };
 
+    std::string ReturnLineWithError(int line, std::stringstream *in);
+
     class SubRipSubtitles : public MovieSubtitles {
     public:
         SubRipSubtitles() : MovieSubtitles() {};
@@ -45,39 +47,42 @@ namespace moviesubs {
 
     class MovieSubtitlesError : public std::runtime_error{
     public:
-        MovieSubtitlesError();
-        MovieSubtitlesError(std::string error_message);
+        MovieSubtitlesError(std::string error_message) : std::runtime_error(error_message){};
 
-        virtual ~MovieSubtitlesError();
+        virtual ~MovieSubtitlesError(){};
     };
+
 
     class WrongFramerateException : public std::invalid_argument {
     public:
         WrongFramerateException(const int &framerate) : invalid_argument{"Framerate must be higher than 0."}, framerate_{framerate}{};
         int framerate_;
-        ~WrongFramerateException();
+        ~WrongFramerateException(){};
 
     };
 
     class NegativeFrameAfterShift : public  MovieSubtitlesError{
     public:
-        NegativeFrameAfterShift() : MovieSubtitlesError{}{};
-        ~NegativeFrameAfterShift();
+        NegativeFrameAfterShift() : MovieSubtitlesError{"Negative frame after shift"}{};
+        ~NegativeFrameAfterShift(){};
     };
 
     class SubtitleEndBeforeStart : public MovieSubtitlesError{
     public:
-        SubtitleEndBeforeStart(const int &line) :  MovieSubtitlesError{}, line_{line}{};
-        ~SubtitleEndBeforeStart();
+        SubtitleEndBeforeStart(const std::pair<int,int> &line, std::stringstream *in) :
+                line_{line.first},
+                MovieSubtitlesError("At line " + std::to_string(line.first) + ": " + ReturnLineWithError(line.second, in) ) {};
+        ~SubtitleEndBeforeStart(){};
         int LineAt() const;
         int line_;
     };
 
     class InvalidSubtitleLineFormat : public MovieSubtitlesError{
     public:
-        InvalidSubtitleLineFormat() :  MovieSubtitlesError{}{};
-        ~InvalidSubtitleLineFormat();
+        InvalidSubtitleLineFormat() :  MovieSubtitlesError("Invalid subtitle line format"){};
+        ~InvalidSubtitleLineFormat(){};
     };
+
 }
 
 
