@@ -38,9 +38,31 @@ namespace moviesubs{
         if(frame_end < frame_start) throw SubtitleEndBeforeStart(line, in);
     }
 
-    void MicroDvdSubtitles::IfIncompleteLine(std::stringstream *in) {
+    void MicroDvdSubtitles::IfIncompleteLine(std::stringstream *in) { // tutaj mozna bylo uzyc regexa, ale nie umiem
+        std::string text;
+        int brackets = 0;
+        text = (*in).str();
+
+        for(int i = 0; i < text.length(); i++) {
+            if (brackets < 4) {
+                if (text[i] == '{') {
+                    if (!isdigit(text[i + 1])) throw InvalidSubtitleLineFormat();
+                    brackets++;
+                    i++;
+                    while (text[i] != '}') {
+                        if (!isdigit(text[i])) throw InvalidSubtitleLineFormat();
+                        i++;
+                    }
+                }
+                if (text[i] == '}') brackets++;
+            }
+                if (text[i] == '\n') {
+                    if (brackets != 4) throw InvalidSubtitleLineFormat();
+                    else brackets = 0;
+                }
 
         }
+    }
 
 
     std::string ReturnLineWithError(int line, std::stringstream *in){
@@ -116,9 +138,65 @@ namespace moviesubs{
         }
     }
 
+    int SubRipSubtitles::ConvertTimeToMiliseconds(std::string time){
+        int time_miliseconds = 0;
+        std::string hours="", minutes="", seconds="", miliseconds="";
+        hours += time[0];
+        hours += time[1];
+
+        minutes += time[3];
+        minutes += time[4];
+
+        seconds += time[6];
+        seconds += time[7];
+
+        miliseconds += time[9];
+        miliseconds += time[10];
+        miliseconds += time[11];
+
+        time_miliseconds = atoi(hours.c_str())*3600000 + atoi(minutes.c_str())*60000 + atoi(seconds.c_str()) * 1000 + atoi(miliseconds.c_str());
+
+        return time_miliseconds;
+    }
+
+
+    void SubRipSubtitles::IfNegative(int delay, int framerate){
+        if(delay < 0 || framerate < 0) throw NegativeFrameAfterShift();
+    }
+
+    void SubRipSubtitles::IfEndEarlierThanStart(std::stringstream *in){
+        std::string text, time_start, time_end;
+        int line = 1;
+        text = (*in).str();
+        for(int i = 0; i < text.length(); i++){
+            if(text[i] == '\n' && text[i+1] == '\n') line ++;
+            if(text[i] == '\n' && isdigit(text[i+1]) && isdigit(text[i+2])){
+                time_start = "";
+                i++;
+                while(text[i+1] != '-'){
+                    time_start += text[i];
+                    i++;
+                }
+            }
+            if(text[i] == '-' && text[i+1] == '-' && text[i+2] == '>'){
+                time_end = "";
+                i += 4;
+                while(text[i] != '\n'){
+                    time_end += text[i];
+                    i++;
+                }
+                if(ConvertTimeToMiliseconds(time_start) > ConvertTimeToMiliseconds(time_end)) throw SubtitleEndBeforeStart(line, in);
+            }
+
+        }
+    }
 
 
     void SubRipSubtitles::ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out){
+        IfNegative(delay, framerate);
+        IfEndEarlierThanStart(in);
+
+
         std::string text;
         int time_seconds, time_miliseconds;
         text = (*in).str();

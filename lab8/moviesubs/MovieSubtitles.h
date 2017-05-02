@@ -34,6 +34,10 @@ namespace moviesubs {
 
         virtual void ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out);
         void ConvertTimeToCorrectFormat(int delay, int time_second, int time_milisecond, std::stringstream *out);
+        int ConvertTimeToMiliseconds(std::string time);
+        void IfNegative(int delay, int framerate);
+        void IfEndEarlierThanStart(std::stringstream *in);
+
 
     };
 
