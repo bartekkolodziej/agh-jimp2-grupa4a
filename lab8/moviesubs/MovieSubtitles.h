@@ -37,8 +37,10 @@ namespace moviesubs {
         int ConvertTimeToMiliseconds(std::string time);
         void IfNegative(int delay, int framerate);
         void IfEndEarlierThanStart(std::stringstream *in);
-
-
+        void IfIncompleteLine(std::stringstream *in);
+        void IfInvalidArgument(std::stringstream *in);
+        void IfFramesOutOfOrder(std::stringstream *in);
+        
     };
 
     class MicroDvdSubtitles : public MovieSubtitles {

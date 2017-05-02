@@ -71,13 +71,18 @@ namespace moviesubs{
         int current_line = 1;
 
         for(int i = 0; i < text.length(); i++){
-            if(text[i] == '\n') current_line++;
+            if(text[i] == '\n' && text[i+1] == '{') current_line++;
+            if(isdigit(text[i]) && text[i+1] == '\n' && isdigit(text[i+2]) && i != 0) {
+                current_line++;
+                i++;
+            }
             if(current_line == line){
                 i++;
                 while(text[i] != '\n'){
                     text_to_return += text[i];
                     i++;
                 }
+                break;
             }
         }
         return text_to_return;
@@ -191,8 +196,56 @@ namespace moviesubs{
         }
     }
 
+    void SubRipSubtitles::IfInvalidArgument(std::stringstream *in){
+        if((*in).str() == "") throw std::invalid_argument("elo");
+    }
+
+    void SubRipSubtitles::IfIncompleteLine(std::stringstream *in){ // tutaj tez monza bylo uzyc regexa
+        std::string text;
+        text = (*in).str();
+        for(int i=0; i<text.length(); i++){
+            if(isdigit(text[i]) && text[i+1] == '\n' && isdigit(text[i+2])){
+                i += 2;
+                while(text[i+2] != ',') {
+                        if (!isdigit(text[i]) || !isdigit(text[i+1])) throw InvalidSubtitleLineFormat();
+                        i += 3;
+                    }
+                if (!isdigit(text[i]) || !isdigit(text[i+1])) throw InvalidSubtitleLineFormat();
+                i +=3;
+                if (!isdigit(text[i]) || !isdigit(text[i+1]) || !isdigit(text[i+2])) throw InvalidSubtitleLineFormat();
+                i += 3;
+                if (text[i] != ' ' || text[i+1] != '-' || text[i+2] != '-' || text[i+3] != '>' || text[i+4] != ' ') throw InvalidSubtitleLineFormat();
+                i += 5;
+                while(text[i+2] != ',') {
+                    if (!isdigit(text[i]) || !isdigit(text[i+1])) throw InvalidSubtitleLineFormat();
+                    i += 3;
+                }
+                if (!isdigit(text[i]) || !isdigit(text[i+1])) throw InvalidSubtitleLineFormat();
+                i +=3;
+                if (!isdigit(text[i]) || !isdigit(text[i+1]) || !isdigit(text[i+2])) throw InvalidSubtitleLineFormat();
+
+            }
+            }
+        }
+
+
+
+    void SubRipSubtitles::IfFramesOutOfOrder(std::stringstream *in){
+        std::string text;
+        int current_line = 1;
+        text = (*in).str();
+        for(int i=0; i<text.length(); i++){
+            if(i+5> text.length()) break;
+            if(text[i] == '\n' && text[i+1] == '\n' && (text [i+2] - 48) != (current_line + 1)) throw OutOfOrderFrames();
+            if(text[i] == '\n' && text[i+1] == '\n' && (text [i+2] - 48) == (current_line + 1)) current_line++;
+        }
+    }
+    
 
     void SubRipSubtitles::ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out){
+        IfInvalidArgument(in);
+        IfIncompleteLine(in);
+        IfFramesOutOfOrder(in);
         IfNegative(delay, framerate);
         IfEndEarlierThanStart(in);
 
