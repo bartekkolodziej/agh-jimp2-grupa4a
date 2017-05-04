@@ -12,14 +12,20 @@
 
 
 
+#include <string>
+#include <sstream>
+#include <stdexcept>
+#include <regex>
+
+
+
 
 namespace moviesubs {
 
     class MovieSubtitles {
     public:
         MovieSubtitles(){};
-
-        ~MovieSubtitles(){};
+        virtual ~MovieSubtitles(){};
 
         virtual void ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out){};
 
@@ -40,13 +46,12 @@ namespace moviesubs {
         void IfIncompleteLine(std::stringstream *in);
         void IfInvalidArgument(std::stringstream *in);
         void IfFramesOutOfOrder(std::stringstream *in);
-        
+
     };
 
     class MicroDvdSubtitles : public MovieSubtitles {
     public:
         MicroDvdSubtitles() : MovieSubtitles() {};
-
         ~MicroDvdSubtitles(){};
 
         virtual void ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out);

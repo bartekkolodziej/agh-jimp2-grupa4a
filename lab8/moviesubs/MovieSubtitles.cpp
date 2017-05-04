@@ -10,7 +10,7 @@ namespace moviesubs{
         if(delay < 0 || framerate < 0) throw NegativeFrameAfterShift();
     }
     void MicroDvdSubtitles::IfInvalidArgument(std::stringstream *in){
-        if((*in).str() == "") throw std::invalid_argument("elo");
+        if((*in).str() == "") throw std::invalid_argument("Invalid argument");
     }
 
     void MicroDvdSubtitles::IfEndEarlierThanStart(std::stringstream *in){
@@ -38,29 +38,17 @@ namespace moviesubs{
         if(frame_end < frame_start) throw SubtitleEndBeforeStart(line, in);
     }
 
-    void MicroDvdSubtitles::IfIncompleteLine(std::stringstream *in) { // tutaj mozna bylo uzyc regexa, ale nie umiem
-        std::string text;
-        int brackets = 0;
+    void MicroDvdSubtitles::IfIncompleteLine(std::stringstream *in) {
+        std::string text, current_line = "";
         text = (*in).str();
+        std::regex pattern(R"(\{\d+\}\{\d+\})");
 
         for(int i = 0; i < text.length(); i++) {
-            if (brackets < 4) {
-                if (text[i] == '{') {
-                    if (!isdigit(text[i + 1])) throw InvalidSubtitleLineFormat();
-                    brackets++;
-                    i++;
-                    while (text[i] != '}') {
-                        if (!isdigit(text[i])) throw InvalidSubtitleLineFormat();
-                        i++;
-                    }
-                }
-                if (text[i] == '}') brackets++;
+            current_line += text[i];
+            if(text[i] == '\n') {
+                if(!std::regex_search(current_line, pattern)) throw InvalidSubtitleLineFormat();
+                current_line = "";
             }
-                if (text[i] == '\n') {
-                    if (brackets != 4) throw InvalidSubtitleLineFormat();
-                    else brackets = 0;
-                }
-
         }
     }
 
@@ -89,8 +77,8 @@ namespace moviesubs{
     }
 
     void MicroDvdSubtitles::ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out){
-        IfIncompleteLine(in);
         IfInvalidArgument(in);
+        IfIncompleteLine(in);
         IfNegative(delay, framerate);
         IfEndEarlierThanStart(in);
 
@@ -192,41 +180,26 @@ namespace moviesubs{
                 }
                 if(ConvertTimeToMiliseconds(time_start) > ConvertTimeToMiliseconds(time_end)) throw SubtitleEndBeforeStart(line, in);
             }
-
         }
     }
 
     void SubRipSubtitles::IfInvalidArgument(std::stringstream *in){
-        if((*in).str() == "") throw std::invalid_argument("elo");
+        if((*in).str() == "") throw std::invalid_argument("Invalid argument");
     }
 
-    void SubRipSubtitles::IfIncompleteLine(std::stringstream *in){ // tutaj tez monza bylo uzyc regexa
-        std::string text;
+    void SubRipSubtitles::IfIncompleteLine(std::stringstream *in){
+        std::string text, current_line = "";
         text = (*in).str();
-        for(int i=0; i<text.length(); i++){
-            if(isdigit(text[i]) && text[i+1] == '\n' && isdigit(text[i+2])){
-                i += 2;
-                while(text[i+2] != ',') {
-                        if (!isdigit(text[i]) || !isdigit(text[i+1])) throw InvalidSubtitleLineFormat();
-                        i += 3;
-                    }
-                if (!isdigit(text[i]) || !isdigit(text[i+1])) throw InvalidSubtitleLineFormat();
-                i +=3;
-                if (!isdigit(text[i]) || !isdigit(text[i+1]) || !isdigit(text[i+2])) throw InvalidSubtitleLineFormat();
-                i += 3;
-                if (text[i] != ' ' || text[i+1] != '-' || text[i+2] != '-' || text[i+3] != '>' || text[i+4] != ' ') throw InvalidSubtitleLineFormat();
-                i += 5;
-                while(text[i+2] != ',') {
-                    if (!isdigit(text[i]) || !isdigit(text[i+1])) throw InvalidSubtitleLineFormat();
-                    i += 3;
-                }
-                if (!isdigit(text[i]) || !isdigit(text[i+1])) throw InvalidSubtitleLineFormat();
-                i +=3;
-                if (!isdigit(text[i]) || !isdigit(text[i+1]) || !isdigit(text[i+2])) throw InvalidSubtitleLineFormat();
+        std::regex pattern(R"(\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3})");
 
-            }
+        for(int i=1; i<text.length(); i++){
+            current_line += text[i];
+            if(isdigit(text[i]) && text[i+1] == '\n' && isdigit(text[i+2])){
+                if(!std::regex_search(current_line, pattern)) throw InvalidSubtitleLineFormat();
+                current_line = "";
             }
         }
+    }
 
 
 
@@ -240,7 +213,7 @@ namespace moviesubs{
             if(text[i] == '\n' && text[i+1] == '\n' && (text [i+2] - 48) == (current_line + 1)) current_line++;
         }
     }
-    
+
 
     void SubRipSubtitles::ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out){
         IfInvalidArgument(in);
@@ -256,8 +229,6 @@ namespace moviesubs{
 
         for(int i = 0; i < text.length(); i++){
             if((text[i] == '\n' && isdigit(text[i+1])) || (text[i] == '-' && text[i+1] == '-')){
-                time_seconds = 0;
-                time_miliseconds = 0;
                 while(text[i+3] != ',') {
                     *out << text[i];
                     i++;
