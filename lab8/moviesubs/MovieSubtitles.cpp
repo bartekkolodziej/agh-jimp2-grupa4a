@@ -226,7 +226,7 @@ namespace moviesubs{
         std::string text;
         int time_seconds, time_miliseconds;
         text = (*in).str();
-
+//
         for(int i = 0; i < text.length(); i++){
             if((text[i] == '\n' && isdigit(text[i+1])) || (text[i] == '-' && text[i+1] == '-')){
                 while(text[i+3] != ',') {
