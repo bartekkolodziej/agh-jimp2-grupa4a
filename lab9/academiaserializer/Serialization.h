@@ -1,0 +1,9 @@
+//
+// Created by bartek on 09.05.17.
+//
+
+#ifndef JIMP_EXERCISES_SERIALIZATION_H
+#define JIMP_EXERCISES_SERIALIZATION_H
+
+
+#endif //JIMP_EXERCISES_SERIALIZATION_H
