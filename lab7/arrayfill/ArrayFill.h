@@ -7,14 +7,18 @@
 
 #include <iostream>
 #include <vector>
-#include <memory>
 #include <random>
+#include <memory>
+
+
 namespace arrays {
+
 
     class ArrayFill {
     public:
-        virtual int Value(int index) const =0;
+        virtual int Value(int index) const = 0;
     };
+
 
     void FillArray(size_t size, const ArrayFill &filler, std::vector<int> *v);
 
@@ -37,28 +41,32 @@ namespace arrays {
     private:
         int offset_;
         int step_;
+
     };
-    class SquaredFill : public ArrayFill {
+
+
+    class SquaredFill : public ArrayFill{
     public:
         SquaredFill(int a = 1, int b = 0);
 
         virtual int Value(int index) const override;
 
     private:
-        int a_;
-        int b_;
-
-    void FillArray(size_t size, const ArrayFill &filler, std::vector<int> *v);
+        int a_, b_;
     };
-    class RandomFill : public ArrayFill {
+
+    class RandomFill : public ArrayFill{
     public:
-        RandomFill(std::unique_ptr<std::default_random_engine> a, std::unique_ptr<std::uniform_int_distribution<int>> b);
-        virtual int Value(int index) const override;
-    private:
-        std::unique_ptr<std::default_random_engine> a_;
-        std::unique_ptr<std::uniform_int_distribution<int>> b_;
+        RandomFill(std::unique_ptr<std::default_random_engine> p1, std::unique_ptr<std::uniform_int_distribution<int>> p2);
 
-        void FillArray(size_t size, const ArrayFill &filler, std::vector<int> *v);
+        virtual int Value(int index) const override;
+
+    private:
+        std::unique_ptr<std::default_random_engine> p1;
+        std::unique_ptr<std::uniform_int_distribution<int>> p2;
+
     };
+
 }
+
 #endif //JIMP_EXERCISES_ARRAYFILL_H
