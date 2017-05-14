@@ -36,49 +36,97 @@ namespace academia {
         
 
     };
-
-
+    class JsonSerializer;
+    class XmlSerializer;
     class Serializable {
     public:
-        virtual void Serialize(Serializer* serializer) = 0;
+        virtual void Serialize(Serializer* serializer) const = 0;
+        virtual void Serialize(JsonSerializer* serializer) const = 0;
+        virtual void Serialize(XmlSerializer* serializer) const = 0;
 
     };
     
     class JsonSerializer{
     public:
-        JsonSerializer(std::stringstream* out){};
+
+        JsonSerializer(std::ostream* out){ std::ostream * output = out; }
+
+        void IntegerField(const std::string &field_name, int value);
+
+        void DoubleField(const std::string &field_name, double value);
+
+        void StringField(const std::string &field_name, const std::string &value);
+
+        void BooleanField(const std::string &field_name, bool value);
+
+        void SerializableField(const std::string &field_name, const Serializable &value);
+
+        void ArrayField(const std::string &field_name, const std::vector <std::reference_wrapper<const Serializable>> &value);
+
+        //void Header()= 0;
+
+        //void Footer()= 0;
+
+        ~JsonSerializer();
+
+        std::ostream* output;
     };
     
     class XmlSerializer{
     public:
-        XmlSerializer(std::stringstream* out){};
+        XmlSerializer(std::ostream* out){std::ostream * output = out;}
+
+        void IntegerField(const std::string &field_name, int value);
+
+        void DoubleField(const std::string &field_name, double value);
+
+        void StringField(const std::string &field_name, const std::string &value);
+
+        void BooleanField(const std::string &field_name, bool value);
+
+        void SerializableField(const std::string &field_name, const Serializable &value);
+
+        void ArrayField(const std::string &field_name, const std::vector <std::reference_wrapper<const Serializable>> &value);
+
+        void Header(const std::string &object_name);
+
+        void Footer(const std::string &object_name);
+
+        ~XmlSerializer();
+
+        std::ostream* output;
     };
 
     class Room : public Serializable{
     public:
+
         enum class Type{
             COMPUTER_LAB,
             LECTURE_HALL,
             CLASSROOM
         };
-        
-        std::string name;
-        int id;
-        Type type;
 
-        std::string Type(Type type) {
-            switch(type) {
+        std::string Type(Type type) const {
+            switch (type) {
                 case Type::COMPUTER_LAB:
                     return "COMPUTER_LAB";
                 case Type::LECTURE_HALL:
                     return "LECTURE_HALL";
                 case Type::CLASSROOM:
                     return "CLASSROOM";
-                    
+
             }
         }
 
-        void Serialize(Serializer* serializer){
+
+        Room(int id, std::string name,Type type);
+        Room(){};
+
+        std::string name;
+        int id;
+        Type type;
+
+        void Serialize(Serializer* serializer) const{
             serializer->Header("Room");
             serializer->IntegerField("id: ", id);
             serializer->StringField("name: ",name);
@@ -86,15 +134,10 @@ namespace academia {
             serializer->Footer("Room");
         };
 
-        void Serialize(JsonSerializer* serializer){};
-        void Serialize(XmlSerializer* serializer){};
-        
-        Room(int id, std::string name,Type type){
-            this->id = id;
-            this->name = name;
-            this->type = type;
-        };
-        Room(){};
+        void Serialize(JsonSerializer* serializer)const;
+        void Serialize(XmlSerializer* serializer)const;
+
+        ~Room();
     };
 
     class Building : public Serializable{
@@ -104,14 +147,10 @@ namespace academia {
         std::vector<Room> rooms;
         
 
-        void Serialize(JsonSerializer* serializer){};
-        void Serialize(XmlSerializer* serializer){};
+        void Serialize(JsonSerializer* serializer);
+        void Serialize(XmlSerializer* serializer);
         
-        Building(int id, std::string name, std::initializer_list<Room> rooms){
-            this->id = id;
-            this->name = name;
-            for(auto x: rooms) this->rooms.push_back(x);
-        };
+        Building(int id, std::string name, std::initializer_list<Room> rooms);
     };
 
 }
