@@ -10,6 +10,7 @@
 #include <iostream>
 #include <functional>
 #include <experimental/optional>
+#include <sstream>
 
 namespace academia {
 
@@ -47,12 +48,15 @@ namespace academia {
         virtual void Serialize(JsonSerializer* serializer) const = 0;
         virtual void Serialize(XmlSerializer* serializer) const = 0;
 
+
     };
     
     class JsonSerializer{
     public:
 
-        JsonSerializer(std::ostream* out){ std::ostream * output = out; }
+        JsonSerializer(std::stringstream* out){
+            this->output = out;
+        }
 
         void IntegerField(const std::string &field_name, int value);
 
@@ -70,14 +74,16 @@ namespace academia {
 
         //void Footer()= 0;
 
-        ~JsonSerializer();
+        ~JsonSerializer(){};
 
-        std::ostream* output;
+        std::stringstream* output;
     };
     
     class XmlSerializer{
     public:
-        XmlSerializer(std::ostream* out){std::ostream * output = out;}
+        XmlSerializer(std::stringstream* out){
+            this->output = out;
+        }
 
         void IntegerField(const std::string &field_name, int value);
 
@@ -89,15 +95,16 @@ namespace academia {
 
         void SerializableField(const std::string &field_name, const Serializable &value);
 
-        void ArrayField(const std::string &field_name, const std::vector <std::reference_wrapper<const Serializable>> &value);
+        void ArrayField(const std::string &field_name, const std::vector<std::reference_wrapper<const Serializable>> &value);
 
         void Header(const std::string &object_name);
 
         void Footer(const std::string &object_name);
 
-        ~XmlSerializer();
+        ~XmlSerializer(){};
 
-        std::ostream* output;
+
+        std::stringstream* output;
     };
 
     class Room : public Serializable{
@@ -109,7 +116,7 @@ namespace academia {
             CLASSROOM
         };
 
-        std::string Type(Type type) const {
+        std::string Typ(Type type) const {
             switch (type) {
                 case Type::COMPUTER_LAB:
                     return "COMPUTER_LAB";
@@ -133,29 +140,29 @@ namespace academia {
             serializer->Header("Room");
             serializer->IntegerField("id: ", id);
             serializer->StringField("name: ",name);
-            serializer->StringField("type: ", Type(type));
+            serializer->StringField("type: ", Typ(type));
             serializer->Footer("Room");
         };
 
         void Serialize(JsonSerializer* serializer)const;
         void Serialize(XmlSerializer* serializer)const;
 
-        ~Room();
+        ~Room(){};
     };
 
     class Building : public Serializable {
     public:
         std::string name;
         int id;
-        std::vector<std::reference_wrapper<const Serializable>> rooms;
-        
+        std::vector<Room> rooms;
 
-        void Serialize(JsonSerializer* serializer);
-        void Serialize(XmlSerializer* serializer);
+        void Serialize(Serializer* serializer) const  {};
+        void Serialize(JsonSerializer* serializer) const;
+        void Serialize(XmlSerializer* serializer) const;
         
-        Building(int id, std::string name, std::initializer_list<Room> rooms);
-        Building();
-        ~Building();
+        Building(int id, std::string name, std::vector<Room> rooms);
+        Building(){};
+        ~Building(){};
     };
 
     class BuildingRepository : public Serializable{
@@ -172,7 +179,7 @@ namespace academia {
 
         std::vector<std::reference_wrapper<const Serializable>> buildings;
 
-        ~BuildingRepository();
+        ~BuildingRepository(){};
     };
 
 }
