@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 
 namespace academia {
 
@@ -61,7 +62,7 @@ namespace academia {
 
         void SerializableField(const std::string &field_name, const Serializable &value);
 
-        void ArrayField(const std::string &field_name, const std::vector <std::reference_wrapper<const Serializable>> &value);
+        void ArrayField(const std::string &field_name,const std::vector <std::reference_wrapper<const Serializable>> &value);
 
         //void Header()= 0;
 
@@ -144,13 +145,27 @@ namespace academia {
     public:
         std::string name;
         int id;
-        std::vector<Room> rooms;
+        std::vector<std::reference_wrapper<const Serializable>> rooms;
         
 
         void Serialize(JsonSerializer* serializer);
         void Serialize(XmlSerializer* serializer);
         
         Building(int id, std::string name, std::initializer_list<Room> rooms);
+    };
+
+    class BuildingRepository : public Serializable{
+
+        BuildingRepository( std::initializer_list<Building> buildings);
+
+        void Add(Building building);
+
+        void StoreAll(JsonSerializer* serializer)const;
+        void StoreAll(XmlSerializer* serializer)const;
+
+        std::experimental::optional<Building> operator[](int id);
+
+        std::vector<std::reference_wrapper<const Serializable>> buildings;
     };
 
 }
