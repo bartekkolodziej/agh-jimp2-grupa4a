@@ -8,6 +8,8 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <functional>
+#include <experimental/optional>
 
 namespace academia {
 
@@ -141,7 +143,7 @@ namespace academia {
         ~Room();
     };
 
-    class Building : public Serializable{
+    class Building : public Serializable {
     public:
         std::string name;
         int id;
@@ -152,13 +154,16 @@ namespace academia {
         void Serialize(XmlSerializer* serializer);
         
         Building(int id, std::string name, std::initializer_list<Room> rooms);
+        Building();
+        ~Building();
     };
 
     class BuildingRepository : public Serializable{
 
         BuildingRepository( std::initializer_list<Building> buildings);
+        BuildingRepository();
 
-        void Add(Building building);
+        void Add(const Building &building);
 
         void StoreAll(JsonSerializer* serializer)const;
         void StoreAll(XmlSerializer* serializer)const;
@@ -166,6 +171,8 @@ namespace academia {
         std::experimental::optional<Building> operator[](int id);
 
         std::vector<std::reference_wrapper<const Serializable>> buildings;
+
+        ~BuildingRepository();
     };
 
 }

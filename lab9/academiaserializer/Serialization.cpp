@@ -15,17 +15,20 @@ namespace academia {
     };
 
 
-    Building::Building(int id, std::string name, std::initializer_list<Room> rooms){
+    Building::Building(int id, std::string name, std::initializer_list<Room> rooms) {
         this->id = id;
         this->name = name;
-        for(auto x: rooms) {
-            std::reference_wrapper<const Serializable> room=std::cref<const Serializable>(x);
+        for (auto x: rooms) {
+            std::reference_wrapper<const Serializable> room = std::cref<const Serializable>(x);
             this->rooms.push_back(room);
         }
     }
 
+    //ERROR!
+
     BuildingRepository::BuildingRepository( std::initializer_list<Building> buildings){
-        for(auto x: buildings) {
+        Building x{};
+        for (x : buildings) {
             std::reference_wrapper<const Serializable> building=std::cref<const Serializable>(x);
             this->buildings.push_back(building);
         }
@@ -33,15 +36,21 @@ namespace academia {
 
     // BuildingRepository functions:
 
-    void BuildingRepository::Add(Building building){
+    void BuildingRepository::Add(const Building &building){
         std::reference_wrapper<const Serializable> new_building=std::cref<const Serializable>(building);
         this->buildings.push_back(new_building);
     }
 
+    //ERROR!
+
     std::experimental::optional<Building> BuildingRepository::operator[](int id){
 
+        std::experimental::optional<Building> new_building;
         for(auto &building : buildings){
-            if ((building.id == id)) return building;
+            if (building.id== id) {
+                new_building.emplace(building);
+                return new_building;
+            }
         }
 
     }
@@ -102,10 +111,6 @@ namespace academia {
         value.Serialize(&serializer);
     }
 
-    // Not working whatever i do.
-    //Can't access the content of the vector.
-    //!!!
-
     void JsonSerializer::ArrayField(const std::string &field_name, const std::vector<std::reference_wrapper<const Serializable>> &value) {
 
         bool IsFirst = true;
@@ -120,8 +125,6 @@ namespace academia {
         }
         (*output) << "]";
     }
-
-    //!!!
 
     //Xml Serialization:
     //1. Serializators:
@@ -183,9 +186,6 @@ namespace academia {
         value.Serialize(&serializer);
     }
 
-    // Not working whatever i do.
-    //Can't access the content of the vector.
-    //!!!
 
     void XmlSerializer::ArrayField(const std::string &field_name, const std::vector<std::reference_wrapper<const Serializable>> &value) {
 
@@ -198,6 +198,5 @@ namespace academia {
         (*output)<< "<\\rooms>";
     }
 
-    //!!!
 
 }
