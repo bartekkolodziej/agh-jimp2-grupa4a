@@ -79,11 +79,7 @@ namespace academia {
     }
 
     void Building::Serialize(JsonSerializer* serializer) const{
-        std::vector<std::reference_wrapper<const Serializable>> rooms_wrapped;
-        for (auto x: rooms) {
-            std::reference_wrapper<const Serializable> room = std::cref<const Serializable>(x);
-            rooms_wrapped.push_back(room);
-        }
+        std::vector<std::reference_wrapper<const Serializable>> rooms_wrapped(rooms.begin(), rooms.end());
         (*serializer->output) << "{";
         serializer->IntegerField("id", id);
         (*serializer->output) << ", ";
@@ -145,12 +141,7 @@ namespace academia {
     }
 
     void Building::Serialize(XmlSerializer* serializer) const {
-        std::vector<std::reference_wrapper<const Serializable>> rooms_wrapped;
-        for (auto x: rooms) {
-            std::reference_wrapper<const Serializable> room = std::cref<const Serializable>(x);
-            rooms_wrapped.emplace_back(room);
-        }
-
+        std::vector<std::reference_wrapper<const Serializable>> rooms_wrapped(rooms.begin(), rooms.end());
         serializer->Header("building");
         serializer->IntegerField("id", id);
         serializer->StringField("name",name);
