@@ -1,6 +1,9 @@
 //
 // Created by bartek on 01.05.17.
 //
+//
+// Created by bartek on 01.05.17.
+//
 
 #ifndef JIMP_EXERCISES_MOVIESUBTITLES_H
 #define JIMP_EXERCISES_MOVIESUBTITLES_H
@@ -8,6 +11,16 @@
 #include <string>
 #include <sstream>
 #include <stdexcept>
+#include <regex>
+
+
+
+#include <string>
+#include <sstream>
+#include <stdexcept>
+#include <regex>
+
+
 
 
 namespace moviesubs {
@@ -15,14 +28,12 @@ namespace moviesubs {
     class MovieSubtitles {
     public:
         MovieSubtitles(){};
-
-        ~MovieSubtitles(){};
+        virtual ~MovieSubtitles(){};
 
         virtual void ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out){};
 
-    };
 
-    std::string ReturnLineWithError(int line, std::stringstream *in);
+    };
 
     class SubRipSubtitles : public MovieSubtitles {
     public:
@@ -31,19 +42,31 @@ namespace moviesubs {
         ~SubRipSubtitles(){};
 
         virtual void ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out);
+        void ConvertTimeToCorrectFormat(int delay, int time_second, int time_milisecond, std::stringstream *out);
+        int ConvertTimeToMiliseconds(std::string time);
+        void IfNegative(int delay, int framerate);
+        void IfEndEarlierThanStart(std::stringstream *in);
+        void IfIncompleteLine(std::stringstream *in);
+        void IfInvalidArgument(std::stringstream *in);
+        void IfFramesOutOfOrder(std::stringstream *in);
 
     };
 
     class MicroDvdSubtitles : public MovieSubtitles {
     public:
         MicroDvdSubtitles() : MovieSubtitles() {};
-
         ~MicroDvdSubtitles(){};
 
         virtual void ShiftAllSubtitlesBy(int delay, int framerate, std::stringstream *in, std::stringstream *out);
+        void IfNegative(int delay, int framerate);
+        void IfEndEarlierThanStart(std::stringstream *in);
+        void IfIncompleteLine(std::stringstream *in);
+        void IfInvalidArgument(std::stringstream *in);
+
 
     };
 
+    std::string ReturnLineWithError(int line, std::stringstream *in);
 
     class MovieSubtitlesError : public std::runtime_error{
     public:
@@ -53,27 +76,21 @@ namespace moviesubs {
     };
 
 
-    class WrongFramerateException : public std::invalid_argument {
-    public:
-        WrongFramerateException(const int &framerate) : invalid_argument{"Framerate must be higher than 0."}, framerate_{framerate}{};
-        int framerate_;
-        ~WrongFramerateException(){};
-
-    };
-
     class NegativeFrameAfterShift : public  MovieSubtitlesError{
     public:
-        NegativeFrameAfterShift() : MovieSubtitlesError{"Negative frame after shift"}{};
+        NegativeFrameAfterShift() : MovieSubtitlesError("Negative frame after shift"){};
         ~NegativeFrameAfterShift(){};
     };
 
     class SubtitleEndBeforeStart : public MovieSubtitlesError{
     public:
-        SubtitleEndBeforeStart(const std::pair<int,int> &line, std::stringstream *in) :
-                line_{line.first},
-                MovieSubtitlesError("At line " + std::to_string(line.first) + ": " + ReturnLineWithError(line.second, in) ) {};
+        SubtitleEndBeforeStart(const int &line, std::stringstream *in) :
+                line_{line},
+                MovieSubtitlesError("At line " + std::to_string(line) + ": " + ReturnLineWithError(line, in) ) {};
+
+
         ~SubtitleEndBeforeStart(){};
-        int LineAt() const;
+        int LineAt() const{ return line_;};
         int line_;
     };
 
@@ -83,7 +100,22 @@ namespace moviesubs {
         ~InvalidSubtitleLineFormat(){};
     };
 
+    class MissingTimeSpecification : public MovieSubtitlesError{
+    public:
+        MissingTimeSpecification() :  MovieSubtitlesError("Missing time specification"){};
+        ~MissingTimeSpecification(){};
+    };
+
+    class OutOfOrderFrames : public MovieSubtitlesError{
+    public:
+        OutOfOrderFrames() :  MovieSubtitlesError("Out of order frames"){};
+        ~OutOfOrderFrames(){};
+    };
+
+
+
 }
+
 
 
 #endif //JIMP_EXERCISES_MOVIESUBTITLES_H
