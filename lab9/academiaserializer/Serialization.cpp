@@ -36,7 +36,7 @@ namespace academia {
 
 
     Building::Building(int id, std::string name, std::initializer_list<Room> rooms) {
-        this->id = id;
+        this->Id = id;
         this->name = name;
         this->rooms = rooms;
         /*
@@ -48,7 +48,7 @@ namespace academia {
 
 
 
-    //ERROR!
+
 
     BuildingRepository::BuildingRepository( std::initializer_list<Building> buildings){
         this->buildings=buildings;
@@ -65,7 +65,7 @@ namespace academia {
         this->buildings.emplace_back(building);
     }
 
-    //ERROR!
+
 
 
 
@@ -73,7 +73,7 @@ namespace academia {
 
         std::experimental::optional<Building> new_building;
         for(std::vector<Building>::iterator building = buildings.begin(); building != buildings.end(); ++building) {
-            if (building->id== id) {
+            if (building->Id== id) {
                 new_building.emplace(*building);
                 return new_building;
             }
@@ -96,7 +96,7 @@ namespace academia {
     void Room::Serialize(JsonSerializer *serializer) const {
 
         (*serializer->output)<<"{";
-        serializer->IntegerField("id", id);
+        serializer->IntegerField("Id", id);
         (*serializer->output) << ", ";
         serializer->StringField("name", name);
         (*serializer->output) << ", ";
@@ -107,7 +107,7 @@ namespace academia {
 
     void Building::Serialize(JsonSerializer* serializer)const{
         (*serializer->output) << "{";
-        serializer->IntegerField("id", id);
+        serializer->IntegerField("Id", Id);
         (*serializer->output) << ", ";
         serializer->StringField("name", name);
         (*serializer->output) << ", ";
@@ -159,7 +159,7 @@ namespace academia {
     void Room::Serialize(XmlSerializer *serializer) const {
 
         serializer->Header("room");
-        serializer->IntegerField("id", id);
+        serializer->IntegerField("Id", id);
         serializer->StringField("name",name);
         serializer->StringField("type", ReturnTypeString(type));
         serializer->Footer("room");
@@ -168,7 +168,7 @@ namespace academia {
 
     void Building::Serialize(XmlSerializer* serializer)const{
         serializer->Header("room");
-        serializer->IntegerField("id", id);
+        serializer->IntegerField("Id", Id);
         serializer->StringField("name",name);
         serializer->ArrayField("rooms", RoomsToReferenceWrapper(rooms));
         serializer->Footer("room");

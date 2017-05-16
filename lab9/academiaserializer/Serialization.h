@@ -136,7 +136,7 @@ namespace academia {
 
         void Serialize(Serializer* serializer) const{
             serializer->Header("Room");
-            serializer->IntegerField("id: ", id);
+            serializer->IntegerField("Id: ", id);
             serializer->StringField("name: ",name);
             serializer->StringField("type: ", ReturnTypeString(type));
             serializer->Footer("Room");
@@ -151,7 +151,7 @@ namespace academia {
     class Building : public Serializable {
     public:
         std::string name;
-        int id;
+        int Id;
         std::vector<Room> rooms;
         
 
@@ -170,7 +170,7 @@ namespace academia {
         BuildingRepository(){};
 
         void Add(const Building &building);
-
+        void StoreAll(Serializer* serializer)const{};
         void StoreAll(JsonSerializer* serializer)const;
         void StoreAll(XmlSerializer* serializer)const;
 
