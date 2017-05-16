@@ -18,9 +18,10 @@ namespace academia {
 
     class Serializer {
     public:
+        Serializer(){};
         Serializer(std::ostream *out){};
 
-        ~Serializer(){};
+        virtual  ~Serializer(){};
 
         virtual void IntegerField(const std::string &field_name, int value) = 0;
 
@@ -37,18 +38,17 @@ namespace academia {
         virtual void Header(const std::string &object_name)= 0;
 
         virtual void Footer(const std::string &object_name)= 0;
-        
+
 
     };
     class JsonSerializer;
     class XmlSerializer;
+
     class Serializable {
     public:
         virtual void Serialize(Serializer* serializer) const = 0;
         virtual void Serialize(JsonSerializer* serializer) const = 0;
         virtual void Serialize(XmlSerializer* serializer) const = 0;
-
-
     };
     
     class JsonSerializer{
@@ -105,6 +105,35 @@ namespace academia {
 
 
         std::stringstream* output;
+    };
+
+    class MockSerializer : public Serializer{
+    public:
+
+        MockSerializer(std::stringstream* out){
+            this->output = out;
+        }
+        MockSerializer(){};
+        ~MockSerializer(){};
+
+        void IntegerField(const std::string &field_name, int value){};
+
+        void DoubleField(const std::string &field_name, double value){};
+
+        void StringField(const std::string &field_name, const std::string &value){};
+
+        void BooleanField(const std::string &field_name, bool value){};
+
+        void SerializableField(const std::string &field_name, const Serializable &value){};
+
+        void ArrayField(const std::string &field_name, const std::vector<std::reference_wrapper<const Serializable>> &value){};
+
+        void Header(const std::string &object_name){};
+
+        void Footer(const std::string &object_name){};
+
+        std::stringstream* output;
+
     };
 
     class Room : public Serializable{
@@ -165,17 +194,19 @@ namespace academia {
         ~Building(){};
     };
 
-    class BuildingRepository : public Serializable{
+    class BuildingRepository{
+    public:
 
-        BuildingRepository( std::initializer_list<Building> buildings);
-        BuildingRepository();
+        BuildingRepository( std::initializer_list<Building> buildings){};
+        BuildingRepository(){};
 
         void Add(const Building &building);
 
         void StoreAll(JsonSerializer* serializer)const;
         void StoreAll(XmlSerializer* serializer)const;
+        void StoreAll(MockSerializer* serializer)const;
 
-        std::experimental::optional<Building> operator[](int id);
+    //    std::experimental::optional<Building> operator[](int id){};
 
         std::vector<std::reference_wrapper<const Serializable>> buildings;
 
