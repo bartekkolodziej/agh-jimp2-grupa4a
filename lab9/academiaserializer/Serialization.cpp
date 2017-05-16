@@ -64,7 +64,7 @@ namespace academia {
         (*serializer->output) << ", ";
         serializer->StringField("name", name);
         (*serializer->output) << ", ";
-        serializer->StringField("type",Typ(type));
+        serializer->StringField("type", RoomType(type));
         (*serializer->output) << "}";
 
     }
@@ -130,7 +130,7 @@ namespace academia {
         serializer->Header("room");
         serializer->IntegerField("id", id);
         serializer->StringField("name",name);
-        serializer->StringField("type", Typ(type));
+        serializer->StringField("type", RoomType(type));
         serializer->Footer("room");
 
     }

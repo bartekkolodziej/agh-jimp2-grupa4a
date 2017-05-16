@@ -119,7 +119,7 @@ namespace academia {
             CLASSROOM
         };
 
-        std::string Typ(Type type) const {
+        std::string RoomType(Type type) const {
             switch (type) {
                 case Type::COMPUTER_LAB:
                     return "COMPUTER_LAB";
@@ -143,7 +143,7 @@ namespace academia {
             serializer->Header("Room");
             serializer->IntegerField("id: ", id);
             serializer->StringField("name: ",name);
-            serializer->StringField("type: ", Typ(type));
+            serializer->StringField("type: ", RoomType(type));
             serializer->Footer("Room");
         };
 
