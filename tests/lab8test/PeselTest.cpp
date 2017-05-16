@@ -60,17 +60,17 @@ TEST_F(PeselTests, BaseClassOfInvalidPeselChecksumIsDataValidationErrorThen__run
 
 TEST_F(PeselTests, TheMessageOfInvalidPeselChecksum) {
   auto ex = make_unique<InvalidPeselChecksum>("00000000001",1);
-  EXPECT_STREQ("Invalid PESEL(00000000001) checksum: 1",ex->what());
+  EXPECT_STREQ("Invalid Pesel(00000000001) checksum: 1",ex->what());
 }
 
 TEST_F(PeselTests, TheMessageOfInvalidPeselCharacter) {
   auto ex = make_unique<InvalidPeselCharacter>("00000000xxx");
-  EXPECT_STREQ("Invalid PESEL(00000000xxx) character set",ex->what());
+  EXPECT_STREQ("Invalid Pesel(00000000xxx) character set",ex->what());
 }
 
 TEST_F(PeselTests, TheMessageOfInvalidPeselLength) {
   auto ex = make_unique<InvalidPeselLength>("0000000000",10);
-  EXPECT_STREQ("Invalid PESEL(0000000000) length: 10",ex->what());
+  EXPECT_STREQ("Invalid Pesel(0000000000) length: 10",ex->what());
 }
 
 

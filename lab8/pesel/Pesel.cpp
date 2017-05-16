@@ -4,23 +4,29 @@
 
 #include "Pesel.h"
 
+
 namespace academia {
-    Pesel::Pesel(const char *pesel_) {
-        if (validatePESEL(pesel_) == false) {
-            throw WrongNumbers(pesel_);
-        } else this->pesel_ = pesel_;
+
+    void Pesel::validatePESEL(const char *pesel){
+
+
+    };
+
+    Pesel::Pesel(const char *pesel) {
+        validatePESEL(pesel);
+
+        this->pesel = pesel;
     }
 
-    bool InvalidPeselChecksum();
-    bool InvalidPeselLength();
-    bool InvalidPeselCharacter();
-    bool AcademiaDataValidationError();
 
-    Pesel::~Pesel() {
-    }
 
-    AcademiaDataValidationError::AcademiaDataValidationError(std::string error_message){
-        this->error_message=error_message;
-    }
+    Pesel::~Pesel() {};
 
+    AcademiaDataValidationError::AcademiaDataValidationError(std::string error_message) : std::runtime_error(error_message){}
+
+    InvalidPeselChecksum::InvalidPeselChecksum(std::string pesel, int computed_checksum) : AcademiaDataValidationError("Invalid Pesel("+pesel+") checksum: "+std::to_string(computed_checksum)){}
+
+    InvalidPeselCharacter::InvalidPeselCharacter(std::string pesel) : AcademiaDataValidationError ("Invalid Pesel("+pesel+") character set"){}
+
+    InvalidPeselLength::InvalidPeselLength(std::string pesel, int computed_checksum) : AcademiaDataValidationError("Invalid Pesel("+pesel+") length: "+std::to_string(computed_checksum)){}
 }

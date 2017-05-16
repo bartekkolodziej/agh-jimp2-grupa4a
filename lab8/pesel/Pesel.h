@@ -9,32 +9,57 @@
 #include <iostream>
 
 namespace academia {
+
     class Pesel {
     public:
-        Pesel(const char *pesel_);
-        ~Pesel();
-        bool validatePESEL(const char *pesel_);
-        bool InvalidPeselChecksum();
-        bool InvalidPeselLength();
-        bool InvalidPeselCharacter();
-        bool AcademiaDataValidationError();
+        Pesel(const char *pesel);
 
-        const char *pesel_;
+        ~Pesel();
+
+        void validatePESEL(const char *pesel);
+
+        const char *pesel;
+
     };
 
-    class AcademiaDataValidationError{
+
+    class AcademiaDataValidationError : public std::runtime_error{
     public:
         AcademiaDataValidationError(std::string error_message);
-        virtual  ~AcademiaDataValidationError();
-        std::string error_message;
+
+        virtual ~AcademiaDataValidationError();
     };
+
 
     class WrongNumbers : public AcademiaDataValidationError {
     public:
-        WrongNumbers(const char *pesel_) : AcademiaDataValidationError{"Wrong dimensions of matrix"}, pesel_{pesel_} {}
+        WrongNumbers(const char *&p) : AcademiaDataValidationError{"Wrong numbers"}, p_{p} {}
 
-        Pesel pesel_;
+        Pesel p_;
     };
+
+
+    class InvalidPeselChecksum : public AcademiaDataValidationError{
+    public:
+        InvalidPeselChecksum(std::string pesel, int computed_checksum);
+        ~InvalidPeselChecksum(){};
+
+    };
+
+    class InvalidPeselLength : public AcademiaDataValidationError{
+    public:
+        InvalidPeselLength(std::string pesel, int computed_checksum);
+        ~InvalidPeselLength(){};
+    };
+
+    class InvalidPeselCharacter : public AcademiaDataValidationError{
+    public:
+        InvalidPeselCharacter(std::string pesel);
+        ~InvalidPeselCharacter(){};
+    };
+
+
 }
+
 
 #endif //JIMP_EXERCISES_PESEL_H
