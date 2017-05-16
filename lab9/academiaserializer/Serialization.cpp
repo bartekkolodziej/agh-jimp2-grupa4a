@@ -23,27 +23,19 @@ namespace academia {
         }
     }
 
-    //ERROR!
-
-    //BuildingRepository::BuildingRepository( std::initializer_list<Building> buildings){
-  //      Building x{};
-  //      for (x : buildings) {
- //           std::reference_wrapper<const Serializable> building=std::cref<const Serializable>(x);
- //           this->buildings.push_back(building);
- //       }
- //   }
+    BuildingRepository::BuildingRepository( std::initializer_list<Building> buildings){
+       for (auto x : buildings) {
+            this->buildings.push_back(x);
+       }
+   }
 
     // BuildingRepository functions:
 
     void BuildingRepository::Add(const Building &building){
-        std::reference_wrapper<const Serializable> new_building=std::cref<const Serializable>(building);
-        this->buildings.push_back(new_building);
+        this->buildings.push_back(building);
     }
 
-    /*ERROR!
-
-    std::experimental::optional<Building> BuildingRepository::operator[](int id){
-
+    std::experimental::optional<Building> BuildingRepository::operator[](int id) const{
         std::experimental::optional<Building> new_building;
         for(auto &building : buildings){
             if (building.id == id) {
@@ -51,18 +43,17 @@ namespace academia {
                 return new_building;
             }
         }
-
     }
-     */
+
 
     // Json Serialization:
     //1. Serializators:
 
     void BuildingRepository::StoreAll(JsonSerializer* serializer)const{
-
+        std::vector<std::reference_wrapper<const Serializable>> buildings_wrapped(buildings.begin(), buildings.end());
         (*serializer->output) << "{";
-        serializer->ArrayField("buildings", buildings);
-        (*serializer->output) << "]}";
+        serializer->ArrayField("buildings", buildings_wrapped);
+        (*serializer->output) << "}";
 
     }
 
@@ -91,6 +82,14 @@ namespace academia {
 
     //2. Functions:
 
+    void JsonSerializer::Header(const std::string &object_name){
+        (*output) << "\"" <<  object_name << "\": [";
+    }
+
+    void JsonSerializer::Footer(const std::string &object_name){
+        (*output) << "]";
+    }
+
     void JsonSerializer::StringField(const std::string &field_name, const std::string &value) {
         (*output) << "\"" << field_name << "\": \"" << value << "\"";
     }
@@ -113,18 +112,14 @@ namespace academia {
     }
 
     void JsonSerializer::ArrayField(const std::string &field_name, const std::vector<std::reference_wrapper<const Serializable>> &value) {
-
+        this->Header(field_name);
         bool IsFirst = true;
-        (*output) << "\"" <<  field_name << "\": [";
-
         for ( const Serializable &element:value) {
-
             if(!IsFirst)(*output)<< ", ";
             else IsFirst = false;
             element.Serialize(this);
-
         }
-        (*output) << "]";
+        this->Footer(field_name);
     }
 
     //Xml Serialization:
@@ -151,10 +146,19 @@ namespace academia {
     }
 
     void BuildingRepository::StoreAll(XmlSerializer* serializer)const{
-
+        std::vector<std::reference_wrapper<const Serializable>> buildings_wrapped(buildings.begin(), buildings.end());
         serializer->Header("building_repository");
-        serializer->ArrayField("buildings", buildings);
-        serializer->Footer("\\building_repository");
+        serializer->ArrayField("buildings", buildings_wrapped);
+        serializer->Footer("building_repository");
+
+    }
+
+
+    void BuildingRepository::StoreAll(Serializer* serializer)const{
+        std::vector<std::reference_wrapper<const Serializable>> buildings_wrapped(buildings.begin(), buildings.end());
+        serializer->Header("building_repository");
+        serializer->ArrayField("buildings", buildings_wrapped);
+        serializer->Footer("building_repository");
 
     }
 
@@ -192,13 +196,11 @@ namespace academia {
 
 
     void XmlSerializer::ArrayField(const std::string &field_name, const std::vector<std::reference_wrapper<const Serializable>> &value) {
-
-        (*output)<< "<rooms>";
-
+        this->Header(field_name);
         for ( const Serializable& element : value) {
             element.Serialize(this);
         }
-        (*output)<< "<\\rooms>";
+        this->Footer(field_name);
     }
 
 
