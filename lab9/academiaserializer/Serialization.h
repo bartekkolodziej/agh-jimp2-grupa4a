@@ -14,12 +14,17 @@
 namespace academia {
 
     class Serializable;
+    class Room;
+    class Building;
+
+    std::vector <std::reference_wrapper<const Serializable>>RoomsToReferenceWrapper(std::vector<Room> array);
+    std::vector <std::reference_wrapper<const Serializable>>BuildingsToReferenceWrapper(std::vector<Building> array);
 
     class Serializer {
     public:
         Serializer(std::ostream *out){};
 
-        ~Serializer(){};
+        virtual ~Serializer()= 0;
 
         virtual void IntegerField(const std::string &field_name, int value) = 0;
 
@@ -70,7 +75,7 @@ namespace academia {
 
         //void Footer()= 0;
 
-        ~JsonSerializer();
+        ~JsonSerializer(){};
 
         std::ostream* output;
     };
@@ -95,7 +100,7 @@ namespace academia {
 
         void Footer(const std::string &object_name);
 
-        ~XmlSerializer();
+        ~XmlSerializer(){};
 
         std::ostream* output;
     };
@@ -109,7 +114,7 @@ namespace academia {
             CLASSROOM
         };
 
-        std::string Type(Type type) const {
+        std::string ReturnTypeString(Type type) const {
             switch (type) {
                 case Type::COMPUTER_LAB:
                     return "COMPUTER_LAB";
@@ -133,35 +138,36 @@ namespace academia {
             serializer->Header("Room");
             serializer->IntegerField("id: ", id);
             serializer->StringField("name: ",name);
-            serializer->StringField("type: ", Type(type));
+            serializer->StringField("type: ", ReturnTypeString(type));
             serializer->Footer("Room");
         };
 
         void Serialize(JsonSerializer* serializer)const;
         void Serialize(XmlSerializer* serializer)const;
 
-        ~Room();
+        ~Room(){};
     };
 
     class Building : public Serializable {
     public:
         std::string name;
         int id;
-        std::vector<std::reference_wrapper<const Serializable>> rooms;
+        std::vector<Room> rooms;
         
 
-        void Serialize(JsonSerializer* serializer);
-        void Serialize(XmlSerializer* serializer);
+        void Serialize(JsonSerializer* serializer) const;
+        void Serialize(XmlSerializer* serializer) const;
+        void Serialize(Serializer* serializer) const{};
         
         Building(int id, std::string name, std::initializer_list<Room> rooms);
-        Building();
-        ~Building();
+        Building(){};
+        ~Building(){};
     };
 
     class BuildingRepository : public Serializable{
-
+    public:
         BuildingRepository( std::initializer_list<Building> buildings);
-        BuildingRepository();
+        BuildingRepository(){};
 
         void Add(const Building &building);
 
@@ -170,9 +176,9 @@ namespace academia {
 
         std::experimental::optional<Building> operator[](int id);
 
-        std::vector<std::reference_wrapper<const Serializable>> buildings;
+        std::vector<Building> buildings;
 
-        ~BuildingRepository();
+        ~BuildingRepository(){};
     };
 
 }
