@@ -9,6 +9,7 @@
 #include <map>
 #include <stdexcept>
 #include <set>
+#include <iostream>
 
 namespace academia{
     class SchedulingItem{
@@ -45,6 +46,7 @@ namespace academia{
         Schedule OfYear(int year) const;
 
         SchedulingItem operator[](int id) const{return this->items[id];};
+        void operator=(const Schedule schedule);
 
         std::vector<int> AvailableTimeSlots(int n_time_slots) const;
 

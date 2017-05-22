@@ -13,36 +13,37 @@ namespace  academia {
     Schedule Schedule::OfTeacher(int teacher_id) const {
         Schedule schedule;
         std::copy_if(this->items.begin(), this->items.end(), std::back_inserter(schedule.items),
-                     [teacher_id](SchedulingItem item) {
-                         item.teacher_id = teacher_id;
-                         return item.teacher_id;
-                     });
+                     [teacher_id](SchedulingItem item) {return item.teacher_id == teacher_id;});
         return schedule;
     }
 
     Schedule Schedule::OfRoom(int room_id) const {
         Schedule schedule;
         std::copy_if(this->items.begin(), this->items.end(), std::back_inserter(schedule.items),
-                     [room_id](SchedulingItem item) {
-                         item.room_id = room_id;
-                         return item.room_id;
-                     });
+                     [room_id](SchedulingItem item) {return item.room_id == room_id; });
         return schedule;
     }
 
     Schedule Schedule::OfYear(int year) const {
         Schedule schedule;
-        std::copy_if(this->items.begin(), this->items.end(), std::back_inserter(schedule.items), [year](SchedulingItem item) {
-            item.year = year;
-            return item.year;
-        });
+        std::copy_if(this->items.begin(), this->items.end(), std::back_inserter(schedule.items), [year](SchedulingItem item) {return item.year == year;});
         return schedule;
     }
 
     std::vector<int> Schedule::AvailableTimeSlots(int n_time_slots) const {
         std::vector<int> TimeSlots;
-        std::remove_if(TimeSlots.begin(), TimeSlots.end(), [this](int x){for(auto v: this->items)return v.time_slot=x;});
+        for(int i=0; i<n_time_slots; i++) TimeSlots.push_back(i+1);
+        
+        for(auto x: this->items) {
+            TimeSlots.erase(std::remove(TimeSlots.begin(), TimeSlots.end(), x.time_slot),
+                            TimeSlots.end());
+        }
+        
         return TimeSlots;
+    }
+
+    void Schedule::operator=(const Schedule schedule){
+        this->items = schedule.items;
     }
 
     Schedule GreedyScheduler::PrepareNewSchedule(const std::vector<int> &rooms,
@@ -84,5 +85,7 @@ namespace  academia {
         }
         return false;
     }
+
+
 }
 
