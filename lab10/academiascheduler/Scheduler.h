@@ -16,11 +16,20 @@ namespace academia{
 
         SchedulingItem(){};
         SchedulingItem(int course_id, int teacher_id, int room_id, int time_slot, int year): course_id{course_id}, teacher_id{teacher_id}, room_id{room_id}, time_slot{time_slot}, year{year}{}
+
+        int CourseId(){return this->course_id;};
+        int TeacherId(){return this->teacher_id;};
+        int RoomId(){return this->room_id;};
+        int TimeSlot(){return this->time_slot;};
+        int Year(){return this->year;};
+
         int course_id;
         int teacher_id;
         int room_id;
         int time_slot;
         int year;
+
+
 
         ~SchedulingItem(){};
 
@@ -29,11 +38,13 @@ namespace academia{
     class Schedule{
     public:
 
-        Schedule(){};
+        Schedule(){std::vector<SchedulingItem> items;};
 
         Schedule OfTeacher(int teacher_id) const ;
         Schedule OfRoom(int room_id) const;
         Schedule OfYear(int year) const;
+
+        SchedulingItem operator[](int id) const{return this->items[id];};
 
         std::vector<int> AvailableTimeSlots(int n_time_slots) const;
 
@@ -50,7 +61,7 @@ namespace academia{
     public:
         Scheduler(){};
         virtual Schedule PrepareNewSchedule(const std::vector<int> &rooms, const std::map<int, std::vector<int>> &teacher_courses_assignment, const std::map<int, std::set<int>> &courses_of_year, int n_time_slots) = 0;
-        virtual ~Scheduler() = 0;
+        ~Scheduler(){};
     };
 
 
