@@ -33,5 +33,45 @@ namespace  academia {
         std::remove_if(TimeSlots.begin(), TimeSlots.end(), [](int x){for(auto v:this->items)return v.time_slot=x;});
         return TimeSlots;
     }
+
+    Schedule GreedyScheduler::PrepareNewSchedule(const std::vector<int> &rooms,
+                                                 const std::map<int, std::vector<int>> &teacher_courses_assignment,
+                                                 const std::map<int, std::set<int>> &courses_of_year,
+                                                 int n_time_slots) {
+
+        Schedule schedule;
+        for (auto year : courses_of_year){
+            for (auto course: year.second){
+                int teacher = FindTeacher(teacher_courses_assignment,course);
+                if(!IsScheduled(&schedule,year.first,rooms,teacher,course,n_time_slots)) throw NoViableSolutionFound("No viable solution found.");
+            }
+        }
+        return schedule;
+
+    }
+
+    int GreedyScheduler::FindTeacher(const std::map<int, std::vector<int>> &teacher_courses_assignment, int course_id) {
+        for(auto teacher:teacher_courses_assignment){
+            for(auto course:teacher.second) if(course==course_id) return teacher.first;
+        }
+        return int();
+    }
+
+    bool GreedyScheduler::IsScheduled(Schedule *schedule, int year, const std::vector<int> &rooms, int teacher, int course, int n_time_slots) {
+        for (auto room:rooms){
+            for(auto room_slot: schedule->OfRoom(room).AvailableTimeSlots(n_time_slots)){
+                for(auto year_slot: schedule->OfYear(year).AvailableTimeSlots(n_time_slots)){
+                    for(auto teacher_slot: schedule->OfTeacher(teacher).AvailableTimeSlots(n_time_slots)){
+                        if(year_slot == teacher_slot && year_slot == room_slot && room_slot == teacher_slot)
+                        {
+                            schedule->InsertScheduleItem(SchedulingItem {course, teacher, room, year_slot, year});
+                            return true;
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
 }
 

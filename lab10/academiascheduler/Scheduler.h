@@ -39,7 +39,7 @@ namespace academia{
 
         void InsertScheduleItem(const SchedulingItem &item){this->items.push_back(item);};
 
-        size_t Size() const{return this->items.size()};
+        size_t Size() const{return this->items.size();};
 
         std::vector<SchedulingItem> items;
 
@@ -48,9 +48,19 @@ namespace academia{
 
     class Scheduler{
     public:
-        virtual Scheduler() = 0;
+        Scheduler(){};
         virtual Schedule PrepareNewSchedule(const std::vector<int> &rooms, const std::map<int, std::vector<int>> &teacher_courses_assignment, const std::map<int, std::set<int>> &courses_of_year, int n_time_slots) = 0;
         virtual ~Scheduler() = 0;
+    };
+
+
+    class GreedyScheduler: public Scheduler{
+    public:
+        GreedyScheduler(){};
+        Schedule PrepareNewSchedule(const std::vector<int> &rooms, const std::map<int, std::vector<int>> &teacher_courses_assignment, const std::map<int, std::set<int>> &courses_of_year, int n_time_slots);
+        int FindTeacher( const std::map<int, std::vector<int>> &teacher_courses_assignment,int course_id);
+        bool IsScheduled(Schedule *schedule, int year, const std::vector<int> &rooms, int teacher, int course, int n_time_slots);
+        ~GreedyScheduler(){};
     };
 
     class NoViableSolutionFound : public std::runtime_error{
