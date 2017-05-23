@@ -5,6 +5,7 @@
 #ifndef JIMP_EXERCISES_PESEL_H
 #define JIMP_EXERCISES_PESEL_H
 
+#include <algorithm>
 #include <stdexcept>
 #include <iostream>
 

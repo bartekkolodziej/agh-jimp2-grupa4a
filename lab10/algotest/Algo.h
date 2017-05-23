@@ -1,5 +1,5 @@
 //
-// Created by kolobart on 16.05.17.
+// Created by wrobbart on 16.05.17.
 //
 
 #ifndef JIMP_EXERCISES_ALGO_H
