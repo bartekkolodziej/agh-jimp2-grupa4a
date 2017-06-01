@@ -6,6 +6,7 @@
 #include <MemLeakTest.h>
 #include "SequentialGenerator.h"
 
+
 class SequentialIdGeneratorTest : public ::testing::Test, MemLeakTest {
  public:
 };
